@@ -1,0 +1,208 @@
+#tpl-contents {
+  /* tpl-main-bottom */
+  /* tpl-button */
+  /* LINK-TEXT */ }
+  #tpl-contents .page-title {
+    border-bottom: none; }
+  #tpl-contents .news-release {
+    width: 1200px;
+    margin: 0 auto; }
+    #tpl-contents .news-release .category-menu {
+      display: table;
+      width: 100%; }
+    #tpl-contents .news-release .category-menu li {
+      display: table-cell;
+      width: 299px;
+      padding-bottom: 12px;
+      text-align: center; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-release .category-menu li {
+        width: 25%; } }
+    #tpl-contents .news-release .category-menu li:first-child {
+      width: 300px;
+      border-left: none; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-release .category-menu li:first-child {
+        width: 25%; } }
+    #tpl-contents .news-release .category-menu li span {
+      background: #333;
+      display: block;
+      height: 60px;
+      vertical-align: middle;
+      border-left: 1px solid #000;
+      font-size: 18px;
+      font-weight: 100; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-release .category-menu li span {
+        height: 50px;
+        font-weight: 200; } }
+    #tpl-contents .news-release .category-menu li.all span {
+      border-bottom: 2px solid #2685c9; }
+    #tpl-contents .news-release .category-menu li.about span {
+      border-bottom: 2px solid #16a4ad; }
+    #tpl-contents .news-release .category-menu li.seminar span {
+      border-bottom: 2px solid #7ab222; }
+    #tpl-contents .news-release .category-menu li.other span {
+      border-bottom: 2px solid #eb8314; }
+    #tpl-contents .news-release .category-menu li.all.current {
+      background: url(https://re-gale.co.jp/news/img/ico-category-navi_all.png) no-repeat center bottom; }
+    #tpl-contents .news-release .category-menu li.all.current span {
+      background: #2685c9; }
+    #tpl-contents .news-release .category-menu li.about.current {
+      background: url(https://re-gale.co.jp/news/img/ico-category-navi_about.png) no-repeat center bottom; }
+    #tpl-contents .news-release .category-menu li.about.current span {
+      background: #16a4ad; }
+    #tpl-contents .news-release .category-menu li.seminar.current {
+      background: url(https://re-gale.co.jp/news/img/ico-category-navi_seminar.png) no-repeat center bottom; }
+    #tpl-contents .news-release .category-menu li.seminar.current span {
+      background: #7ab222; }
+    #tpl-contents .news-release .category-menu li.other.current {
+      background: url(https://re-gale.co.jp/news/img/ico-category-navi_other.png) no-repeat center bottom; }
+    #tpl-contents .news-release .category-menu li.other.current span {
+      background: #eb8314; }
+    #tpl-contents .news-release .category-menu li a {
+      display: block;
+      height: 100%;
+      line-height: 60px; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-release .category-menu li a {
+        font-size: 12px;
+        line-height: 50px; } }
+    #tpl-contents .news-release .category-menu li a:hover {
+      color: #fff;
+      text-decoration: none; }
+    #tpl-contents .news-release .category-menu li.all a:hover {
+      background: #2685c9; }
+    #tpl-contents .news-release .category-menu li.about a:hover {
+      background: #16a4ad; }
+    #tpl-contents .news-release .category-menu li.seminar a:hover {
+      background: #7ab222; }
+    #tpl-contents .news-release .category-menu li.other a:hover {
+      background: #eb8314; }
+  @media only screen and (max-width: 750px) {
+    #tpl-contents .news-release {
+      width: 100%; } }
+  #tpl-contents .news-list {
+    margin: 0;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    visibility: hidden; }
+    #tpl-contents .news-list dl {
+      border-bottom: 1px dotted #4d4d4d;
+      display: table;
+      width: 100%;
+      font-size: 14px; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list dl {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 12px; } }
+    #tpl-contents .news-list dl.first {
+      border-top: 1px dotted #4d4d4d; }
+    #tpl-contents .news-list dt,
+    #tpl-contents .news-list dd {
+      display: table-cell;
+      padding: 25px 0;
+      vertical-align: middle;
+      font-size: 16px; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list dt,
+      #tpl-contents .news-list dd {
+        display: block;
+        padding: 15px 0 0 0; } }
+    #tpl-contents .news-list dt {
+      width: 236px;
+      color: #2685c9;
+      font-size: 16px;
+      vertical-align: top; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list dt {
+        width: 100%;
+        font-size: 12px; } }
+    #tpl-contents .news-list .news-tag {
+      display: inline-block;
+      width: 110px;
+      margin-left: 12px;
+      padding: 6px 0;
+      font-size: 14px;
+      color: #fff;
+      line-height: 1;
+      text-align: center; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list .news-tag {
+        max-width: 70px;
+        padding: 4px 0;
+        font-size: 10px; } }
+    #tpl-contents .news-list .news-tag.about {
+      border: 1px solid #16a4ad; }
+    #tpl-contents .news-list .news-tag.seminar {
+      border: 1px solid #7ab222; }
+    #tpl-contents .news-list .news-tag.other {
+      border: 1px solid #eb8314; }
+    #tpl-contents .news-list dd {
+      color: #fff;
+      padding: 20px 0 25px 0; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list dd {
+        font-size: 12px;
+        padding: 10px 0; } }
+    #tpl-contents .news-list dd span.new-mark {
+      display: inline;
+      float: left;
+      color: #2685c9;
+      line-height: 2; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list dd span.new-mark {
+        display: inline;
+        float: none;
+        width: auto;
+        line-height: 1.6; } }
+    #tpl-contents .news-list dd span.text {
+      display: inline;
+      overflow: auto;
+      line-height: 2; }
+    @media only screen and (max-width: 750px) {
+      #tpl-contents .news-list dd span.text {
+        display: inline;
+        line-height: 1.6; } }
+    #tpl-contents .news-list dd span.text a {
+      text-decoration: underline;
+      font-weight: 200; }
+    #tpl-contents .news-list dd span.text a:hover {
+      color: #fff;
+      text-decoration: none; }
+  #tpl-contents .news-list.is-visible {
+    width: 1200px;
+    height: auto;
+    margin: 48px auto 0;
+    visibility: visible; }
+  @media only screen and (max-width: 750px) {
+    #tpl-contents .news-list.is-visible {
+      width: 100%;
+      margin: 48px auto 0; } }
+  #tpl-contents .tpl-main-bottom {
+    padding: 100px 0 150px 0;
+    text-align: center; }
+  #tpl-contents .tpl-button-blue {
+    background: #2685c9;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center; }
+    #tpl-contents .tpl-button-blue a {
+      display: block;
+      width: 100%;
+      padding: 30px 0; }
+    #tpl-contents .tpl-button-blue a:hover {
+      color: #fff; }
+  #tpl-contents .tpl-link-white-boder a {
+    color: #fff;
+    text-decoration: underline; }
+  #tpl-contents .tpl-link-white-boder a:hover {
+    text-decoration: underline; }
+  @media screen and (max-width: 750px) {
+    #tpl-contents .tpl-main-bottom {
+      padding: 59px 0 60px 0; } }

@@ -1,0 +1,1320 @@
+#tpl-contents {
+
+  /* tpl-description */ }
+
+  #tpl-contents .page-title {
+
+    border-bottom: none; }
+
+  #tpl-contents .tpl-description {
+
+    width: 1200px;
+
+    margin: 0 auto;
+
+    line-height: 2;
+
+    color: #fff; }
+
+  @media screen and (max-width: 750px) {
+
+    #tpl-contents .tpl-description {
+
+      width: 100%;
+
+      font-size: 12px; } }
+
+  #tpl-contents .contact {
+
+    width: 1200px;
+
+    margin: 0 auto 150px auto;
+
+    /* form */
+
+    /* tpl-main-bottom */ }
+
+    #tpl-contents .contact .box_tel {
+
+      border: 1px solid #666;
+
+      margin-bottom: 60px;
+
+      padding: 30px 242px; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .box_tel {
+
+        padding: 22px 0;
+
+        text-align: center; } }
+
+    #tpl-contents .contact .box_tel .inner {
+
+      display: table;
+
+      width: 100%; }
+
+    #tpl-contents .contact .box_tel p {
+
+      display: table-cell;
+
+      vertical-align: middle; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .box_tel p {
+
+        display: block; } }
+
+    #tpl-contents .contact .box_tel .title {
+
+      font-size: 20px;
+
+      line-height: 1;
+
+      color: #2685c9; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .box_tel .title {
+
+        font-size: 15px; } }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .box_tel .tel {
+
+        position: relative;
+
+        width: 240px;
+
+        margin: 12px auto 0 auto;
+
+        padding-left: 42px; }
+
+      #tpl-contents .contact .box_tel .tel:before {
+
+        content: "";
+
+        width: 35px;
+
+        height: 23px;
+
+        /*background: url(/common/img/ico_freedial.png) no-repeat;*/
+
+        background-size: contain;
+
+        position: absolute;
+
+        top: 50%;
+
+        left: 18px;
+
+        margin-top: -10px; }
+
+      #tpl-contents .contact .box_tel .tel .tel-link {
+
+        font-size: 26px;
+
+        line-height: 1;
+
+        color: #fff;
+
+        text-decoration: underline; } }
+
+    #tpl-contents .contact .box_tel .date {
+
+      font-size: 14px;
+
+      line-height: 1;
+
+      color: #fff; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .box_tel .date {
+
+        margin-top: 6px;
+
+        font-size: 12px; } }
+
+    #tpl-contents .contact .step {
+
+      width: 1200px;
+
+      height: 160px;
+
+      margin-top: 30px; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step {
+
+        width: 100%;
+
+        height: 50px;
+
+        margin-top: 25px;
+
+        margin-bottom: 30px; } }
+
+    #tpl-contents .contact .step ul {
+
+      background: #0b273c;
+
+      position: relative;
+
+      height: 100px; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step ul {
+
+        width: 100%;
+
+        height: 50px;
+
+        overflow: hidden; } }
+
+    #tpl-contents .contact .step li {
+
+      display: block;
+
+      height: 100px;
+
+      text-align: center;
+
+      font-size: 18px;
+
+      position: absolute; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step li {
+
+        height: 50px;
+
+        font-size: 11px; } }
+
+    #tpl-contents .contact .step li.input,
+
+    #tpl-contents .contact .step li.check {
+
+      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step.png) no-repeat right center;
+
+      width: 414px; }
+
+    #tpl-contents .contact .step li.input {
+
+      z-index: 2;
+
+      left: 0;
+
+      top: 0; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step li.input {
+
+        width: 34%;
+
+        padding-right: 12px; } }
+
+    #tpl-contents .contact .step li.check {
+
+      left: 414px;
+
+      top: 0;
+
+      z-index: 1;
+
+      margin-left: -22px; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step li.check {
+
+        left: 34%;
+
+        width: 40%;
+
+        padding-right: 12px;
+
+        margin-left: -20px; }
+
+      #tpl-contents .contact .step li.comp {
+
+        width: 416px; } }
+
+    #tpl-contents .contact .step li.comp {
+
+      z-index: 0;
+
+      left: 806px;
+
+      top: 0;
+
+      margin-left: -22px;
+
+      width: 415px; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step li.comp {
+
+        width: 37%;
+
+        left: 70%;
+
+        margin-left: -18px; } }
+
+    #tpl-contents .contact .step li.current {
+
+      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step_current.png) no-repeat right center; }
+
+    #tpl-contents .contact .step li.current.comp {
+
+      background-color: #2685c9;
+
+      background-image: none; }
+
+    #tpl-contents .contact .step li p.inner {
+
+      background: #0b273c;
+
+      display: block;
+
+      width: 392px;
+
+      padding: 38px 0 37px 0;
+
+      color: #fff; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step li p.inner {
+
+        width: 100%;
+
+        padding: 10px 0; } }
+
+    #tpl-contents .contact .step li.current p.inner {
+
+      background: #2685c9;
+
+      display: block; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .step li.check span.text {
+
+        display: block;
+
+        padding-left: 20px; } }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .sub-title {
+
+        margin-bottom: 0;
+
+        font-size: 15px; }
+
+      #tpl-contents .contact .sub-title span {
+
+        padding-bottom: 10px; } }
+
+    #tpl-contents .contact .form {
+
+      border-top: 1px dotted #4d4d4d;
+
+      display: table;
+
+      width: 100%;
+
+      /* radio & checkbox customize */ }
+
+      #tpl-contents .contact .form > dt,
+
+      #tpl-contents .contact .form > dd {
+
+        display: table-cell;
+
+        padding: 30px 0; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form > dt,
+
+        #tpl-contents .contact .form > dd {
+
+          display: block;
+
+          padding: 0; } }
+
+      #tpl-contents .contact .form .valign_t {
+
+        vertical-align: top; }
+
+      #tpl-contents .contact .form .valign_m {
+
+        vertical-align: middle; }
+
+      #tpl-contents .contact .form .valign_b {
+
+        vertical-align: bottom; }
+
+      #tpl-contents .contact .form > dt {
+
+        width: 200px;
+
+        line-height: 2;
+
+        color: #2685c9;
+
+        font-size: 16px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form > dt {
+
+          width: 100%;
+
+          margin-bottom: 12px;
+
+          font-size: 12px; }
+
+        #tpl-contents .contact .form > dt.check-title {
+
+          margin-bottom: 0; } }
+
+      #tpl-contents .contact .form > dd {
+
+        color: #fff;
+
+        font-size: 16px; }
+
+        @media screen and (max-width: 750px) {
+
+          #tpl-contents .contact .form > dd {
+
+            font-size: 12px; } }
+
+      #tpl-contents .contact .form .req {
+
+        color: #fff;
+
+        display: inline-block;
+
+        margin-left: 5px; }
+
+      #tpl-contents .contact .form input[type="radio"],
+
+      #tpl-contents .contact .form input[type="checkbox"] {
+
+        display: inline-block;
+
+        margin-right: 9px; }
+
+      #tpl-contents .contact .form input[type="radio"] + label,
+
+      #tpl-contents .contact .form input[type="checkbox"] + label {
+
+        position: relative;
+
+        display: inline-block;
+
+        font-size: 16px;
+
+        line-height: 30px;
+
+        cursor: pointer; }
+
+      @media (min-width: 1px) {
+
+        #tpl-contents .contact .form input[type="radio"],
+
+        #tpl-contents .contact .form input[type="checkbox"] {
+
+          display: none;
+
+          margin: 0; }
+
+        #tpl-contents .contact .form input[type="radio"] + label,
+
+        #tpl-contents .contact .form input[type="checkbox"] + label {
+
+          padding: 0 0 0 20px; }
+
+        #tpl-contents .contact .form input[type="radio"] + label::before,
+
+        #tpl-contents .contact .form input[type="checkbox"] + label::before {
+
+          content: "";
+
+          position: absolute;
+
+          top: 50%;
+
+          left: 0;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: block;
+
+          width: 12px;
+
+          height: 12px;
+
+          margin-top: -6px;
+
+          background: #FFF;
+
+          border-radius: 2px; }
+
+        #tpl-contents .contact .form input[type="radio"] + label::before {
+
+          border: 1px solid #ccc;
+
+          border-radius: 30px; }
+
+        #tpl-contents .contact .form input[type="checkbox"] + label::before {
+
+          border: 1px solid #ccc; }
+
+        #tpl-contents .contact .form input[type="checkbox"]:checked + label::before {
+
+          background: #2685c9;
+
+          border: 1px solid #2685c9; }
+
+        #tpl-contents .contact .form input[type="radio"]:checked + label::before {
+
+          background: #2685c9;
+
+          border: 1px solid #2685c9; }
+
+        #tpl-contents .contact .form input[type="radio"]:checked + label::after,
+
+        #tpl-contents .contact .form input[type="checkbox"]:checked + label::after {
+
+          content: "";
+
+          position: absolute;
+
+          top: 50%;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: block; }
+
+        #tpl-contents .contact .form input[type="radio"]:checked + label::after {
+
+          left: 3px;
+
+          width: 6px;
+
+          height: 6px;
+
+          margin-top: -3px;
+
+          background: #fff;
+
+          border-radius: 8px; }
+
+        #tpl-contents .contact .form input[type="checkbox"]:checked + label::after {
+
+          left: 3px;
+
+          width: 7px;
+
+          height: 4px;
+
+          margin-top: -3px;
+
+          border-left: 2px solid #fff;
+
+          border-bottom: 2px solid #fff;
+
+          -webkit-transform: rotate(-55deg);
+
+          -ms-transform: rotate(-55deg);
+
+          transform: rotate(-55deg); } }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form input[type="radio"] + label,
+
+        #tpl-contents .contact .form input[type="checkbox"] + label {
+
+          font-size: 12px; } }
+
+      #tpl-contents .contact .form dd.inline input[type="checkbox"] + label,
+
+      #tpl-contents .contact .form dd.inline input[type="radio"] + label {
+
+        margin-left: 40px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form dd.inline input[type="checkbox"] + label,
+
+        #tpl-contents .contact .form dd.inline input[type="radio"] + label {
+
+          margin-left: 0;
+
+          margin-top: 14px;
+
+          display: block;
+
+          font-size: 12px; } }
+
+      #tpl-contents .contact .form dd.inline input[type="checkbox"]:first-child + label,
+
+      #tpl-contents .contact .form dd.inline input[type="radio"]:first-child + label {
+
+        margin-left: 0; }
+
+      #tpl-contents .contact .form .block {
+
+        display: table;
+
+        width: 100%; }
+
+      #tpl-contents .contact .form .block .col {
+
+        border-left: 1px dotted #4d4d4d;
+
+        display: table-cell;
+
+        padding: 0 30px;
+
+        font-size: 16px;
+
+        width: 33.33%; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .block .col {
+
+          border-left: 0;
+
+          display: block;
+
+          margin-top: 22px;
+
+          margin-bottom: 40px;
+
+          padding: 0;
+
+          width: 100%;
+
+          font-size: 12px; } }
+
+      #tpl-contents .contact .form .block .col:last-child {
+
+        border-right: 1px dotted #4d4d4d; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .block .col:last-child {
+
+          border-right: 0;
+
+          margin-bottom: 0; } }
+
+      #tpl-contents .contact .form .block .col p {
+
+        margin-bottom: 12px;
+
+        font-size: 18px;
+
+        line-height: 1; }
+
+        @media screen and (max-width: 750px) {
+
+          #tpl-contents .contact .form .block .col p {
+
+            font-size: 15px;
+
+            margin-bottom: 5px; } }
+
+      #tpl-contents .contact .form .block .col label {
+
+        margin-top: 14px;
+
+        line-height: 2;
+
+        cursor: pointer; }
+
+        @media screen and (max-width: 750px) {
+
+          #tpl-contents .contact .form .block .col label {
+
+            font-size: 12px;
+
+            margin-top: 5px; } }
+
+      #tpl-contents .contact .form input[type="text"],
+
+      #tpl-contents .contact .form input[type="number"],
+
+      #tpl-contents .contact .form input[type="tel"],
+
+      #tpl-contents .contact .form input[type="email"],
+
+      #tpl-contents .contact .form textarea {
+
+        background: #1f1f1f;
+
+        border: 1px solid #666;
+
+        padding: 0px 17px;
+
+        height: 50px;
+
+        font-size: 16px;
+
+        color: #fff;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form input[type="text"],
+
+        #tpl-contents .contact .form input[type="number"],
+
+        #tpl-contents .contact .form input[type="tel"],
+
+        #tpl-contents .contact .form input[type="email"],
+
+        #tpl-contents .contact .form textarea {
+
+          padding: 14px;
+
+          font-size: 12px; } }
+
+      #tpl-contents .contact .form input[type="text"],
+
+      #tpl-contents .contact .form input[type="tel"],
+
+      #tpl-contents .contact .form input[type="number"],
+
+      #tpl-contents .contact .form input[type="email"] {
+
+        margin-left: 10px; }
+
+      #tpl-contents .contact .form input[type="text"]:first-child,
+
+      #tpl-contents .contact .form input[type="number"],
+
+      #tpl-contents .contact .form input[type="tel"]:first-child,
+
+      #tpl-contents .contact .form input[type="email"]:first-child {
+
+        margin-left: 0; }
+
+      #tpl-contents .contact .form input::-webkit-input-placeholder,
+
+      #tpl-contents .contact .form textarea::-webkit-input-placeholder {
+
+        color: #666; }
+
+      #tpl-contents .contact .form input:-ms-input-placeholder,
+
+      #tpl-contents .contact .form textarea:-ms-input-placeholder {
+
+        color: #666; }
+
+      #tpl-contents .contact .form input::-moz-placeholder,
+
+      #tpl-contents .contact .form textarea::-moz-placeholder {
+
+        color: #666; }
+
+      #tpl-contents .contact .form .input_xs {
+
+        width: 200px; }
+
+        @media screen and (max-width: 750px) {
+
+          #tpl-contents .contact .form .input_xs {
+
+            width: 40%; } }
+
+      #tpl-contents .contact .form .input_s,
+
+      #tpl-contents .contact .form .input_tel {
+
+        width: 300px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .input_s {
+
+          width: 40%; }
+
+        #tpl-contents .contact .form .input_tel {
+
+          width: 100%; } }
+
+      #tpl-contents .contact .form .input_m {
+
+        width: 610px; }
+
+      #tpl-contents .contact .form .input_num {
+
+        width: 100px;
+
+        display: inline-block;
+
+        margin-right: 10px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .input_m {
+
+          width: 100%; } }
+
+      #tpl-contents .contact .form .input_l {
+
+        width: 100%; }
+
+      #tpl-contents .contact .form .address select, #tpl-contents .contact .form .address .col {
+
+        display: inline-block; }
+
+      #tpl-contents .contact .form .address .select-wrap {
+
+        display: inline-block; }
+
+        #tpl-contents .contact .form .address .select-wrap .customSelect {
+
+          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+
+          border: 1px solid #666666;
+
+          -webkit-box-sizing: border-box;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: inline-block;
+
+          width: 280px;
+
+          height: 50px; }
+
+          #tpl-contents .contact .form .address .select-wrap .customSelect .customSelectInner {
+
+            display: block;
+
+            -webkit-box-sizing: border-box;
+
+            -moz-box-sizing: border-box;
+
+            box-sizing: border-box;
+
+            width: 280px !important;
+
+            height: 50px !important;
+
+            line-height: 48px;
+
+            padding-left: 17px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .address .col {
+
+          width: 100%; } }
+
+      #tpl-contents .contact .form .address .col input#address2 {
+
+        width: 420px; }
+
+        @media screen and (max-width: 750px) {
+
+          #tpl-contents .contact .form .address .col input#address2 {
+
+            width: 100%; } }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .address .col input {
+
+          margin-left: 0;
+
+          width: 100%; } }
+
+      #tpl-contents .contact .form .address .col p {
+
+        font-size: 16px;
+
+        margin-left: 10px;
+
+        margin-bottom: 15px; }
+
+        @media screen and (max-width: 750px) {
+
+          #tpl-contents .contact .form .address .col p {
+
+            margin-left: 0;
+
+            margin-bottom: 5px;
+
+            margin-top: 15px;
+
+            font-size: 12px; } }
+
+      #tpl-contents .contact .form .job .select-wrap, #tpl-contents .contact .form .jobposition .select-wrap, #tpl-contents .contact .form .job-income .select-wrap, #tpl-contents .contact .form .job-length .select-wrap, #tpl-contents .contact .form .business .select-wrap, #tpl-contents .contact .form .borro .select-wrap {
+
+        display: inline-block; }
+
+        #tpl-contents .contact .form .job .select-wrap .customSelect, #tpl-contents .contact .form .jobposition .select-wrap .customSelect, #tpl-contents .contact .form .job-income .select-wrap .customSelect, #tpl-contents .contact .form .job-length .select-wrap .customSelect, #tpl-contents .contact .form .business .select-wrap .customSelect, #tpl-contents .contact .form .borro .select-wrap .customSelect {
+
+          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+
+          border: 1px solid #666666;
+
+          -webkit-box-sizing: border-box;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: inline-block;
+
+          width: 400px;
+
+          height: 50px; }
+
+          #tpl-contents .contact .form .job .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .jobposition .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .job-income .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .job-length .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .business .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .borro .select-wrap .customSelect .customSelectInner {
+
+            display: block;
+
+            -webkit-box-sizing: border-box;
+
+            -moz-box-sizing: border-box;
+
+            box-sizing: border-box;
+
+            width: 400px !important;
+
+            height: 50px !important;
+
+            line-height: 48px;
+
+            padding-left: 17px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .job .select-wrap, #tpl-contents .contact .form .jobposition .select-wrap, #tpl-contents .contact .form .job-income .select-wrap, #tpl-contents .contact .form .job-length .select-wrap, #tpl-contents .contact .form .business .select-wrap, #tpl-contents .contact .form .borro .select-wrap {
+
+          display: inline-block; }
+
+          #tpl-contents .contact .form .job .select-wrap .customSelect, #tpl-contents .contact .form .jobposition .select-wrap .customSelect, #tpl-contents .contact .form .job-income .select-wrap .customSelect, #tpl-contents .contact .form .job-length .select-wrap .customSelect, #tpl-contents .contact .form .business .select-wrap .customSelect, #tpl-contents .contact .form .borro .select-wrap .customSelect {
+
+            background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+
+            border: 1px solid #666666;
+
+            -webkit-box-sizing: border-box;
+
+            -moz-box-sizing: border-box;
+
+            box-sizing: border-box;
+
+            display: inline-block;
+
+            width: 290px;
+
+            height: 50px; }
+
+            #tpl-contents .contact .form .job .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .jobposition .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .job-income .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .job-length .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .business .select-wrap .customSelect .customSelectInner, #tpl-contents .contact .form .borro .select-wrap .customSelect .customSelectInner {
+
+              display: block;
+
+              -webkit-box-sizing: border-box;
+
+              -moz-box-sizing: border-box;
+
+              box-sizing: border-box;
+
+              width: 290px !important;
+
+              height: 50px !important;
+
+              line-height: 48px;
+
+              padding-left: 10px; }
+
+        #tpl-contents .contact .form .borro .customSelectInner {
+
+          letter-spacing: -0.5px; } }
+
+      #tpl-contents .contact .form .hope, #tpl-contents .contact .form .listing {
+
+        vertical-align: middle; }
+
+        #tpl-contents .contact .form .hope label, #tpl-contents .contact .form .listing label {
+
+          display: inline-block;
+
+          margin-right: 20px; }
+
+      #tpl-contents .contact .form .family {
+
+        vertical-align: middle; }
+
+        #tpl-contents .contact .form .family dl {
+
+          float: left;
+
+          width: 260px; }
+
+        #tpl-contents .contact .form .family dt {
+
+          float: left;
+
+          margin-right: 20px; }
+
+        #tpl-contents .contact .form .family .spouse dt {
+
+          padding-top: 3px; }
+
+        #tpl-contents .contact .form .family .spouse dd label {
+
+          display: inline-block;
+
+          margin-right: 20px; }
+
+        #tpl-contents .contact .form .family .dependent {
+
+          margin-top: -10px; }
+
+          #tpl-contents .contact .form .family .dependent dt {
+
+            padding-top: 15px; }
+
+          @media screen and (max-width: 750px) {
+
+            #tpl-contents .contact .form .family .dependent {
+
+              margin-top: 20px; } }
+
+      #tpl-contents .contact .form .house label, #tpl-contents .contact .form .debt label, #tpl-contents .contact .form .investment label {
+
+        display: inline-block;
+
+        margin-right: 20px; }
+
+      #tpl-contents .contact .form textarea {
+
+        width: 1000px;
+
+        max-width: 1000px;
+
+        height: 300px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form textarea {
+
+          width: 100%; } }
+
+      #tpl-contents .contact .form .hyphen {
+
+        padding-left: 10px; }
+
+      #tpl-contents .contact .form .form_privacy {
+
+        height: 250px;
+
+        padding-right: 50px;
+
+        overflow: auto; }
+
+        #tpl-contents .contact .form .form_privacy .discription {
+
+          margin-bottom: 20px;
+
+          line-height: 2; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .form_privacy {
+
+          padding-top: 5px;
+
+          padding-right: 10px; } }
+
+      #tpl-contents .contact .form .form_privacy dl {
+
+        border-top: 1px dotted #666;
+
+        padding: 30px 0; }
+
+      #tpl-contents .contact .form .form_privacy dl:first-child {
+
+        border-top: none;
+
+        padding-top: 0; }
+
+      #tpl-contents .contact .form .form_privacy dt {
+
+        float: left;
+
+        width: 238px;
+
+        line-height: 2; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .form_privacy dt {
+
+          float: none;
+
+          width: 100%;
+
+          font-size: 12px;
+
+          line-height: 1.2; } }
+
+      #tpl-contents .contact .form .form_privacy dd {
+
+        overflow: hidden;
+
+        padding-left: 30px;
+
+        line-height: 2.4; }
+
+        #tpl-contents .contact .form .form_privacy dd p + p {
+
+          margin-top: 30px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form .form_privacy dd {
+
+          margin-top: 14px;
+
+          overflow: hidden;
+
+          font-size: 12px;
+
+          line-height: 1.6;
+
+          padding-left: 0; } }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .form {
+
+        display: block;
+
+        padding: 20px 0; } }
+
+    #tpl-contents .contact .form_alert {
+
+      border: 3px solid #990000;
+
+      margin-bottom: 65px;
+
+      padding: 30px 0;
+
+      text-align: center; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form_alert {
+
+          margin-bottom: 30px; } }
+
+      #tpl-contents .contact .form_alert .title {
+
+        height: 31px;
+
+        font-size: 20px;
+
+        color: #990000; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form_alert .title {
+
+          font-size: 15px;
+
+          position: relative; } }
+
+      #tpl-contents .contact .form_alert .title:before {
+
+        content: url(https://re-gale.co.jp/data/contact/img/ico_alert.png);
+
+        margin-right: 14px;
+
+        position: relative;
+
+        top: 5px; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form_alert .title:before {
+
+          content: url(https://re-gale.co.jp/data/contact/img/ico_alert-sp.png);
+
+          margin-right: 5px;
+
+          position: relative;
+
+          top: 1px; } }
+
+      #tpl-contents .contact .form_alert .text {
+
+        margin-top: 20px;
+
+        color: #990000; }
+
+      @media screen and (max-width: 750px) {
+
+        #tpl-contents .contact .form_alert .text {
+
+          margin-top: 10px;
+
+          font-size: 12px; } }
+
+    #tpl-contents .contact .form_btn {
+
+      padding: 60px 0 0 0;
+
+      text-align: center; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .form_btn {
+
+        padding-bottom: 75px; } }
+
+    #tpl-contents .contact .form_btn input {
+
+      background-color: #333;
+
+      border: none;
+
+      width: 400px;
+
+      padding: 35px 0;
+
+      font-size: 18px;
+
+      line-height: 1;
+
+      color: #999;
+
+      cursor: pointer; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .form_btn input {
+
+        width: 60%;
+
+        padding: 15px 0;
+
+        font-size: 14px; }
+
+      #tpl-contents .contact .form_btn input:nth-child(even) {
+
+        margin-top: 10px; } }
+
+    #tpl-contents .contact .form_btn input.active {
+
+      background-color: #2685C9;
+
+      color: #fff; }
+
+    #tpl-contents .contact .tpl-main-bottom {
+
+      text-align: center; }
+
+    #tpl-contents .contact .tpl-main-bottom {
+
+      padding: 100px 0 150px 0;
+
+      text-align: center; }
+
+    @media only screen and (max-width: 750px) {
+
+      #tpl-contents .contact .tpl-main-bottom {
+
+        padding: 30px 0 60px 0; } }
+
+    #tpl-contents .contact .only-sp {
+
+      display: none; }
+
+    @media screen and (max-width: 750px) {
+
+      #tpl-contents .contact .only-pc {
+
+        display: none; }
+
+      #tpl-contents .contact .only-sp {
+
+        display: block; } }
+
+    #tpl-contents .contact input[type="text"],
+
+    #tpl-contents .contact input[type="tel"],
+
+    #tpl-contents .contact input[type="email"],
+
+    #tpl-contents .contact textarea,
+
+    #tpl-contents .contact input[type="button"],
+
+    #tpl-contents .contact input[type="submit"] {
+
+      -webkit-appearance: none;
+
+      border-radius: 0; }
+
+  @media screen and (max-width: 750px) {
+
+    #tpl-contents .contact {
+
+      width: 90%;
+
+      margin: 0 auto; } }
+
+  @media screen and (max-width: 750px) {
+
+    #tpl-contents .btn {
+
+      width: 60%; }
+
+    #tpl-contents .btn a {
+
+      height: auto;
+
+      padding: 15px 0;
+
+      font-size: 14px; } }
+
+  #tpl-contents .contact .form.check-open {
+
+    display: none; }
+

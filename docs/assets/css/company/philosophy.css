@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+.category-title .inner h1 {
+  margin-bottom: 10px; }
+
+.category-title .inner p {
+  text-indent: 0; }
+
+#tpl-contents .main .mainCont ul li,
+.missionStatement h2,
+.missionStatement p {
+  font-family: "myfont","游明朝","Yu Mincho","游明朝体","YuMincho","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","HiraMinProN-W3","HGS明朝E","ＭＳ Ｐ明朝","MS PMincho",serif; }
+
+.category-title {
+  background: none; }
+
+#tpl-contents .main {
+  background: url(https://re-gale.co.jp/assets/img/ac/41_b.jpg) no-repeat center;
+  background-size: cover; }
+
+#tpl-contents .main .mainCont {
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+#tpl-contents .main .mainCont ul li {
+  float: left;
+  letter-spacing: 0.1em;
+  border: solid 1px #dedede;
+  font-size: 30px;
+  text-align: center;
+  padding: 48px 0;
+  line-height: 1.66; }
+
+#tpl-contents .main .mainCont ul li span {
+  display: block;
+  color: #2685c9;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+#tpl-contents .main .mainCont ul li.ps01 {
+  width: 940px;
+  margin-bottom: 40px; }
+
+#tpl-contents .main .mainCont ul li.ps02,
+#tpl-contents .main .mainCont ul li.ps03 {
+  width: 450px; }
+
+#tpl-contents .main .mainCont ul li.ps03 {
+  margin-left: 40px; }
+
+.missionStatement {
+  width: 1000px;
+  margin: 0 auto 120px;
+  padding: 150px 0 0; }
+
+.missionStatement h2 {
+  color: #2685c9;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: center; }
+
+.missionStatement p {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 90px; }
+
+.missionStatement p .capt {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 2.14;
+  font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif; }
+
+#tpl-contents .company-common-navi .header {
+  background: #000; }
+
+@media only screen and (max-width: 768px) {
+  .category-title .inner h1 {
+    margin-bottom: 0; }
+  #tpl-contents .main {
+        background: url(https://re-gale.co.jp/assets/img/ac/41_b.jpg) no-repeat center;
+        background-size:cover;
+    }
+  #tpl-contents .main .mainCont {
+    padding: 0 38px;
+    width: 100%; }
+  #tpl-contents .main .mainCont ul li {
+    float: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 24px 0;
+    line-height: 1.5; }
+  #tpl-contents .main .mainCont ul li span {
+    margin-bottom: 0;
+    font-size: 12px; }
+  #tpl-contents .main .mainCont ul li.ps01,
+  #tpl-contents .main .mainCont ul li.ps02,
+  #tpl-contents .main .mainCont ul li.ps03 {
+    width: 100%;
+    margin: 0 auto 19px; }
+  .missionStatement {
+    width: 100%;
+    padding: 39px 23px 0;
+    margin: 0 auto 60px; }
+  .missionStatement h2 {
+    font-size: 12px;
+    margin-bottom: 25px; }
+  .missionStatement p {
+    font-size: 23px;
+    margin-bottom: 55px; }
+  .missionStatement p .capt {
+    font-size: 12px;
+    line-height: 1.33;
+    margin-top: 3px; } }
+
+.message-text {
+    width: 940px;
+    
+        font-size: 18px;
+    margin:auto;
+}
+.message-text p {
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.message-text h2 {
+    padding-top:60px;
+    margin-bottom:40px;
+    text-align:center;
+    font-size: 30px;
+}
+.message-text h3 {
+    padding-top:25px;
+    margin-bottom:25px;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .message-text {
+        width: 100%;
+        font-size: 18px;
+        margin:auto;
+    }
+    .message-text p {
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+    .message-text h2 {
+        padding-top:60px;
+        margin-bottom:40px;
+        text-align:center;
+        font-size: 25px;
+    }
+    .message-text h3 {
+        padding-top:25px;
+        margin-bottom:25px;
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,2182 @@
+@charset "utf-8";
+/* ■リセットCSS
+******************************* */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+vertical-align: baseline;
+background: transparent;
+}
+ol,ul,dl,li,dt,dd {list-style: none;}
+:focus {outline: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* ******************************* */
+
+
+body{
+    font-family:"ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size:16px;
+    width:100%;
+    overflow-x: hidden;    
+}
+header{
+    background:#000;
+    padding:28px 0 24px;
+}
+section{
+    width:100%;
+    /*margin-bottom:1000px;*/
+}
+h1{
+    line-height:100%;
+}
+h1 img{
+    width:300px;
+    display: block;
+}
+h2{
+    font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+    font-size:48px;
+    line-height:125%;
+}
+.inner{
+    width:1000px;
+    margin:0 auto;
+}
+.consult .inner img{
+    float: right;
+}
+
+@media screen and (max-width:1060px){
+    .inner{
+        margin:0 15px;
+    }
+}
+.pcClass{
+    display:block;
+    padding:0;
+}
+.spClass{
+    display:none;
+    padding:0;
+}
+.btn a{
+    width: 400px;
+    height: 50px;
+    margin:0 auto;
+    display:block;
+    line-height:270%;
+    padding:21px 0;
+    background-image: linear-gradient(to right, #f4a460, #ff8c00 50%, #f4a460);
+    color:#fff;
+    font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+    text-decoration: none;
+    position:relative;
+    text-align:center;
+    transition:1s;
+    font-weight:600;
+    text-shadow:none;
+    font-size: 20px;
+}
+.btn a::before{
+    border:1px #fff solid;
+    width:385px;
+    height:80px;
+    content:"";
+    display:block;
+    position: absolute;
+    top:5px;
+    left:5px;
+}    
+.btn a:hover{
+    background:#fff;
+    color:#0a1768;
+}
+.btn a:hover::before{
+    border:1px #0a1768 solid;
+}
+
+
+
+.bignumber {
+    font-family:"ヒラギノ角ゴ ProNf", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;    
+    font-size:70px;
+    font-weight:bold;
+}
+.small-comment {
+    font-size:15px;
+}
+/*
+.header-box {
+   position: relative;
+
+}
+*/
+/*
+#header-logo {
+    display: inline-block;
+    width:500px;
+    display: inline;
+    margin-right: auto;
+    margin-left: 0;
+
+}
+#header-freedial {
+    display: inline-block;
+    position:absolute;
+
+    right: 0;
+}*/
+.header-box {
+height:50px; 
+display:inline-block;
+}
+.header-box #logo {
+  position: absolute;
+  top: 20px;
+  left: 10px; 
+}
+.header-box #tel-block {
+    display: table-cell;
+    position:absolute;
+    right:10px;
+}
+
+.header-box #tel-block p {
+    margin-left: 10px;
+    display: block;
+    text-align: center;
+}
+.header-box #tel-block .text {
+    margin-top: .5em;
+    font-size: 11px;
+    color:white;
+}
+
+.keyVisual{
+    background:url(https://re-gale.co.jp/assets/img/landing/main_bg.jpg) no-repeat;
+    background-size:100%;
+    /*height:732px;*/
+    height:300px;
+    color:#fff;
+}
+@media screen and (max-width:1400px){
+    .keyVisual{
+        background-size:1400px;
+    }
+}
+.keyVisual .inner{
+    position:relative;
+}
+.keyVisual h2{
+    position: absolute;
+    top:108px;
+    width:100%;
+    text-align:center;
+    font-size:48px;
+    line-height:100%;
+}
+.keyVisual h2 span{
+    font-size:36px;
+}
+.keyVisual iframe{
+    width:490px;
+    height:275px;
+}
+.keyVisual ul::after{
+    clear:both;
+    content:"";
+    display:block;
+}
+.keyVisual ul li{
+    float:left;
+    width:49%;
+    text-align:center;
+    margin-top:253px;
+}
+.keyVisual ul li:first-child{
+    margin-right:2%;
+}
+.message{
+    background:#fff;
+}
+.message .inner{
+    background:url(https://re-gale.co.jp/assets/img/landing/president.png) #fff no-repeat 70% 100%;
+
+}
+.message h2{
+    padding-top:105px;
+    padding-bottom:60px;
+}
+.message h2 span{
+    font-size:16px;
+    display:block;
+    line-height:100%;
+    padding-bottom:10px;
+}
+.message .text{
+    width:480px;
+    text-align:justify;
+    line-height:188%;
+    font-size:16px;
+    color:#262626;
+    padding-bottom:105px;
+}
+.consult{
+    background:url(../../img/landing/talk_bg_2.png) no-repeat #2f2f35;
+    background-size:100%;
+    height:835px;
+    color:#fff;
+    padding-bottom:0px;
+    padding-top:0;
+    /*margin:0;*/
+}
+@media screen and (max-width:1400px){
+    .consult{
+        background-size:1400px 845px ;
+    }
+}
+.consult h2{
+    padding-top:80px;
+    padding-bottom:5px;
+}
+.consult p{
+    line-height: 1.88;
+    padding-bottom:24px;
+    text-shadow:0px 0px 3px rgba(0,0,0,1);
+}
+.consult .btn{
+    margin-top:60px;
+    padding-bottom:14px;
+}
+.consult span{
+    text-align:center;
+    line-height:100%;
+    font-size:14px;
+}
+.reason{
+    /*background:#0f0f0f;*/
+    color:#fff;
+    background: url(https://re-gale.co.jp/assets/img/ac/46_b.jpg) no-repeat center;
+    background-size:cover;
+}
+.reason h2{
+    /*background:url(/assets/img/landing/reason_bg_1.jpg) no-repeat;
+    background-size:100%;*/
+    background:#000;
+    height:240px;
+    color:#fff;
+    font-weight: 600;
+    text-align:center;
+    margin-bottom:25px;
+}
+@media screen and (max-width:1400px){
+    .reason h2{
+        background-size:1400px;
+    }
+
+}
+.reason h2 .inner{
+    width:auto;
+    display:inline-block;
+    text-align:right;
+    margin-top:90px;
+    letter-spacing: 0.03em;
+}
+.reason h2 span{
+    font-size:36px;
+}
+.reason h2 p{
+    font-size:14px;
+    line-height:100%;
+}
+.reason h3{
+    font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+    border-bottom:2px solid #fff;
+    color:#fff;
+    display:inline-block;
+    font-size:42px;
+    padding-top:80px;
+    margin-bottom:35px;
+}
+.reason h3 span{
+    font-size:24px;
+    display:block;
+    line-height:100%;
+}
+.reason h3 p{
+    font-size:16px;
+    line-height:160%;
+}
+.reason h3:last-of-type{
+    padding-top:114px;
+}
+.reason .inner div{
+    margin-bottom:35px;
+}
+.reason ul{
+    text-align: center;
+    margin:0px auto 0px;
+    width:810px;
+}
+.reason ul::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.reason .graphArea li{
+    float:left;
+    width:400px;
+}
+.reason .graphArea li span{
+    text-align:left;
+    display:block;
+    padding:0 5px;
+}
+.reason .graphArea li img{
+    width:100%;
+}
+.reason .graphArea li:first-child{
+    padding-right:10px;
+}
+.voice{
+    /*background:#091626;*/
+    background: url(https://re-gale.co.jp/assets/img/ac/49_b.jpg) no-repeat center;
+    background-size:cover;
+    color:#fff;
+    padding:130px 0 160px;
+}
+.voice h2{
+    text-align:center;
+}
+.voice h3{
+    font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+    border-bottom:2px solid #fff;
+    color:#fff;
+    display:inline-block;
+    font-size:28px;
+    padding-top:90px;
+    margin-bottom:35px;
+}
+.voice dl::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+.voice dt{
+    float:left;
+    width:300px;
+    text-align:center;
+}
+.voice dl.right dd{
+    float:left;
+    margin-left:0px;
+    margin-right:41px;
+}
+.voice dd{
+    float:right;
+    width:593px;
+    line-height:188%;
+    margin-left:5px;
+    margin-right:80px;
+}
+.voice dd p{
+    padding-bottom:1.5em;
+}
+.formArea{
+    background:#0f0f0f;
+    color:#fff;
+    padding:110px 0 100px;
+}
+.formArea .text{
+    font-family:"ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;    
+    position: absolute;
+    font-size:12px;
+    line-height:150%;
+    right:-10px;
+    bottom:-90px;
+}
+.formArea h2{
+    font-size:34.5px;
+    font-weight:normal;
+    display:inline-block;
+    border-bottom:2px solid #fff;
+    padding-bottom:5px;
+    padding-right:300px;
+    position:relative;
+}
+.formArea h2 img{
+    position:absolute;
+    right:-50px;
+    top:0;
+}
+.formArea h3{
+    font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+    font-weight:normal;
+    font-size:24px;
+    padding-top:80px;
+    margin-bottom:45px;
+}
+/* 画像ループCSS */
+.loopSliderWrap {
+    top: 0;
+    left: 0;
+    height: 330px;
+    overflow: hidden;
+    position: absolute;
+}
+.lg {
+    margin: 0 auto;
+    width: 100%;
+    height: 330px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+.lg ul {
+    height: 330px;
+    float: left;
+    overflow: hidden;
+}
+.lg ul li {
+    width: auto;
+    height: 330px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+/* ------------------------------
+   CLEARFIX ELEMENTS
+------------------------------ */
+.loopSliderWrap:after {
+    content: "";
+    display: none;
+    clear: none;
+}
+
+footer{
+    background:#0f0f0f;
+    text-align:center;
+    font-size:11px;
+    color:#fff;
+    padding:26px 0;
+}
+
+@media screen and (max-width:640px){
+    body{
+        background:#0f0f0f;
+    }
+    header{
+        background:#000;
+        padding:20px 0;
+    }
+    section{
+        width:100%;
+    }
+    h1{
+        line-height:100%;
+    }
+    h1 img{
+        width:115px;
+    }
+    h2{
+        font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+        font-size:36px;
+        line-height:125%;
+    }
+    .inner{
+        width:92%;
+        margin:0 auto;
+    }
+    .consult .inner img{
+        width: 100%;
+        height: auto;
+    }
+    .pcClass{
+        display:none;
+    }
+    .spClass{
+        display:block;
+    }
+    .btn a{
+        width: 283px;
+        margin:0 auto;
+        display:block;
+        line-height:270%;
+        padding:21px 0;
+        text-decoration: none;
+        position:relative;
+        text-align:center;
+    }
+    .btn a::before{
+        border:1px #fff solid;
+        width:96%;
+        height:84%;
+        content:"";
+        display:block;
+        position: absolute;
+        top:5px;
+        left:5px;
+    }    
+    .btn a:hover{
+        background:#fff;
+        color:#0a1768;
+    }
+    .btn a:hover::before{
+        border:1px #0a1768 solid;
+    }
+    .keyVisual{
+        background:url(https://re-gale.co.jp/assets/img/landing/main_bg.jpg) no-repeat 90% 90%;
+        background-size:auto;
+        height:auto;
+        color:#fff;
+        padding-top:33px;
+        padding-bottom:25px;
+    }
+    .keyVisual h2{
+        position: static;
+        width:100%;
+        text-align:center;
+        font-size:30px;
+        line-height:100%;
+    }
+    .keyVisual h2 span{
+        font-size:22px;
+    }
+    .keyVisual ul::after{
+        clear:both;
+        content:"";
+        display:block;
+    }
+    .keyVisual ul{
+        padding-top:30px;
+    }
+    .keyVisual ul li{
+        float:none;
+        width:100%;
+        text-align:center;
+        margin-top:0px;
+        margin-bottom:95px;
+        position: relative;
+    }
+    .keyVisual ul li:first-child{
+        margin-right:0%;    
+    }
+    .keyVisual iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .keyVisual ul li p{
+        position:absolute;
+        bottom:-3.5em;
+        font-size:4vw;
+        width:100%;
+    }
+    .message .inner{
+        background:none;
+    }
+    .message img{
+        width:100%;
+        display:block;
+    }
+    .message h2{
+        padding-top:50px;
+        padding-bottom:25px;
+    }
+    .message h2 span{
+        font-size:16px;
+        display:block;
+        line-height:100%;
+        padding-bottom:10px;
+    }
+    .message .text{
+        width:auto;
+        text-align:justify;
+        line-height:188%;
+        font-size:16px;
+        color:#262626;
+        padding-bottom:0px;
+    }
+    .consult{
+        background:#2f2f35;
+        color:#fff;
+        padding-bottom:90px;
+        height:auto;        
+    }
+    .consult h2{
+        padding-top:60px;
+        padding-bottom:25px;
+    }
+    .consult p{
+        line-height: 1.88;
+        padding-bottom:24px;
+    }
+    .consult .btn{
+        margin-top:24px;
+        padding-bottom:0px;
+    }
+    .consult span{
+        text-align:center;
+        line-height:180%;
+        font-size:11.5px;
+        letter-spacing: 0;
+    }
+
+    .reason{
+        /*background:#0f0f0f;*/
+        color:#fff;
+        background: url(https://re-gale.co.jp/assets/img/ac/46_b.jpg) no-repeat center;
+        background-size:cover;
+    }
+    .reason h2{
+        background:#000;
+        /*background:url(/assets/img/landing/reason_bg_1.jpg) no-repeat 100% 100%;
+        background-size:900px;*/
+        height:auto;
+        color:#fff;
+        font-weight: 600;
+        text-align:center;
+        margin-bottom:0px;
+        font-size:30px;
+    }
+    .reason h2 .inner{
+        width:90%;
+        display:inline-block;
+        text-align:left;
+        margin:32px auto 22px;
+        letter-spacing: 0.03em;
+    }
+    .reason h2 span{
+        font-size:22px;
+    }
+    .reason h2 p{
+        font-size:14px;
+        line-height:100%;
+        text-align:right;
+    }
+    .reason h3{
+        font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+        border-bottom:2px solid #fff;
+        color:#fff;
+        display:inline-block;
+        line-height:120%;
+        font-size:34px;
+        padding-top:50px;
+        margin-bottom:35px;
+        margin-right:4%;
+        padding-bottom:3px;
+        padding-left:4%;
+    }
+    .reason h3 span{
+        font-size:24px;
+        display:block;
+        line-height:100%;
+        margin-bottom:8px;
+    }
+    .reason h3 p{
+        font-size:16px;
+        line-height:160%;
+    }
+    .reason h3:last-of-type{
+        padding-top:67px;
+    }
+    .reason .inner div{
+        margin-bottom:35px;
+    }
+    .reason ul{
+        text-align: center;
+        margin:0px 0 0px;
+        width:auto;        
+    }
+    .reason .graphArea li{
+        width:100%;
+        float: none;
+        font-size:90%;
+    }
+    .reason .graphArea li:first-child{
+        padding-right:0%;
+    }
+    .reason .graphArea li img{
+        width:100%;
+    }
+    .reason .graphArea li span{
+        display:block;
+        padding-bottom:15px;
+        text-align: left;
+    }
+    .voice{
+        /*background:#091626;*/
+        background: url(https://re-gale.co.jp/assets/img/ac/49_b.jpg) no-repeat center;
+        background-size:cover;
+        color:#fff;
+        padding:90px 0 100px;
+    }
+    .voice h2{
+        text-align:center;
+    }
+    .voice h3{
+        font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+        border-bottom:2px solid #fff;
+        color:#fff;
+        display:inline-block;
+        font-size:28px;
+        margin-top:90px;
+        margin-bottom:35px;
+        padding-left:4%;
+        margin-right:10%;
+    }
+    .voice dl::after{
+        content:"";
+        clear:both;
+        display: block;
+    }
+    .voice dt{
+        float:none;
+        width:auto;
+        margin-right:0;
+        text-align:center;
+    }
+    .voice dl.right dd {
+        float: none;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+    .voice dt img{
+        width:100%;
+    }
+    .voice dd{
+        float:left;
+        width:auto;
+        line-height:188%;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+    .formArea{
+        background:#0f0f0f;
+        color:#fff;
+        padding:70px 0 150px;
+        width:100%;
+        overflow:hidden;
+    }
+    .formArea h2{
+        font-size:24px;
+        font-weight:normal;
+        display:inline-block;
+        border-bottom:2px solid #fff;
+        padding-bottom:5px;
+        padding-right:0px;
+        padding-left:4%;
+        position:relative;
+    }
+    .formArea h2 img{
+        position:absolute;
+        right:-25%;
+        top:initial;
+        bottom:-40%;
+        width:151px;
+    }
+    .formArea h3{
+        font-family:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+        font-weight:normal;
+        font-size:16px;
+        padding-top:70px;
+        margin-bottom:18px;
+    }
+    .formArea .text{
+        position: absolute;
+        font-size:10px;
+        line-height:150%;
+        left:20%;
+        bottom:-40px;
+    }
+
+
+    /* 画像ループCSS */
+    .loopSliderWrap {
+        top: 0;
+        left: 0;
+        height: 165px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .lg {
+        margin: 0 auto;
+        width: 100%;
+        height: 165px;
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+    }
+    .lg ul {
+        height: 165px;
+        float: left;
+        overflow: hidden;
+    }
+    .lg ul li {
+        width: 231px;
+        height: 165px;
+        float: left;
+        display: inline;
+        overflow: hidden;
+    }
+    /* ------------------------------
+       CLEARFIX ELEMENTS
+    ------------------------------ */
+    .loopSliderWrap:after {
+        content: "";
+        display: none;
+        clear: none;
+    }
+    .lg ul li img{
+        width:100%;
+    }
+    footer{
+        background:#0f0f0f;
+        text-align:center;
+        font-size:11px;
+        color:#fff;
+        padding:26px 0;
+        position:relative;
+    }
+    .gotop{
+        position:absolute;
+        right:4%;
+        bottom:70px;
+        width:42px;
+    }
+    .gotop img{
+        width:42px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+.contact-section {
+    background:#091626;
+}
+  .contact {
+
+    width: 1200px;
+    background:#0f0f0f;
+    
+    margin: 0 auto 150px auto;
+    padding: 15px;
+    /* form */
+
+    /* tpl-main-bottom */ }
+
+    .contact .box_tel {
+
+      border: 1px solid #666;
+
+      margin-bottom: 60px;
+
+      padding: 30px 242px; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .box_tel {
+
+        padding: 22px 0;
+
+        text-align: center; } }
+
+    .contact .box_tel .inner {
+
+      display: table;
+
+      width: 100%; }
+
+    .contact .box_tel p {
+
+      display: table-cell;
+
+      vertical-align: middle; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .box_tel p {
+
+        display: block; } }
+
+    .contact .box_tel .title {
+
+      font-size: 20px;
+
+      line-height: 1;
+
+      color: #2685c9; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .box_tel .title {
+
+        font-size: 15px; } }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .box_tel .tel {
+
+        position: relative;
+
+        width: 240px;
+
+        margin: 12px auto 0 auto;
+
+        padding-left: 42px; }
+
+      .contact .box_tel .tel:before {
+
+        content: "";
+
+        width: 35px;
+
+        height: 23px;
+
+        /*background: url(/common/img/ico_freedial.png) no-repeat;*/
+
+        background-size: contain;
+
+        position: absolute;
+
+        top: 50%;
+
+        left: 18px;
+
+        margin-top: -10px; }
+
+      .contact .box_tel .tel .tel-link {
+
+        font-size: 26px;
+
+        line-height: 1;
+
+        color: #fff;
+
+        text-decoration: underline; } }
+
+    .contact .box_tel .date {
+
+      font-size: 14px;
+
+      line-height: 1;
+
+      color: #fff; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .box_tel .date {
+
+        margin-top: 6px;
+
+        font-size: 12px; } }
+
+    .contact .step {
+
+      width: 1200px;
+
+      height: 160px;
+
+      margin-top: 30px; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step {
+
+        width: 100%;
+
+        height: 50px;
+
+        margin-top: 25px;
+
+        margin-bottom: 30px; } }
+
+    .contact .step ul {
+
+      background: #0b273c;
+
+      position: relative;
+
+      height: 100px; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step ul {
+
+        width: 100%;
+
+        height: 50px;
+
+        overflow: hidden; } }
+
+    .contact .step li {
+
+      display: block;
+
+      height: 100px;
+
+      text-align: center;
+
+      font-size: 18px;
+
+      position: absolute; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step li {
+
+        height: 50px;
+
+        font-size: 11px; } }
+
+    .contact .step li.input,
+
+    .contact .step li.check {
+
+      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step.png) no-repeat right center;
+
+      width: 414px; }
+
+    .contact .step li.input {
+
+      z-index: 2;
+
+      left: 0;
+
+      top: 0; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step li.input {
+
+        width: 34%;
+
+        padding-right: 12px; } }
+
+    .contact .step li.check {
+
+      left: 414px;
+
+      top: 0;
+
+      z-index: 1;
+
+      margin-left: -22px; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step li.check {
+
+        left: 34%;
+
+        width: 40%;
+
+        padding-right: 12px;
+
+        margin-left: -20px; }
+
+      .contact .step li.comp {
+
+        width: 416px; } }
+
+    .contact .step li.comp {
+
+      z-index: 0;
+
+      left: 806px;
+
+      top: 0;
+
+      margin-left: -22px;
+
+      width: 415px; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step li.comp {
+
+        width: 37%;
+
+        left: 70%;
+
+        margin-left: -18px; } }
+
+    .contact .step li.current {
+
+      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step_current.png) no-repeat right center; }
+
+    .contact .step li.current.comp {
+
+      background-color: #2685c9;
+
+      background-image: none; }
+
+    .contact .step li p.inner {
+
+      background: #0b273c;
+
+      display: block;
+
+      width: 392px;
+
+      padding: 38px 0 37px 0;
+
+      color: #fff; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step li p.inner {
+
+        width: 100%;
+
+        padding: 10px 0; } }
+
+    .contact .step li.current p.inner {
+
+      background: #2685c9;
+
+      display: block; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .step li.check span.text {
+
+        display: block;
+
+        padding-left: 20px; } }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .sub-title {
+
+        margin-bottom: 0;
+
+        font-size: 15px; }
+
+      .contact .sub-title span {
+
+        padding-bottom: 10px; } }
+
+    .contact .form {
+
+      border-top: 1px dotted #4d4d4d;
+
+      display: table;
+
+      width: 100%;
+
+      /* radio & checkbox customize */ }
+
+      .contact .form > dt,
+
+      .contact .form > dd {
+
+        display: table-cell;
+
+        padding: 30px 0; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form > dt,
+
+        .contact .form > dd {
+
+          display: block;
+
+          padding: 0; } }
+
+      .contact .form .valign_t {
+
+        vertical-align: top; }
+
+      .contact .form .valign_m {
+
+        vertical-align: middle; }
+
+      .contact .form .valign_b {
+
+        vertical-align: bottom; }
+
+      .contact .form > dt {
+
+        width: 200px;
+
+        line-height: 2;
+
+        color: #2685c9;
+
+        font-size: 16px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form > dt {
+
+          width: 100%;
+
+          margin-bottom: 12px;
+
+          font-size: 12px; }
+
+        .contact .form > dt.check-title {
+
+          margin-bottom: 0; } }
+
+      .contact .form > dd {
+
+        color: #fff;
+
+        font-size: 16px; }
+
+        @media screen and (max-width: 750px) {
+
+          .contact .form > dd {
+
+            font-size: 12px; } }
+
+      .contact .form .req {
+
+        color: #fff;
+
+        display: inline-block;
+
+        margin-left: 5px; }
+
+      .contact .form input[type="radio"],
+
+      .contact .form input[type="checkbox"] {
+
+        display: inline-block;
+
+        margin-right: 9px; }
+
+      .contact .form input[type="radio"] + label,
+
+      .contact .form input[type="checkbox"] + label {
+
+        position: relative;
+
+        display: inline-block;
+
+        font-size: 16px;
+
+        line-height: 30px;
+
+        cursor: pointer; }
+
+      @media (min-width: 1px) {
+
+        .contact .form input[type="radio"],
+
+        .contact .form input[type="checkbox"] {
+
+          display: none;
+
+          margin: 0; }
+
+        .contact .form input[type="radio"] + label,
+
+        .contact .form input[type="checkbox"] + label {
+
+          padding: 0 0 0 20px; }
+
+        .contact .form input[type="radio"] + label::before,
+
+        .contact .form input[type="checkbox"] + label::before {
+
+          content: "";
+
+          position: absolute;
+
+          top: 50%;
+
+          left: 0;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: block;
+
+          width: 12px;
+
+          height: 12px;
+
+          margin-top: -6px;
+
+          background: #FFF;
+
+          border-radius: 2px; }
+
+        .contact .form input[type="radio"] + label::before {
+
+          border: 1px solid #ccc;
+
+          border-radius: 30px; }
+
+        .contact .form input[type="checkbox"] + label::before {
+
+          border: 1px solid #ccc; }
+
+        .contact .form input[type="checkbox"]:checked + label::before {
+
+          background: #2685c9;
+
+          border: 1px solid #2685c9; }
+
+        .contact .form input[type="radio"]:checked + label::before {
+
+          background: #2685c9;
+
+          border: 1px solid #2685c9; }
+
+        .contact .form input[type="radio"]:checked + label::after,
+
+        .contact .form input[type="checkbox"]:checked + label::after {
+
+          content: "";
+
+          position: absolute;
+
+          top: 50%;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: block; }
+
+        .contact .form input[type="radio"]:checked + label::after {
+
+          left: 3px;
+
+          width: 6px;
+
+          height: 6px;
+
+          margin-top: -3px;
+
+          background: #fff;
+
+          border-radius: 8px; }
+
+        .contact .form input[type="checkbox"]:checked + label::after {
+
+          left: 3px;
+
+          width: 7px;
+
+          height: 4px;
+
+          margin-top: -3px;
+
+          border-left: 2px solid #fff;
+
+          border-bottom: 2px solid #fff;
+
+          -webkit-transform: rotate(-55deg);
+
+          -ms-transform: rotate(-55deg);
+
+          transform: rotate(-55deg); } }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form input[type="radio"] + label,
+
+        .contact .form input[type="checkbox"] + label {
+
+          font-size: 12px; } }
+
+      .contact .form dd.inline input[type="checkbox"] + label,
+
+      .contact .form dd.inline input[type="radio"] + label {
+
+        margin-left: 40px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form dd.inline input[type="checkbox"] + label,
+
+        .contact .form dd.inline input[type="radio"] + label {
+
+          margin-left: 0;
+
+          margin-top: 14px;
+
+          display: block;
+
+          font-size: 12px; } }
+
+      .contact .form dd.inline input[type="checkbox"]:first-child + label,
+
+      .contact .form dd.inline input[type="radio"]:first-child + label {
+
+        margin-left: 0; }
+
+      .contact .form .block {
+
+        display: table;
+
+        width: 100%; }
+
+      .contact .form .block .col {
+
+        border-left: 1px dotted #4d4d4d;
+
+        display: table-cell;
+
+        padding: 0 30px;
+
+        font-size: 16px;
+
+        width: 33.33%; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .block .col {
+
+          border-left: 0;
+
+          display: block;
+
+          margin-top: 22px;
+
+          margin-bottom: 40px;
+
+          padding: 0;
+
+          width: 100%;
+
+          font-size: 12px; } }
+
+      .contact .form .block .col:last-child {
+
+        border-right: 1px dotted #4d4d4d; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .block .col:last-child {
+
+          border-right: 0;
+
+          margin-bottom: 0; } }
+
+      .contact .form .block .col p {
+
+        margin-bottom: 12px;
+
+        font-size: 18px;
+
+        line-height: 1; }
+
+        @media screen and (max-width: 750px) {
+
+          .contact .form .block .col p {
+
+            font-size: 15px;
+
+            margin-bottom: 5px; } }
+
+      .contact .form .block .col label {
+
+        margin-top: 14px;
+
+        line-height: 2;
+
+        cursor: pointer; }
+
+        @media screen and (max-width: 750px) {
+
+          .contact .form .block .col label {
+
+            font-size: 12px;
+
+            margin-top: 5px; } }
+
+      .contact .form input[type="text"],
+
+      .contact .form input[type="number"],
+
+      .contact .form input[type="tel"],
+
+      .contact .form input[type="email"],
+
+      .contact .form textarea {
+
+        background: #1f1f1f;
+
+        border: 1px solid #666;
+
+        padding: 0px 17px;
+
+        height: 50px;
+
+        font-size: 16px;
+
+        color: #fff;
+
+        -webkit-box-sizing: border-box;
+
+        -moz-box-sizing: border-box;
+
+        box-sizing: border-box; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form input[type="text"],
+
+        .contact .form input[type="number"],
+
+        .contact .form input[type="tel"],
+
+        .contact .form input[type="email"],
+
+        .contact .form textarea {
+
+          padding: 14px;
+
+          font-size: 12px; } }
+
+      .contact .form input[type="text"],
+
+      .contact .form input[type="tel"],
+
+      .contact .form input[type="number"],
+
+      .contact .form input[type="email"] {
+
+        margin-left: 10px; }
+
+      .contact .form input[type="text"]:first-child,
+
+      .contact .form input[type="number"],
+
+      .contact .form input[type="tel"]:first-child,
+
+      .contact .form input[type="email"]:first-child {
+
+        margin-left: 0; }
+
+      .contact .form input::-webkit-input-placeholder,
+
+      .contact .form textarea::-webkit-input-placeholder {
+
+        color: #666; }
+
+      .contact .form input:-ms-input-placeholder,
+
+      .contact .form textarea:-ms-input-placeholder {
+
+        color: #666; }
+
+      .contact .form input::-moz-placeholder,
+
+      .contact .form textarea::-moz-placeholder {
+
+        color: #666; }
+
+      .contact .form .input_xs {
+
+        width: 200px; }
+
+        @media screen and (max-width: 750px) {
+
+          .contact .form .input_xs {
+
+            width: 40%; } }
+
+      .contact .form .input_s,
+
+      .contact .form .input_tel {
+
+        width: 300px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .input_s {
+
+          width: 40%; }
+
+        .contact .form .input_tel {
+
+          width: 100%; } }
+
+      .contact .form .input_m {
+
+        width: 610px; }
+
+      .contact .form .input_num {
+
+        width: 100px;
+
+        display: inline-block;
+
+        margin-right: 10px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .input_m {
+
+          width: 100%; } }
+
+      .contact .form .input_l {
+
+        width: 100%; }
+
+      .contact .form .address select, .contact .form .address .col {
+
+        display: inline-block; }
+
+      .contact .form .address .select-wrap {
+
+        display: inline-block; }
+
+        .contact .form .address .select-wrap .customSelect {
+
+          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+
+          border: 1px solid #666666;
+
+          -webkit-box-sizing: border-box;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: inline-block;
+
+          width: 280px;
+
+          height: 50px; }
+
+          .contact .form .address .select-wrap .customSelect .customSelectInner {
+
+            display: block;
+
+            -webkit-box-sizing: border-box;
+
+            -moz-box-sizing: border-box;
+
+            box-sizing: border-box;
+
+            width: 280px !important;
+
+            height: 50px !important;
+
+            line-height: 48px;
+
+            padding-left: 17px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .address .col {
+
+          width: 100%; } }
+
+      .contact .form .address .col input#address2 {
+
+        width: 420px; }
+
+        @media screen and (max-width: 750px) {
+
+          .contact .form .address .col input#address2 {
+
+            width: 100%; } }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .address .col input {
+
+          margin-left: 0;
+
+          width: 100%; } }
+
+      .contact .form .address .col p {
+
+        font-size: 16px;
+
+        margin-left: 10px;
+
+        margin-bottom: 15px; }
+
+        @media screen and (max-width: 750px) {
+
+          .contact .form .address .col p {
+
+            margin-left: 0;
+
+            margin-bottom: 5px;
+
+            margin-top: 15px;
+
+            font-size: 12px; } }
+
+      .contact .form .job .select-wrap, .contact .form .jobposition .select-wrap, .contact .form .job-income .select-wrap, .contact .form .job-length .select-wrap, .contact .form .business .select-wrap, .contact .form .borro .select-wrap {
+
+        display: inline-block; }
+
+        .contact .form .job .select-wrap .customSelect, .contact .form .jobposition .select-wrap .customSelect, .contact .form .job-income .select-wrap .customSelect, .contact .form .job-length .select-wrap .customSelect, .contact .form .business .select-wrap .customSelect, .contact .form .borro .select-wrap .customSelect {
+
+          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+
+          border: 1px solid #666666;
+
+          -webkit-box-sizing: border-box;
+
+          -moz-box-sizing: border-box;
+
+          box-sizing: border-box;
+
+          display: inline-block;
+
+          width: 400px;
+
+          height: 50px; }
+
+          .contact .form .job .select-wrap .customSelect .customSelectInner, .contact .form .jobposition .select-wrap .customSelect .customSelectInner, .contact .form .job-income .select-wrap .customSelect .customSelectInner, .contact .form .job-length .select-wrap .customSelect .customSelectInner, .contact .form .business .select-wrap .customSelect .customSelectInner, .contact .form .borro .select-wrap .customSelect .customSelectInner {
+
+            display: block;
+
+            -webkit-box-sizing: border-box;
+
+            -moz-box-sizing: border-box;
+
+            box-sizing: border-box;
+
+            width: 400px !important;
+
+            height: 50px !important;
+
+            line-height: 48px;
+
+            padding-left: 17px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .job .select-wrap, .contact .form .jobposition .select-wrap, .contact .form .job-income .select-wrap, .contact .form .job-length .select-wrap, .contact .form .business .select-wrap, .contact .form .borro .select-wrap {
+
+          display: inline-block; }
+
+          .contact .form .job .select-wrap .customSelect, .contact .form .jobposition .select-wrap .customSelect, .contact .form .job-income .select-wrap .customSelect, .contact .form .job-length .select-wrap .customSelect, .contact .form .business .select-wrap .customSelect, .contact .form .borro .select-wrap .customSelect {
+
+            background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+
+            border: 1px solid #666666;
+
+            -webkit-box-sizing: border-box;
+
+            -moz-box-sizing: border-box;
+
+            box-sizing: border-box;
+
+            display: inline-block;
+
+            width: 290px;
+
+            height: 50px; }
+
+            .contact .form .job .select-wrap .customSelect .customSelectInner, .contact .form .jobposition .select-wrap .customSelect .customSelectInner, .contact .form .job-income .select-wrap .customSelect .customSelectInner, .contact .form .job-length .select-wrap .customSelect .customSelectInner, .contact .form .business .select-wrap .customSelect .customSelectInner, .contact .form .borro .select-wrap .customSelect .customSelectInner {
+
+              display: block;
+
+              -webkit-box-sizing: border-box;
+
+              -moz-box-sizing: border-box;
+
+              box-sizing: border-box;
+
+              width: 290px !important;
+
+              height: 50px !important;
+
+              line-height: 48px;
+
+              padding-left: 10px; }
+
+        .contact .form .borro .customSelectInner {
+
+          letter-spacing: -0.5px; } }
+
+      .contact .form .hope, .contact .form .listing {
+
+        vertical-align: middle; }
+
+        .contact .form .hope label, .contact .form .listing label {
+
+          display: inline-block;
+
+          margin-right: 20px; }
+
+      .contact .form .family {
+
+        vertical-align: middle; }
+
+        .contact .form .family dl {
+
+          float: left;
+
+          width: 260px; }
+
+        .contact .form .family dt {
+
+          float: left;
+
+          margin-right: 20px; }
+
+        .contact .form .family .spouse dt {
+
+          padding-top: 3px; }
+
+        .contact .form .family .spouse dd label {
+
+          display: inline-block;
+
+          margin-right: 20px; }
+
+        .contact .form .family .dependent {
+
+          margin-top: -10px; }
+
+          .contact .form .family .dependent dt {
+
+            padding-top: 15px; }
+
+          @media screen and (max-width: 750px) {
+
+            .contact .form .family .dependent {
+
+              margin-top: 20px; } }
+
+      .contact .form .house label, .contact .form .debt label, .contact .form .investment label {
+
+        display: inline-block;
+
+        margin-right: 20px; }
+
+      .contact .form textarea {
+
+        width: 1000px;
+
+        max-width: 1000px;
+
+        height: 300px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form textarea {
+
+          width: 100%; } }
+
+      .contact .form .hyphen {
+
+        padding-left: 10px; }
+
+      .contact .form .form_privacy {
+
+        height: 250px;
+
+        padding-right: 50px;
+
+        overflow: auto; }
+
+        .contact .form .form_privacy .discription {
+
+          margin-bottom: 20px;
+
+          line-height: 2; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .form_privacy {
+
+          padding-top: 5px;
+
+          padding-right: 10px; } }
+
+      .contact .form .form_privacy dl {
+
+        border-top: 1px dotted #666;
+
+        padding: 30px 0; }
+
+      .contact .form .form_privacy dl:first-child {
+
+        border-top: none;
+
+        padding-top: 0; }
+
+      .contact .form .form_privacy dt {
+
+        float: left;
+
+        width: 238px;
+
+        line-height: 2; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .form_privacy dt {
+
+          float: none;
+
+          width: 100%;
+
+          font-size: 12px;
+
+          line-height: 1.2; } }
+
+      .contact .form .form_privacy dd {
+
+        overflow: hidden;
+
+        padding-left: 30px;
+
+        line-height: 2.4; }
+
+        .contact .form .form_privacy dd p + p {
+
+          margin-top: 30px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form .form_privacy dd {
+
+          margin-top: 14px;
+
+          overflow: hidden;
+
+          font-size: 12px;
+
+          line-height: 1.6;
+
+          padding-left: 0; } }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .form {
+
+        display: block;
+
+        padding: 20px 0; } }
+
+    .contact .form_alert {
+
+      border: 3px solid #990000;
+
+      margin-bottom: 65px;
+
+      padding: 30px 0;
+
+      text-align: center; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form_alert {
+
+          margin-bottom: 30px; } }
+
+      .contact .form_alert .title {
+
+        height: 31px;
+
+        font-size: 20px;
+
+        color: #990000; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form_alert .title {
+
+          font-size: 15px;
+
+          position: relative; } }
+
+      .contact .form_alert .title:before {
+
+        content: url(https://re-gale.co.jp/data/contact/img/ico_alert.png);
+
+        margin-right: 14px;
+
+        position: relative;
+
+        top: 5px; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form_alert .title:before {
+
+          content: url(https://re-gale.co.jp/data/contact/img/ico_alert-sp.png);
+
+          margin-right: 5px;
+
+          position: relative;
+
+          top: 1px; } }
+
+      .contact .form_alert .text {
+
+        margin-top: 20px;
+
+        color: #990000; }
+
+      @media screen and (max-width: 750px) {
+
+        .contact .form_alert .text {
+
+          margin-top: 10px;
+
+          font-size: 12px; } }
+
+    .contact .form_btn {
+
+      padding: 60px 0 0 0;
+
+      text-align: center; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .form_btn {
+
+        padding-bottom: 75px; } }
+
+    .contact .form_btn input {
+
+      background-color: #333;
+
+      border: none;
+
+      width: 400px;
+
+      padding: 35px 0;
+
+      font-size: 18px;
+
+      line-height: 1;
+
+      color: #999;
+
+      cursor: pointer; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .form_btn input {
+
+        width: 60%;
+
+        padding: 15px 0;
+
+        font-size: 14px; }
+
+      .contact .form_btn input:nth-child(even) {
+
+        margin-top: 10px; } }
+
+    .contact .form_btn input.active {
+
+      background-color: #2685C9;
+
+      color: #fff; }
+
+    .contact .tpl-main-bottom {
+
+      text-align: center; }
+
+    .contact .tpl-main-bottom {
+
+      padding: 100px 0 150px 0;
+
+      text-align: center; }
+
+    @media only screen and (max-width: 750px) {
+
+      .contact .tpl-main-bottom {
+
+        padding: 30px 0 60px 0; } }
+
+    .contact .only-sp {
+
+      display: none; }
+
+    @media screen and (max-width: 750px) {
+
+      .contact .only-pc {
+
+        display: none; }
+
+      .contact .only-sp {
+
+        display: block; } }
+
+    .contact input[type="text"],
+
+    .contact input[type="tel"],
+
+    .contact input[type="email"],
+
+    .contact textarea,
+
+    .contact input[type="button"],
+
+    .contact input[type="submit"] {
+
+      -webkit-appearance: none;
+
+      border-radius: 0; }
+
+  @media screen and (max-width: 750px) {
+
+    .contact {
+
+      width: 90%;
+
+      margin: 0 auto; } }
+
+  @media screen and (max-width: 750px) {
+
+    .btn {
+
+      width: 60%; }
+
+    .btn a {
+
+      height: auto;
+
+      padding: 15px 0;
+
+      font-size: 14px; } }
+
+  .contact .form.check-open {
+
+    display: none; }

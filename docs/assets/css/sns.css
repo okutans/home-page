@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@media only screen and (min-width: 751px) {
+
+  #tpl-contents {
+
+    /*pcのみ*/ }
+
+    #tpl-contents .category-title {
+
+      background: none; } }
+
+
+
+#tpl-contents .company-list {
+
+  width: 100%; }
+
+  @media only screen and (min-width: 751px) {
+
+    #tpl-contents .company-list {
+
+      /*pcのみ*/ }
+
+      #tpl-contents .company-list li {
+
+        float: left; }
+
+        #tpl-contents .company-list li .inner {
+
+          width: 100%;
+
+          height: 100%; }
+
+        #tpl-contents .company-list li a {
+
+          display: block;
+
+          width: 100%;
+
+          height: 100%;
+
+          position: relative; }
+
+          #tpl-contents .company-list li a p.arrow {
+
+            width: 100%;
+
+            text-align: center;
+
+            position: absolute;
+
+            bottom: 40px;
+
+            font-size: 20px; }
+
+            #tpl-contents .company-list li a p.arrow span {
+
+              display: inline-block;
+
+              background: url(https://re-gale.co.jp/common/img/ico_arw_lef_w.png) left center no-repeat;
+
+              padding-left: 18px; }
+
+      #tpl-contents .company-list .line1 {
+
+        width: 50%;
+
+        height: 400px; }
+
+      #tpl-contents .company-list .line2 {
+
+        width: 100%;
+
+        height: 600px; }
+
+      #tpl-contents .company-list .line3 {
+
+        width: 33.3%;
+
+        height: 400px; } }
+
+  #tpl-contents .company-list .li1 {
+
+    background: url("https://re-gale.co.jp/assets/img/sns/facebook.jpg") no-repeat center;
+
+    background-size: 40%; }
+
+  #tpl-contents .company-list .li2 {
+
+    background: url("https://re-gale.co.jp/assets/img/sns/twitter.jpg") no-repeat center;
+
+    background-size: 40%; }
+
+  #tpl-contents .company-list .li3 {
+
+    background: url("https://re-gale.co.jp/assets/img/sns/instagram.jpg") no-repeat center;
+
+    background-size: 40%; }
+
+  #tpl-contents .company-list .li4 {
+
+    background: url("https://re-gale.co.jp/assets/img/ac/21.jpg") no-repeat center;
+
+    background-size: cover; }
+
+  #tpl-contents .company-list .li5 {
+
+    background: url("../img/ac/36.jpg") no-repeat center;
+
+    background-size: cover; }
+
+  #tpl-contents .company-list .li6 {
+
+    background: url("../img/ac/9.jpg") no-repeat center;
+
+    background-size: cover; }
+
+  #tpl-contents .company-list .li7 {
+
+    background: url("https://re-gale.co.jp/assets/img/ac/6.jpg") no-repeat left center;
+
+    background-size: cover; }
+
+  #tpl-contents .company-list .li8 {
+
+    background: url("https://re-gale.co.jp/assets/img/ac/3.jpg") no-repeat left center;
+
+    background-size: cover; }
+
+
+
+/****************************************
+
+sp
+
+****************************************/
+
+@media only screen and (max-width: 750px) {
+
+  #tpl-contents .company-list li {
+
+    position: relative;
+
+    width: 50%;
+
+    float: left; }
+
+    #tpl-contents .company-list li:before {
+
+      content: "";
+
+      display: block;
+
+      padding-top: 100%;
+
+      /* 高さを幅の75%に固定 */ }
+
+    #tpl-contents .company-list li a {
+
+      display: block;
+
+      width: 100%;
+
+      height: 100%;
+
+      position: relative; }
+
+      #tpl-contents .company-list li a p.arrow {
+
+        width: 100%;
+
+        text-align: center;
+
+        position: absolute;
+
+        bottom: 8%;
+
+        font-size: 12px; }
+
+        #tpl-contents .company-list li a p.arrow span {
+
+          display: inline-block;
+
+          background: url(https://re-gale.co.jp/common/img/ico_arw_lef_w.png) left center no-repeat;
+
+          -webkit-background-size: 6px auto;
+
+          -o-background-size: 6px auto;
+
+          background-size: 6px auto;
+
+          padding-left: 10px; }
+
+  #tpl-contents .company-list .inner {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    bottom: 0;
+
+    right: 0; } }
+

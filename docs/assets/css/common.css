@@ -374,7 +374,7 @@ padding, margin
               display: block;
               width: 63px;
               height: 25px;
-              background: url(https://re-gale.co.jp/assets/img/common/logo_gold_300.png) center center no-repeat;
+              background: url(../img/common/logo_gold_300.png) center center no-repeat;
               -webkit-background-size: cover;
               -o-background-size: cover;
               background-size: cover; }
@@ -438,7 +438,7 @@ padding, margin
               display: inline-block;
               width: 13px;
               height: 13px;
-              background: url(https://re-gale.co.jp/assets/img/common/ico_circle_arw.png) center top no-repeat;
+              background: url(../img/common/ico_circle_arw.png) center top no-repeat;
               vertical-align: middle;
               margin-right: 6px;
               margin-top: -3px; }
@@ -451,19 +451,19 @@ padding, margin
               border-bottom: 2px solid #2685C9;
               margin-bottom: -2px; }
               #global-nav nav ul li a:hover span:before, #global-nav nav ul li a.current span:before {
-                background: url(https://re-gale.co.jp/assets/img/common/ico_circle_arw.png) center bottom no-repeat; }
+                background: url(../img/common/ico_circle_arw.png) center bottom no-repeat; }
       #global-nav nav ul #contact span:before {
         content: "";
         display: inline-block;
         width: 24px;
         height: 20px;
-        background: url(https://re-gale.co.jp/assets/img/common/ico_mail.png) center center no-repeat;
+        background: url(../img/common/ico_mail.png) center center no-repeat;
         vertical-align: middle;
         margin-right: 10px;
         margin-top: -2px; }
       #global-nav nav ul #contact a:hover span:before,
       #global-nav nav ul #contact a.current span:before {
-        background: url(https://re-gale.co.jp/assets/img/common/ico_mail_on.png) center center no-repeat; }
+        background: url(../img/common/ico_mail_on.png) center center no-repeat; }
       #global-nav nav ul #facebook {
         letter-spacing: 0.05em; }
         #global-nav nav ul #facebook span:before {
@@ -477,7 +477,7 @@ padding, margin
           margin-top: -2px; }
         #global-nav nav ul #facebook a:hover span:before,
         #global-nav nav ul #facebook a.current span:before {
-          background: url(https://re-gale.co.jp/assets/img/common/ico_facebook_on.png) center center no-repeat; }
+          background: url(../img/common/ico_facebook_on.png) center center no-repeat; }
 
 @media screen and (max-width: 750px) {
   #global-nav-wrap {
@@ -541,7 +541,7 @@ padding, margin
         #sp-menu .menu-icon span:nth-of-type(3) {
           bottom: 0; }
   #sp-global-nav-wrap {
-    background: url(https://re-gale.co.jp/assets/img/common/sp_menu_bg.jpg) left top repeat-y #333;
+    background: url(../img/common/sp_menu_bg.jpg) left top repeat-y #333;
     -webkit-background-size: 100% auto;
     -o-background-size: 100% auto;
     background-size: 100% auto;
@@ -607,7 +607,7 @@ padding, margin
             display: inline-block;
             width: 12px;
             height: 10px;
-            background: url(https://re-gale.co.jp/assets/img/common/ico_mail.png) center center no-repeat;
+            background: url(../img/common/ico_mail.png) center center no-repeat;
             -webkit-background-size: 100% auto;
             -o-background-size: 100% auto;
             background-size: 100% auto;
@@ -699,7 +699,7 @@ padding, margin
           padding-left: 28px; }
           #sp-global-nav-wrap #sp-global-nav #sp-nav-close a p:before {
             content: "";
-            background: url(https://re-gale.co.jp/assets/img/common/ico_close.png) center center no-repeat;
+            background: url(../img/common/ico_close.png) center center no-repeat;
             -webkit-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
@@ -837,7 +837,7 @@ padding, margin
       display: inline-block;
       width: 60px;
       height: 60px;
-      background: url(https://re-gale.co.jp/assets/img/common/ico_pagetop.png) center center no-repeat; }
+      background: url(../img/common/ico_pagetop.png) center center no-repeat; }
       @media screen and (max-width: 750px) {
         #tpl-pagetop-box p a,
         #sp-pagetop-box p a {
@@ -865,7 +865,7 @@ padding, margin
 ----------------------------------------------------------- */
 #tpl-footer {
   /*background: url(/assets/img/common/pc_bg_footer.png) center top no-repeat #000;*/
-  background:url(https://re-gale.co.jp/assets/img/common/bg_body_b.png) center bottom no-repeat;
+  background:url(../img/common/bg_body_b.png) center bottom no-repeat;
   color: #FFF;
   clear: both;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -971,7 +971,7 @@ padding, margin
             height: 208px;
             color: #FFF;
             text-decoration: none;
-            background: url(https://re-gale.co.jp/assets/img/common/ico_arw_lef_w.png) 120px 177px no-repeat; }
+            background: url(../img/common/ico_arw_lef_w.png) 120px 177px no-repeat; }
             #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a .text {
               font-size: 14px;
               padding-top: 10px;
@@ -980,7 +980,7 @@ padding, margin
 
 @media screen and (max-width: 750px) {
   #tpl-footer {
-    background: url(https://re-gale.co.jp/assets/img/common/sp_bg_footer.png) center top no-repeat #000;
+    background: url(../img/common/sp_bg_footer.png) center top no-repeat #000;
     background-size: cover;
     position: relative;
     padding-bottom: 97px; }
@@ -1035,7 +1035,7 @@ padding, margin
               width: 100%;
               height: auto;
               color: #FFF;
-              background: url(https://re-gale.co.jp/assets/img/common/ico_arw_lef_w.png) right center no-repeat;
+              background: url(../img/common/ico_arw_lef_w.png) right center no-repeat;
               text-align: left;
               vertical-align: middle; }
               #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a .img {
@@ -1271,7 +1271,7 @@ padding, margin
     float: left;
     padding-left: 20px;
     margin-left: 20px;
-    background: url(https://re-gale.co.jp/assets/img/common/ico_arw_l.png) no-repeat left 0.25em; }
+    background: url(../img/common/ico_arw_l.png) no-repeat left 0.25em; }
     @media screen and (max-width: 750px) {
       .detail-nav-inner .detail-nav-prev {
         margin-left: 0;
@@ -1282,7 +1282,7 @@ padding, margin
     float: right;
     padding-right: 20px;
     margin-right: 20px;
-    background: url(https://re-gale.co.jp/assets/img/common/ico_arw_r.png) no-repeat right 0.25em; }
+    background: url(../img/common/ico_arw_r.png) no-repeat right 0.25em; }
     @media screen and (max-width: 750px) {
       .detail-nav-inner .detail-nav-next {
         margin-right: 0;
@@ -1300,7 +1300,7 @@ padding, margin
         display: inline-block;
         width: 18px;
         height: 14px;
-        background: url(https://re-gale.co.jp/assets/img/common/ico_index.png) no-repeat center center;
+        background: url(../img/common/ico_index.png) no-repeat center center;
         vertical-align: middle;
         margin-right: 10px;
         margin-top: -3px; }
@@ -1345,7 +1345,7 @@ padding, margin
             width: 50%;
             font-size: 12px; } }
         .tpl-pager ul li.prev.prev, .tpl-pager ul li.next.prev {
-          background: transparent url(https://re-gale.co.jp/assets/img/common/ico_arw_l.png) no-repeat left 20px;
+          background: transparent url(../img/common/ico_arw_l.png) no-repeat left 20px;
           padding: 19px 30px 19px 20px; }
           @media screen and (max-width: 750px) {
             .tpl-pager ul li.prev.prev, .tpl-pager ul li.next.prev {
@@ -1353,7 +1353,7 @@ padding, margin
               padding-right: 14px;
               padding: 0 5px 0 0; } }
         .tpl-pager ul li.prev.next, .tpl-pager ul li.next.next {
-          background: transparent url(https://re-gale.co.jp/assets/img/common/ico_arw_r.png) no-repeat right 20px;
+          background: transparent url(../img/common/ico_arw_r.png) no-repeat right 20px;
           padding: 19px 20px 19px 30px; }
           @media screen and (max-width: 750px) {
             .tpl-pager ul li.prev.next, .tpl-pager ul li.next.next {

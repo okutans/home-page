@@ -10,13 +10,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="../assets/img/favicon/favicon.ico" type="image/vnd.microsoft.icon">    
-    <link rel="stylesheet" type="text/css" href="https://re-gale.co.jp/assets/css/landing/1.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/landing/1.css" />
     
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
             
     <!-- <script src="jquery-1.9.1.min.js" type="text/javascript" charset="UTF-8"></script> -->
-    <script src="https://re-gale.co.jp/assets/js/landing/1.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="../assets/js/landing/1.js" type="text/javascript" charset="UTF-8"></script>
     
 
     <script>
@@ -32,7 +32,7 @@
 <body style="background-color:black;">
     <!-- カウンターアニメーション -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://re-gale.co.jp/assets/js/vendor/Counter-Up/jquery.counterup.min.js"></script>
+    <script src="../assets/js/vendor/Counter-Up/jquery.counterup.min.js"></script>
     
 
 
@@ -79,14 +79,14 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
         </div>
         <div class="lg">
             <ul>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/20.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/27.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/2.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/5.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/7.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/9.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/10.jpg"></li>
-                <li><img src="https://re-gale.co.jp/assets/img/ac/14.jpg"></li>
+                <li><img src="../assets/img/ac/20.jpg"></li>
+                <li><img src="../assets/img/ac/27.jpg"></li>
+                <li><img src="../assets/img/ac/2.jpg"></li>
+                <li><img src="../assets/img/ac/5.jpg"></li>
+                <li><img src="../assets/img/ac/7.jpg"></li>
+                <li><img src="../assets/img/ac/9.jpg"></li>
+                <li><img src="../assets/img/ac/10.jpg"></li>
+                <li><img src="../assets/img/ac/14.jpg"></li>
             </ul>
         </div>
     </section>
@@ -97,7 +97,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
             「売主様の不動産がREGALEに任せると高く売れる理由とは？
             <span class="spClass"></span>
         
-            <img src="https://re-gale.co.jp/assets/img/landing/inquiry_1.png" style="max-width: 30vw;">
+            <img src="../assets/img/landing/inquiry_1.png" style="max-width: 30vw;">
 
         </h2>
         <div class="inner">
@@ -107,7 +107,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
 
                 </p>
             </h3>
-            <p class="btn"><a href="https://re-gale.co.jp/contact?inquiry_content_type=1">お問い合わせ</a></p>
+            <p class="btn"><a href="../contact?inquiry_content_type=1">お問い合わせ</a></p>
         </div>
         
         <div class="inner">
@@ -164,7 +164,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
 
                     </p>
                 </dd>
-                <dt><img src="https://re-gale.co.jp/assets/img/ac/customer/4.png" style="max-width: 40vw;"><p>55歳男性　会社員</p></dt>
+                <dt><img src="../assets/img/ac/customer/4.png" style="max-width: 40vw;"><p>55歳男性　会社員</p></dt>
             </dl>
         </div>
          
@@ -179,7 +179,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
 
                     </p>
                 </dd>
-                <dt><img src="https://re-gale.co.jp/assets/img/ac/customer/1.png" style="max-width: 40vw;"><p>59歳女性医師</p></dt>
+                <dt><img src="../assets/img/ac/customer/1.png" style="max-width: 40vw;"><p>59歳女性医師</p></dt>
             </dl>
         </div>
         
@@ -196,7 +196,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
 
                     </p>
                 </dd>
-                <dt><img src="https://re-gale.co.jp/assets/img/ac/customer/2.png" style="max-width: 40vw;"><p>68歳男性　元会社員</p></dt>
+                <dt><img src="../assets/img/ac/customer/2.png" style="max-width: 40vw;"><p>68歳男性　元会社員</p></dt>
             </dl>
         </div>
     </section>
@@ -242,7 +242,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
             <b style="color: red;">＊新型コロナウイルスの感染拡大の状況に鑑み、5月中旬まで中止させていただきます</b>
         </div>
         
-        <div class="spClass"><img src="https://re-gale.co.jp/assets/img/landing/talk_bg_2.png" width="100%"></div>
+        <div class="spClass"><img src="../assets/img/landing/talk_bg_2.png" width="100%"></div>
         
         <div class="inner">
             <div class="contents">
@@ -268,7 +268,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
                 </p>
                 
             </div>
-            <p class="btn"><a href="https://re-gale.co.jp/contact?inquiry_content_type=4">少人数制セミナーに申し込む</a></p>
+            <p class="btn"><a href="../contact?inquiry_content_type=4">少人数制セミナーに申し込む</a></p>
         </div>
     </section>
 
@@ -294,7 +294,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
             </h3>
 
         </div>
-                    <p class="btn"><a href="https://re-gale.co.jp/contact?inquiry_content_type=1">お問い合わせ</a></p>
+                    <p class="btn"><a href="../contact?inquiry_content_type=1">お問い合わせ</a></p>
 
     </section>
 
@@ -305,7 +305,7 @@ REGALEは、首都圏と関西圏の投資用マンションに特化し、常�
 
     
     <footer>
-        <div class="gotop spClass"><a href="1#gotop"><img src="https://re-gale.co.jp/assets/img/landing/gotop.png" alt="topへ戻る"></a></div>
+        <div class="gotop spClass"><a href="1#gotop"><img src="../assets/img/landing/gotop.png" alt="topへ戻る"></a></div>
         <p class="copylight">Copyright © REGALE .inc All Rights Reserved.</p>
     </footer>
 

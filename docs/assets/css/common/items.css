@@ -130,7 +130,7 @@ transition: opacity 1s ease-out;
 
 .checkicon-text {
     padding-left: 30px;
-    background: url('https://re-gale.co.jp/assets/img/landing/2/checkicon.png') no-reprat left center;
+    background: url('../../img/landing/2/checkicon.png') no-reprat left center;
 }
 
 .sample6 {
@@ -168,13 +168,13 @@ transition: opacity 1s ease-out;
 	transition:		all 0.001s ease;
 }
 .mask-1 {
-    background-image: url('https://re-gale.co.jp/assets/img/landing/2/business2.png');
+    background-image: url('../../img/landing/2/business2.png');
 }
 .mask-2 {
-    background-image: url('https://re-gale.co.jp/assets/img/landing/2/reason2.png');
+    background-image: url('../../img/landing/2/reason2.png');
 }
 .mask-3 {
-    background-image: url('https://re-gale.co.jp/assets/img/landing/2/voice2.png');
+    background-image: url('../../img/landing/2/voice2.png');
 }
 .sample6:hover .mask {
 	top:			0;	/* 下に降りてくるように見せる */
@@ -303,13 +303,13 @@ s:before {
 }
 
 	#keyart-0 {
-		background-image: url('https://re-gale.co.jp/assets/img/landing/2/pr_sky.png');
+		background-image: url('../../img/landing/2/pr_sky.png');
 		background-color: #ffaf1b;
 	}
 
         
 	#keyart-2 {
-		background-image: url('https://re-gale.co.jp/assets/img/landing/2/top_message.png');
+		background-image: url('../../img/landing/2/top_message.png');
                 background-size:contain;
                 max-height: 70%;
         background-repeat:no-repeat;
@@ -318,11 +318,11 @@ s:before {
         
 
 	#keyart-4 {
-		background-image: url('https://re-gale.co.jp/assets/img/landing/2/pr_3.png');
+		background-image: url('../../img/landing/2/pr_3.png');
 	}
 
 	#keyart-6 {
-		background-image: url('https://re-gale.co.jp/assets/img/landing/2/pr_2.png');
+		background-image: url('../../img/landing/2/pr_2.png');
 	}
         /*
         #keyart-7 {
@@ -334,7 +334,7 @@ s:before {
         */
         
 	#keyart-8 {
-		background-image: url('https://re-gale.co.jp/assets/img/landing/2/pr_1.png');
+		background-image: url('../../img/landing/2/pr_1.png');
 	}
         
 	/*

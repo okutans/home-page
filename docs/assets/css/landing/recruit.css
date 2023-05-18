@@ -1,0 +1,1089 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,500");
+/*
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Light.min.woff) format("woff"), url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Light.min.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.min.woff) format("woff"), url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.min.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.min.woff) format("woff"), url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Medium.min.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.min.woff) format("woff"), url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Bold.min.ttf) format("truetype"); }
+*/
+@font-face {
+  font-family: YuGothicM;
+  src: local("Yu Gothic Medium");
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  background-color: #111;
+  color: #fff;
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  /*font-family: "Noto Serif Japanese", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;*/
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto; }
+  .device-mobile body {
+    font-size: 12px; }
+  .device-desktop body {
+    font-size: 20px; }
+
+li {
+  list-style-type: none; }
+
+img {
+  vertical-align: middle; }
+  .device-mobile img {
+    max-width: 100%; }
+
+main.content {
+  position: relative; }
+  .device-desktop main.content {
+    min-width: 1024px; }
+
+  
+#keyvisual {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  opacity: 0; }
+  #keyvisual .copy {
+      width:100%;
+    opacity: 0; }
+  .device-mobile #keyvisual {
+    height: calc(100vh - 245px);
+    justify-content: center;
+    /*background-image: url("/assets/img/landing/recruit/bg-keyvisual5.jpg");*/ }
+    .device-mobile #keyvisual .copy img {
+      width: 100%;/*313px;*/ }
+
+  .os-android #keyvisual {
+    height: 70vh; }
+  .device-desktop #keyvisual {
+    /*background-image: url("/assets/img/landing/recruit/bg-keyvisual9.jpg");*/
+    position: relative; }
+    .device-desktop #keyvisual .copy {
+      position: relative;
+      z-index: 20;
+      /*margin-left: 106px;*/ }
+      .device-desktop #keyvisual .copy img {
+        width: 100%;/*819px;*/ }
+
+    .device-desktop #keyvisual:before, .device-desktop #keyvisual:after {
+      content: '';
+      width: 100%;
+      height: 200px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent); }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  opacity: 0; }
+  header a {
+    color: #fff;
+    text-decoration: none;
+    display: inline; }
+  .device-mobile header {
+    background: #111;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%; }
+    .device-mobile header .logo {
+      margin: 0 11px;
+      padding-top: 10px;
+      display: inline-block; }
+      .device-mobile header .logo img {
+        width: 200px; }
+      .device-mobile header .logo span {
+        display: inline-block;
+        font-size: 9px;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+        margin-left: 8px;
+        position: relative;
+        top: 2px; }
+    .device-mobile header .cta {
+      margin-top: 14px; }
+      .device-mobile header .cta:after {
+        content: "";
+        display: block;
+        clear: both; }
+      .device-mobile header .cta li {
+        float: left;
+        width: 50%; }
+        .device-mobile header .cta li a {
+          color: #fff; }
+        .device-mobile header .cta li.btn a {
+          text-decoration: none;
+          border: solid 1px #aaa;
+          background: #fff;
+          color: #000;
+          display: block;
+          width: 100%;
+          height: 40px;
+          line-height: 38px;
+          box-sizing: border-box;
+          font-size: 12px;
+          letter-spacing: -0.15em;
+          font-weight: 700;
+          text-align: center; }
+        .device-mobile header .cta li:first-child a {
+          border-right: 0;
+          letter-spacing: 0.05em; }
+          .device-mobile header .cta li:first-child a span {
+            letter-spacing: -0.15em; }
+        .device-mobile header .cta li.link {
+          position: absolute;
+          top: 16px;
+          right: 12px;
+          text-align: right; }
+          .device-mobile header .cta li.link a {
+            background: url("https://re-gale.co.jp/assets/css/img/common/icn-arrow.png") no-repeat 0 5px;
+            background-size: 6px;
+            font-size: 10px;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            text-decoration: none;
+            padding-left: 10px; }
+            .device-mobile header .cta li.link a span {
+              display: inline-block; }
+              .device-mobile header .cta li.link a span::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 0.5px;
+                background: #fff;
+                position: relative;
+                top: 4px; }
+  .device-desktop header .logo {
+    margin: 50px 0 0 55px; }
+    .device-desktop header .logo img {
+      vertical-align: top;
+      width: 350px; }
+    .device-desktop header .logo span {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      margin-left: 24px;
+      padding: 14px 0;
+      font-weight: 500; }
+  .device-desktop header .cta {
+    position: absolute;
+    top: 50px;
+    right: 53px; }
+    .device-desktop header .cta:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .device-desktop header .cta li {
+      float: left;
+      margin-left: 12px; }
+      .device-desktop header .cta li a {
+        color: #fff; }
+      .device-desktop header .cta li.btn a {
+        text-decoration: none;
+        border: solid 2px #fff;
+        display: block;
+        width: 176px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        letter-spacing: -0.15em;
+        font-weight: 700;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: "palt" 1;
+        text-align: center;
+        transition: background 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .device-desktop header .cta li.btn a:hover {
+          background: #fff;
+          color: #000; }
+      .device-desktop header .cta li:first-child a {
+        letter-spacing: 0em; }
+        .device-desktop header .cta li:first-child a span {
+          letter-spacing: -0.15em; }
+      .device-desktop header .cta li.link {
+        clear: left;
+        float: right;
+        margin-top: 26px;
+        text-align: right; }
+        .device-desktop header .cta li.link a {
+          background: url("https://re-gale.co.jp/assets/css/img/common/icn-arrow.png") no-repeat 0 8px;
+          background-size: 12px;
+          font-size: 16px;
+          letter-spacing: 0.05em;
+          font-weight: 500;
+          text-decoration: none;
+          padding-left: 19px; }
+          .device-desktop header .cta li.link a span {
+            display: inline-block; }
+            .device-desktop header .cta li.link a span::after {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 1px;
+              background: #fff;
+              position: relative;
+              top: 8px;
+              transition: width 0.8s cubic-bezier(0.215, 0.61, 0.355, 1); }
+          .device-desktop header .cta li.link a:hover span::after {
+            width: 0; }
+
+#information {
+  opacity: 0; }
+  #information a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    #information a:hover {
+      opacity: 0.6; }
+  .device-mobile #information {
+    position: relative;
+    padding: 14px 16px; }
+    .device-mobile #information:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .device-mobile #information .headline {
+      margin-bottom: 8px;
+      font-size: 15px;
+      letter-spacing: 0.1em;
+      /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .device-mobile #information .slide-wrapper {
+      width: 300px;
+      height: 32px;
+      overflow: hidden; }
+      .device-mobile #information .slide-wrapper .slides {
+        transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .device-mobile #information .slide-wrapper .slides:after {
+          content: "";
+          display: block;
+          clear: both; }
+        .device-mobile #information .slide-wrapper .slides li {
+          font-size: 10px;
+          height: 32px;
+          font-weight: 400;
+          letter-spacing: 0.05em;
+          line-height: 1.67; }
+    .device-mobile #information .pagenation {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      font-size: 13px;
+      /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      letter-spacing: -0.05em; }
+      .device-mobile #information .pagenation .nav-next, .device-mobile #information .pagenation .nav-prev {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        cursor: pointer;
+        transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+        .device-mobile #information .pagenation .nav-next.disable, .device-mobile #information .pagenation .nav-prev.disable {
+          visibility: hidden; }
+        .device-mobile #information .pagenation .nav-next::before, .device-mobile #information .pagenation .nav-next::after, .device-mobile #information .pagenation .nav-prev::before, .device-mobile #information .pagenation .nav-prev::after {
+          content: '';
+          display: inline-block;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          height: 1px; }
+        .device-mobile #information .pagenation .nav-next::before, .device-mobile #information .pagenation .nav-prev::before {
+          width: 12px; }
+        .device-mobile #information .pagenation .nav-next::after, .device-mobile #information .pagenation .nav-prev::after {
+          width: 5px;
+          margin-top: -1.5px; }
+      .device-mobile #information .pagenation .nav-next {
+        margin-left: 6px; }
+        .device-mobile #information .pagenation .nav-next::before {
+          left: 0; }
+        .device-mobile #information .pagenation .nav-next::after {
+          right: -1px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg); }
+      .device-mobile #information .pagenation .nav-prev {
+        margin-right: 6px; }
+        .device-mobile #information .pagenation .nav-prev::before {
+          right: 0; }
+        .device-mobile #information .pagenation .nav-prev::after {
+          left: -1px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg); }
+  .device-desktop #information {
+    position: relative;
+    margin-bottom: -56px;
+    top: -106px;
+    left: 53px;
+    z-index: 100;
+    width: 70%; }
+    .device-desktop #information:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .device-desktop #information .headline {
+      margin-bottom: 11px;
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .device-desktop #information .slide-wrapper {
+      width: 528px;
+      height: 56px;
+      overflow: hidden;
+      float: left; }
+      .device-desktop #information .slide-wrapper .slides {
+        transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .device-desktop #information .slide-wrapper .slides:after {
+          content: "";
+          display: block;
+          clear: both; }
+        .device-desktop #information .slide-wrapper .slides li {
+          font-size: 14px;
+          height: 56px;
+          font-weight: 500;
+          letter-spacing: 0.05em;
+          line-height: 2; }
+    .device-desktop #information .pagenation {
+      letter-spacing: -0.04em;
+      float: left;
+      font-size: 14px;
+      /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      top: -30px;
+      left: 0px; }
+      .device-desktop #information .pagenation .nav-next, .device-desktop #information .pagenation .nav-prev {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+        transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1); }
+        .device-desktop #information .pagenation .nav-next.disable, .device-desktop #information .pagenation .nav-prev.disable {
+          visibility: hidden;
+          opacity: 0; }
+        .device-desktop #information .pagenation .nav-next::before, .device-desktop #information .pagenation .nav-next::after, .device-desktop #information .pagenation .nav-prev::before, .device-desktop #information .pagenation .nav-prev::after {
+          content: '';
+          display: inline-block;
+          background: #fff;
+          height: 2px;
+          transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+          position: absolute;
+          top: 50%; }
+        .device-desktop #information .pagenation .nav-next::before, .device-desktop #information .pagenation .nav-prev::before {
+          width: 24px; }
+        .device-desktop #information .pagenation .nav-next::after, .device-desktop #information .pagenation .nav-prev::after {
+          transform: translateX(0);
+          width: 8px;
+          margin-top: -3px; }
+      .device-desktop #information .pagenation .nav-next {
+        margin-left: 8px; }
+        .device-desktop #information .pagenation .nav-next::before {
+          left: 0; }
+        .device-desktop #information .pagenation .nav-next::after {
+          right: 0;
+          transform: rotate(40deg); }
+        .device-desktop #information .pagenation .nav-next:hover::before {
+          width: 28px; }
+        .device-desktop #information .pagenation .nav-next:hover::after {
+          transform: translateX(4px) rotate(30deg); }
+      .device-desktop #information .pagenation .nav-prev {
+        margin-right: 8px; }
+        .device-desktop #information .pagenation .nav-prev::before {
+          right: 0; }
+        .device-desktop #information .pagenation .nav-prev::after {
+          left: 0;
+          transform: rotate(-40deg); }
+        .device-desktop #information .pagenation .nav-prev:hover::before {
+          width: 28px; }
+        .device-desktop #information .pagenation .nav-prev:hover::after {
+          transform: translateX(-4px) rotate(-30deg); }
+
+.is-hide {
+  opacity: 0; }
+
+.is-blur {
+  filter: blur(10px); }
+
+.is-blur-out {
+  filter: blur(0);
+  transition: filter 1.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition-delay: .4s; }
+
+.device-mobile .elm-headline {
+  text-align: center; }
+  .device-mobile .elm-headline .en {
+    font-size: 27px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    position: relative;
+    /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .device-mobile .elm-headline .en::after {
+      content: '';
+      display: inline-block;
+      width: 105%;
+      height: 0.5px;
+      background: #fff;
+      position: absolute;
+      bottom: 3px;
+      left: -3%; }
+.os-android .elm-headline .en::after {
+  height: 1px;
+  bottom: 4px; }
+.device-desktop .elm-headline {
+  text-align: center; }
+  .device-desktop .elm-headline .en {
+    font-size: 48px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    position: relative;
+    /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+    .device-desktop .elm-headline .en::after {
+      /*content: '';**/
+      display: inline-block;
+      width: 106%;
+      height: 1px;
+      background: #fff;
+      position: absolute;
+      bottom: 6px;
+      left: -4%; }
+
+.device-mobile #message {
+  padding: 84px 0 90px; }
+  .device-mobile #message .elm-headline {
+    margin-bottom: 36px; }
+  .device-mobile #message .lead {
+    width: 15em;
+    margin: 0 auto;
+    letter-spacing: 0.19em;
+    color: #aaa;
+    line-height: 2.15;
+    font-feature-settings: "palt" 1; }
+  .device-mobile #message .signature {
+    width: 147px;
+    margin: 0 auto;
+    color: #fff;
+    font-feature-settings: "palt" 1;
+    letter-spacing: 0.1em;
+    text-align: right;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 28px; }
+.os-android #message .lead {
+  width: 16em; }
+.device-desktop #message {
+  /*
+  text-align: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 225px 0 271px; 
+  */
+  text-align: left;
+  /*width: 600px;*/
+  margin: 0 auto;
+  padding: 110px 0 130px; 
+  background-color: #2E3030;
+    }
+    .device-desktop #message .message-row {
+       
+        margin-top:80px;
+      margin-bottom:80px;
+      width:95%;
+      padding:10px;
+    }
+  .device-desktop #message .elm-headline {
+    margin-bottom: 66px; }
+  .device-desktop #message .elm-headline .reason-title {
+      padding-top:70px;
+      padding-bottom:70px;
+      
+  }
+  .device-desktop #message .lead {
+    letter-spacing: 0.2em;
+    color: #aaa;
+    line-height: 2.4;
+    text-align: left;
+    position: relative;
+    left: 15px; }
+  .device-desktop #message .signature {
+    color: #fff;
+    font-feature-settings: "palt" 1;
+    letter-spacing: 0.1em;
+    text-align: right;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 62px;
+    position: relative;
+    left: -15px; }
+
+.device-mobile #story > .image img {
+  width: 100%; }
+.device-mobile #story > .elm-headline {
+  padding-top: 116px; }
+.device-mobile #story section {
+  margin: 0 auto;
+  padding-bottom: 60px;
+  position: relative;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .device-mobile #story section .inner {
+    padding: 0 20px;
+    box-sizing: border-box; }
+    .device-mobile #story section .inner:after {
+      content: "";
+      display: block;
+      clear: both; }
+  .device-mobile #story section .text {
+    position: relative;
+    z-index: 10;
+    padding-top: 92px; }
+    .device-mobile #story section .text .sub-headline {
+      margin-bottom: 40px; }
+      .device-mobile #story section .text .sub-headline .en {
+        font-size: 12px;
+        /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        letter-spacing: 0.1em;
+        font-style: italic;
+        color: #aaa;
+        display: block;
+        margin-bottom: 30px; }
+      .device-mobile #story section .text .sub-headline .ja {
+        font-size: 18px;
+        line-height: 1.66;
+        margin-bottom: -5.94px;
+        margin-top: -5.94px; }
+    .device-mobile #story section .text .lead {
+      font-size: 12px;
+      line-height: 2.15;
+      margin-bottom: -6.9px;
+      margin-top: -6.9px;
+      font-feature-settings: "palt" 1;
+      letter-spacing: 0.2em; }
+  .device-mobile #story section.left {
+    background-position: 100% 0; }
+  .device-mobile #story section.right {
+    text-align: right; }
+  .device-mobile #story section.episode1 {
+    padding-top: 118px;
+    background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/img-episode-13.png"); }
+    .device-mobile #story section.episode1 .text .sub-headline .ja img {
+      width: 226px; }
+  .device-mobile #story section.episode2 {
+    padding-top: 132px;
+    background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/img-episode-24.png"); }
+    .device-mobile #story section.episode2 .text .sub-headline .ja img {
+      width: 217px; }
+  .device-mobile #story section.episode3 {
+    padding-top: 118px;
+    background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/img-episode-31.png"); }
+    .device-mobile #story section.episode3 .text .sub-headline .ja img {
+      width: 226px; }
+.device-desktop #story > .image img {
+  width: 100%; }
+.device-desktop #story > .elm-headline {
+  padding-top: 222px; }
+.device-desktop #story section {
+  margin: 0 auto 100px;
+  padding-bottom: 100px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .device-desktop #story section .inner {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box; 
+  }
+    .device-desktop #story section .inner:after {
+      content: "";
+      display: block;
+      clear: both; }
+  .device-desktop #story section .text {
+    position: relative;
+    z-index: 10;
+    padding-top: 30px; }
+    .device-desktop #story section .text .sub-headline {
+      margin-bottom: 80px; }
+      .device-desktop #story section .text .sub-headline .en {
+        font-size: 20px;
+        /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        letter-spacing: 0.1em;
+        font-style: italic;
+        color: #aaa;
+        display: block;
+        margin-bottom: 58px; }
+      .device-desktop #story section .text .sub-headline .ja {
+        font-size: 40px;
+        line-height: 1.5;
+        margin-bottom: -10px;
+        margin-top: -10px; }
+    .device-desktop #story section .text .lead {
+      font-size: 20px;
+      line-height: 2.4;
+      margin-bottom: -14px;
+      margin-top: -14px;
+      font-feature-settings: "palt" 1;
+      letter-spacing: 0.1em; }
+  .device-desktop #story section.left {
+    background-position: 100% 50%; }
+  .device-desktop #story section.right {
+    background-position: 0 50%; }
+    .device-desktop #story section.right .inner {
+      max-width: none;
+      width: 50%;
+      margin-left: 50%; }
+      .device-desktop #story section.right .inner .text .lead {
+        margin-left: -3px; }
+  .device-desktop #story section.episode1 {
+    padding-top: 196px;
+    background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/img-episode-13.png"); }
+    .device-desktop #story section.episode1 .text .sub-headline .ja img {
+      width: 502px; }
+  .device-desktop #story section.episode2 {
+    background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/img-episode-24.png"); }
+    .device-desktop #story section.episode2 .text .sub-headline .ja img {
+      width: 484px; }
+  .device-desktop #story section.episode3 {
+    margin-bottom: 196px;
+    background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/img-episode-31.png"); }
+    .device-desktop #story section.episode3 .text .sub-headline .ja img {
+      width: 502px; }
+
+.device-mobile #entry {
+  background: url("https://re-gale.co.jp/assets/css/img/sp/bg-entry.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 80px 10px 40px; }
+  .device-mobile #entry .wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 22px 40px;
+    /*border: solid 1px #d2d2d2;
+    border-top: none;*/ }
+    .device-mobile #entry .wrapper .elm-headline {
+      margin: 0 -23px;
+      position: relative;
+      top: -15px; }
+      .device-mobile #entry .wrapper .elm-headline::before, .device-mobile #entry .wrapper .elm-headline::after {
+        content: '';
+        width: calc(50% - 74px);
+        height: 1px;
+        background: #d2d2d2;
+        display: block;
+        position: absolute;
+        top: 52%; }
+      .device-mobile #entry .wrapper .elm-headline::after {
+        right: 0; }
+    .device-mobile #entry .wrapper > .sub-headline {
+      margin: 26px 0 26px;
+      text-align: center; }
+      .device-mobile #entry .wrapper > .sub-headline img {
+        width: 222px; }
+    .device-mobile #entry .wrapper .lead {
+      letter-spacing: 0.05em;
+      line-height: 2.2; }
+    .device-mobile #entry .wrapper .cta {
+      margin-top: 23px; }
+      .device-mobile #entry .wrapper .cta .sub-headline {
+        margin-bottom: 30px;
+        position: relative;
+        text-align: center; }
+        .device-mobile #entry .wrapper .cta .sub-headline img {
+          width: 112px; }
+        .device-mobile #entry .wrapper .cta .sub-headline::before, .device-mobile #entry .wrapper .cta .sub-headline::after {
+          content: '';
+          width: 24px;
+          height: 0.5px;
+          background: #d2d2d2;
+          display: inline-block;
+          margin-bottom: 2px; }
+        .device-mobile #entry .wrapper .cta .sub-headline::before {
+          margin-right: 11px; }
+        .device-mobile #entry .wrapper .cta .sub-headline::after {
+          margin-left: 11px; }
+      .device-mobile #entry .wrapper .cta ul li + li {
+        margin-top: 19px; }
+      .device-mobile #entry .wrapper .cta ul li a {
+        background: no-repeat 50% 50%;
+        background-size: cover;
+        display: block;
+        width: 100%;
+        height: 90px;
+        line-height: 90px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        position: relative; }
+        .device-mobile #entry .wrapper .cta ul li a span::after {
+          content: '';
+          width: 12px;
+          height: 11px;
+          background: url("https://re-gale.co.jp/assets/css/img/common/icn-window.png") no-repeat 0 0;
+          background-size: 12px 11px;
+          display: inline-block;
+          margin-left: 6px;
+          position: relative;
+          top: 1px; }
+      .device-mobile #entry .wrapper .cta ul li.new a {
+        background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/bnr-new8.png"); }
+        .device-mobile #entry .wrapper .cta ul li.new a span img {
+          width: 88px; }
+      .device-mobile #entry .wrapper .cta ul li.career a {
+        background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/bnr-career8.png"); }
+        .device-mobile #entry .wrapper .cta ul li.career a span img {
+          width: 88px; }
+.device-desktop #entry {
+  /*background: url("/assets/img/landing/recruit/bg-entry1.jpg") no-repeat 50% 50%;*/
+  width:100%;
+  height:100%;
+  background-size: cover;
+  padding: 260px 0 0px; }
+  .device-desktop #entry .wrapper {
+    width: calc(100% - 48px);
+    max-width: 1128px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 72px 122px;
+    /*border: solid 2px #d2d2d2;*/
+    border-top: none; }
+    .device-desktop #entry .wrapper .elm-headline {
+      margin: 0 -74px;
+      position: relative;
+      top: -30px; }
+      .device-desktop #entry .wrapper .elm-headline .en {
+        font-size: 54px; }
+        .device-desktop #entry .wrapper .elm-headline .en:after {
+          bottom: 7px; }
+      .device-desktop #entry .wrapper .elm-headline::before, .device-desktop #entry .wrapper .elm-headline::after {
+        content: '';
+        width: calc(50% - 152px);
+        height: 2px;
+        background: #d2d2d2;
+        display: block;
+        position: absolute;
+        top: 53%; }
+      .device-desktop #entry .wrapper .elm-headline::after {
+        right: 0; }
+    .device-desktop #entry .wrapper > .sub-headline {
+      font-size: 40px;
+      letter-spacing: 0.05em;
+      font-feature-settings: "palt" 1;
+      text-align: center;
+      line-height:3;
+      margin: 48px 0 67px; }
+      .device-desktop #entry .wrapper > .sub-headline img {
+        width: 492px; }
+    .device-desktop #entry .wrapper .lead {
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      line-height: 3; }
+    .device-desktop #entry .wrapper .cta {
+      margin-top: 89px; }
+      .device-desktop #entry .wrapper .cta .sub-headline {
+        margin-bottom: 66px;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        position: relative;
+        text-align: center; }
+        .device-desktop #entry .wrapper .cta .sub-headline img {
+          width: 223px; }
+        .device-desktop #entry .wrapper .cta .sub-headline::before, .device-desktop #entry .wrapper .cta .sub-headline::after {
+          content: '';
+          width: 48px;
+          height: 1px;
+          background: #d2d2d2;
+          display: inline-block;
+          margin-bottom: 7px; }
+        .device-desktop #entry .wrapper .cta .sub-headline::before {
+          margin-right: 24px; }
+        .device-desktop #entry .wrapper .cta .sub-headline::after {
+          margin-left: 24px; }
+      .device-desktop #entry .wrapper .cta ul:after {
+        content: "";
+        display: block;
+        clear: both; }
+      .device-desktop #entry .wrapper .cta ul li {
+        width: calc(50% - 13px); }
+        .device-desktop #entry .wrapper .cta ul li a {
+          background: no-repeat 50% 50%;
+          background-size: cover;
+          display: block;
+          width: 100%;
+          height: 168px;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          line-height: 168px;
+          position: relative; }
+          .device-desktop #entry .wrapper .cta ul li a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0);
+            z-index: 10;
+            transition: background 0.8s cubic-bezier(0.215, 0.61, 0.355, 1); }
+          .device-desktop #entry .wrapper .cta ul li a:hover::after {
+            background: rgba(255, 255, 255, 0.15); }
+          .device-desktop #entry .wrapper .cta ul li a span {
+            position: relative;
+            top: -4px; }
+            .device-desktop #entry .wrapper .cta ul li a span::after {
+              content: '';
+              width: 22px;
+              height: 21px;
+              background: url("https://re-gale.co.jp/assets/css/img/common/icn-window.png") no-repeat 0 0;
+              background-size: 22px 21px;
+              display: inline-block;
+              margin-left: 14px;
+              position: relative;
+              top: 6px; }
+        .device-desktop #entry .wrapper .cta ul li.new {
+          float: left; }
+          .device-desktop #entry .wrapper .cta ul li.new a {
+            background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/bnr-new8.png"); }
+            .device-desktop #entry .wrapper .cta ul li.new a span img {
+              width: 262px; }
+        .device-desktop #entry .wrapper .cta ul li.career {
+          float: right; }
+          .device-desktop #entry .wrapper .cta ul li.career a {
+            background-image: url("https://re-gale.co.jp/assets/img/landing/recruit/bnr-career8.png"); }
+            .device-desktop #entry .wrapper .cta ul li.career a span img {
+              width: 230px; }
+
+footer {
+  background: #171717;
+  color: #aaa; }
+  footer a {
+    color: #aaa;
+    text-decoration: none; }
+  .device-mobile footer {
+    padding: 30px 20px;
+    position: relative; }
+    .device-mobile footer .pagetop {
+      position: absolute;
+      top: 84px;
+      right: 0;
+      /*font-family: 'Poppins', sans-serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+      .device-mobile footer .pagetop a {
+        text-decoration: none;
+        display: block;
+        font-size: 8px;
+        letter-spacing: 0.05em;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        position: relative; }
+        .device-mobile footer .pagetop a::before, .device-mobile footer .pagetop a:after {
+          background: #aaa;
+          content: '';
+          display: block;
+          width: 25px;
+          height: 0.5px;
+          position: absolute;
+          left: -30px;
+          top: 4px; }
+        .device-mobile footer .pagetop a:after {
+          transform: rotate(30deg);
+          -webkit-transform: rotate(30deg);
+          width: 6px;
+          top: 6px; }
+    .device-mobile footer .logo {
+      margin-bottom: 30px; }
+      .device-mobile footer .logo img {
+        width: 79px; }
+      .device-mobile footer .logo span {
+        color: #aaa;
+        display: block;
+        font-size: 7px;
+        letter-spacing: 0.1em;
+        margin-top: 6px;
+        font-weight: 500; }
+    .device-mobile footer .utility {
+      margin-bottom: 8px; }
+      .device-mobile footer .utility:after {
+        content: "";
+        display: block;
+        clear: both; }
+      .device-mobile footer .utility li {
+        float: left;
+        font-size: 9px; }
+        .device-mobile footer .utility li + li::before {
+          content: '/';
+          display: inline-block;
+          padding: 0 6px; }
+        .device-mobile footer .utility li a {
+          text-decoration: none;
+          letter-spacing: 0.1em; }
+    .device-mobile footer .copyright {
+      font-size: 7px;
+      /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #aaa;
+      letter-spacing: 0.05em; }
+  .device-desktop footer {
+    padding: 30px 68px;
+    position: relative; }
+    .device-desktop footer .pagetop {
+      position: absolute;
+      top: 120px;
+      right: 44px;
+      /*font-family: 'Poppins', sans-serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+      .device-desktop footer .pagetop a {
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        transform: rotate(90deg);
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .device-desktop footer .pagetop a::before, .device-desktop footer .pagetop a:after {
+          content: '';
+          display: block;
+          width: 50px;
+          height: 1px;
+          background: #aaa;
+          position: absolute;
+          left: -60px;
+          top: 7px;
+          transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+        .device-desktop footer .pagetop a:after {
+          transform: rotate(30deg);
+          width: 10px;
+          top: 9px; }
+        .device-desktop footer .pagetop a:hover {
+          color: #fff; }
+          .device-desktop footer .pagetop a:hover::before {
+            width: 58px;
+            transform: translateX(-8px); }
+          .device-desktop footer .pagetop a:hover::after {
+            transform: translateX(-8px) rotate(30deg); }
+    .device-desktop footer .logo {
+      margin-bottom: 65px; }
+      .device-desktop footer .logo img {
+        width: 158px; }
+      .device-desktop footer .logo span {
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        margin-top: 12px; }
+    .device-desktop footer .utility {
+      margin-bottom: 21px; }
+      .device-desktop footer .utility:after {
+        content: "";
+        display: block;
+        clear: both; }
+      .device-desktop footer .utility li {
+        float: left;
+        font-size: 12px; }
+        .device-desktop footer .utility li + li::before {
+          content: '/';
+          display: inline-block;
+          padding: 0 16px; }
+        .device-desktop footer .utility li a {
+          font-size: 14px;
+          text-decoration: none;
+          letter-spacing: 0.14em;
+          transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
+          .device-desktop footer .utility li a:hover {
+            color: #fff; }
+    .device-desktop footer .copyright {
+      font-size: 12px;
+      /*font-family: 'EB Garamond', serif;*/
+      font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN",メイリオ,Meiryo,sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #aaa;
+      letter-spacing: 0.05em; }
+
+
+.parallax-window {
+     min-height: 800px;
+     background: transparent;
+}
+
+.parallax-slider {
+     top: 0;
+     left: 0;
+}

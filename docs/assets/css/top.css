@@ -43,7 +43,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(https://re-gale.co.jp/assets/img/top/bg_mesh.png) left top repeat transparent;
+    background: url(../img/top/bg_mesh.png) left top repeat transparent;
     z-index: -2; 
 }
 #toppage-mind-section-box {
@@ -216,7 +216,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(https://re-gale.co.jp/assets/img/top/bg_mesh.png) left top repeat transparent;
+    background: url(../img/top/bg_mesh.png) left top repeat transparent;
     z-index: -3; }
     @media screen and (max-width: 750px) {
       #topvideo .mesh {
@@ -224,7 +224,7 @@ body {
   #topvideo .movie-loading {
     width: 46px;
     height: 46px;
-    background: url(https://re-gale.co.jp/assets/img/common/loading.png) center center no-repeat;
+    background: url(../img/common/loading.png) center center no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -381,7 +381,7 @@ body {
 #pickup {
   width: 100%;
   height: 600px;
-  background: url(https://re-gale.co.jp/assets/img/top/bgimg_pickup_1.jpg);
+  background: url(../img/top/bgimg_pickup_1.jpg);
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -447,27 +447,27 @@ body {
             letter-spacing: 0.05em; }
           #pickup > ul > li a .txtbox .link {
             display: inline-block;
-            background: url(https://re-gale.co.jp/assets/img/common/ico_arw_lef_w.png) left center no-repeat;
+            background: url(../img/common/ico_arw_lef_w.png) left center no-repeat;
             padding-left: 18px;
             font-size: 22px;
             letter-spacing: 0.08em;
             font-weight: 200;
             text-align: right; }
       #pickup > ul > li.list-message {
-        background: url(https://re-gale.co.jp/assets/img/ac/36.jpg) center center no-repeat;
+        background: url(../img/ac/36.jpg) center center no-repeat;
         /*background: linear-gradient(0deg, rgba(0,0,0, 1.0), rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.0)),url(/assets/img/ac/36.jpg) center center no-repeat;*/
         -webkit-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
       #pickup > ul > li.list-guidance {
-        background: url(https://re-gale.co.jp/assets/img/ac/19.jpg) center center no-repeat;
+        background: url(../img/ac/19.jpg) center center no-repeat;
         /*background: linear-gradient(0deg, rgba(0,0,0, 1.0), rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.0)),url(/assets/img/ac/19.jpg) center center no-repeat;*/
         -webkit-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
       #pickup > ul > li.list-philosophy {
         /*background: linear-gradient(0deg, rgba(0,0,0, 1.0), rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.0)),url(/assets/img/ac/13.jpg) center center no-repeat;*/
-        background: url(https://re-gale.co.jp/assets/img/ac/13.jpg) center center no-repeat;
+        background: url(../img/ac/13.jpg) center center no-repeat;
         -webkit-background-size: cover;
         -o-background-size: cover;
         background-size: cover; }
@@ -500,7 +500,7 @@ body {
 @media screen and (max-width: 750px) {
   #pickup {
     height: auto;
-    background: url(https://re-gale.co.jp/assets/img/top/bgimg_pickup_sp_1.jpg);
+    background: url(../img/top/bgimg_pickup_sp_1.jpg);
     background-attachment: scroll;
     padding-bottom: 50px;
     z-index: 10; }
@@ -555,7 +555,7 @@ body {
 /* information
 ----------------------------------------------------------- */
 #recruit-link {
-  background: url(https://re-gale.co.jp/assets/img/top/bgimg_information_1.jpg) center center no-repeat;
+  background: url(../img/top/bgimg_information_1.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -584,7 +584,7 @@ body {
 /* information
 ----------------------------------------------------------- */
 #information {
-  background: url(https://re-gale.co.jp/assets/img/top/bgimg_information_1.jpg) center center no-repeat;
+  background: url(../img/top/bgimg_information_1.jpg) center center no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -865,10 +865,10 @@ body {
 
 #tpl-footer {
   position: relative;
-  background: url(https://re-gale.co.jp/assets/img/common/bg_body_b.png) center bottom no-repeat #000; }
+  background: url(../img/common/bg_body_b.png) center bottom no-repeat #000; }
   @media screen and (max-width: 750px) {
     #tpl-footer {
-      background: url(https://re-gale.co.jp/assets/img/common/sp_bg_footer.png) center top no-repeat #000;
+      background: url(../img/common/sp_bg_footer.png) center top no-repeat #000;
       z-index: 10; } }
 
 #pickup .hs{
