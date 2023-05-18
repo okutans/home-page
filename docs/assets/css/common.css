@@ -1,0 +1,1468 @@
+@charset "UTF-8";
+/* scroll fix */
+html {
+  overflow-y: scroll; }
+
+html, body {
+  /*background: #000;*/
+  min-width: 1200px; }
+
+body {
+  font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif;
+  color: #fff;
+  line-height: 1.4;
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+  
+  /*background: url(/assets/img/common/bg_body_t.png) center top no-repeat, url(/assets/img/common/bg_body_b.png) center bottom no-repeat; */
+  /*background: url(/assets/img/common/bg_body_t.png) center top no-repeat*/
+}
+
+@media only screen and (max-width: 750px) {
+  html, body {
+    min-width: 320px; }
+  body {
+    /*overflow: hidden;*/ } }/*スマホでスクロールしない問題修正*/
+
+input, textarea {
+  font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif; }
+
+strong {
+  font-weight: bold; }
+
+/*---mincho font------------------*/
+@font-face {
+  font-family: 'myfont_test';
+  src: url("https://re-gale.co.jp/common/font/12mincho_reg_min.eot");
+  /* IE9 Compat Modes */
+  src: url("https://re-gale.co.jp/common/font/12mincho_reg_min.eot?") format("embedded-opentype"), url("https://re-gale.co.jp/common/font/12mincho_reg_min.woff") format("woff"), url("https://re-gale.co.jp/common/font/12mincho_reg_min.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+.mincho {
+  font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
+
+/*---ForFireFoxLink------------------*/
+a:focus {
+  outline: none; }
+
+/*---hide ------------------*/
+.pc-hide {
+  display: none; }
+  @media only screen and (max-width: 750px) {
+    .pc-hide {
+      display: block; } }
+
+@media only screen and (max-width: 750px) {
+  .sp-hide {
+    display: none; } }
+
+@media only screen and (max-width: 750px) {
+  svg {
+    display: none; } }
+
+/*---clearFix ------------------*/
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* 02.link
+
+----------------------------------------------------------- */
+a {
+  color: #fff;
+  text-decoration: none; }
+
+a:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+/*////////////////////////////////////////
+
+
+
+padding, margin
+
+
+
+////////////////////////////////////////*/
+.padT0 {
+  padding-top: 0 !important; }
+
+.padT1 {
+  padding-top: 0.5em !important; }
+
+.padT2 {
+  padding-top: 1em !important; }
+
+.padT3 {
+  padding-top: 1.5em !important; }
+
+.padT4 {
+  padding-top: 2em !important; }
+
+.padT5 {
+  padding-top: 2.5em !important; }
+
+.padL0 {
+  padding-left: 0 !important; }
+
+.padL1 {
+  padding-left: 0.5em !important; }
+
+.padL2 {
+  padding-left: 1em !important; }
+
+.padL3 {
+  padding-left: 1.5em !important; }
+
+.padL4 {
+  padding-left: 2em !important; }
+
+.padL5 {
+  padding-left: 2.5em !important; }
+
+.padR0 {
+  padding-right: 0 !important; }
+
+.padR1 {
+  padding-right: 0.5em !important; }
+
+.padR2 {
+  padding-right: 1em !important; }
+
+.padR3 {
+  padding-right: 1.5em !important; }
+
+.padR4 {
+  padding-right: 2em !important; }
+
+.padR5 {
+  padding-right: 2.5em !important; }
+
+.padB0 {
+  padding-bottom: 0 !important; }
+
+.padB1 {
+  padding-bottom: 0.5em !important; }
+
+.padB2 {
+  padding-bottom: 1em !important; }
+
+.padB3 {
+  padding-bottom: 1.5em !important; }
+
+.padB4 {
+  padding-bottom: 2em !important; }
+
+.padB5 {
+  padding-bottom: 2.5em !important; }
+
+.marT0 {
+  margin-top: 0 !important; }
+
+.marT1 {
+  margin-top: 0.5em !important; }
+
+.marT2 {
+  margin-top: 1em !important; }
+
+.marT3 {
+  margin-top: 1.5em !important; }
+
+.marT4 {
+  margin-top: 2em !important; }
+
+.marT5 {
+  margin-top: 2.5em !important; }
+
+.marL0 {
+  margin-left: 0 !important; }
+
+.marL1 {
+  margin-left: 0.5em !important; }
+
+.marL2 {
+  margin-left: 1em !important; }
+
+.marL3 {
+  margin-left: 1.5em !important; }
+
+.marL4 {
+  margin-left: 2em !important; }
+
+.marL5 {
+  margin-left: 2.5em !important; }
+
+.marR0 {
+  margin-right: 0 !important; }
+
+.marR1 {
+  margin-right: 0.5em !important; }
+
+.marR2 {
+  margin-right: 1em !important; }
+
+.marR3 {
+  margin-right: 1.5em !important; }
+
+.marR4 {
+  margin-right: 2em !important; }
+
+.marR5 {
+  margin-right: 2.5em !important; }
+
+.marB0 {
+  margin-bottom: 0 !important; }
+
+.marB1 {
+  margin-bottom: 0.5em !important; }
+
+.marB2 {
+  margin-bottom: 1em !important; }
+
+.marB3 {
+  margin-bottom: 1.5em !important; }
+
+.marB4 {
+  margin-bottom: 2em !important; }
+
+.marB5 {
+  margin-bottom: 2.5em !important; }
+
+.tpl-inner-wrap {
+  width: auto;
+  margin: 0 auto;
+  clear: both; }
+
+/* #tpl-header
+
+----------------------------------------------------------- */
+#tpl-header {
+  width: 100%;
+  height: 172px;
+  min-width: 1200px; }
+  @media screen and (max-width: 750px) {
+    #tpl-header {
+      background-color: #000; } }
+  #tpl-header .tpl-inner-wrap {
+    min-width: 1200px;
+    color: #FFF; }
+    @media only screen and (max-width: 750px) {
+      #tpl-header .tpl-inner-wrap {
+        background-color: #000; } }
+    #tpl-header .tpl-inner-wrap #header {
+      width: 1200px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      height: 90px; }
+      #tpl-header .tpl-inner-wrap #header #logo-wrap {
+        float: left;
+        letter-spacing: -0.2em;
+        margin-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 19px; }
+        #tpl-header .tpl-inner-wrap #header #logo-wrap p {
+          display: inline-block;
+          vertical-align: middle;
+          letter-spacing: normal;
+          margin-left: 17px; }
+          #tpl-header .tpl-inner-wrap #header #logo-wrap p:first-child {
+            margin-left: 0; }
+      #tpl-header .tpl-inner-wrap #header #header-contents {
+        float: right;
+        overflow: hidden;
+        letter-spacing: -0.2em;
+        text-align: right;
+        padding-top: 32px; }
+        #tpl-header .tpl-inner-wrap #header #header-contents #header-links,
+        #tpl-header .tpl-inner-wrap #header #header-contents #info-wrap {
+          display: inline-block;
+          letter-spacing: normal;
+          vertical-align: middle; }
+        #tpl-header .tpl-inner-wrap #header #header-contents #header-links {
+          display: inline-block; }
+          #tpl-header .tpl-inner-wrap #header #header-contents #header-links li {
+            display: inline-block; }
+            #tpl-header .tpl-inner-wrap #header #header-contents #header-links li:before {
+              content: "|"; }
+            #tpl-header .tpl-inner-wrap #header #header-contents #header-links li:first-child:before {
+              content: ""; }
+            #tpl-header .tpl-inner-wrap #header #header-contents #header-links li a,
+            #tpl-header .tpl-inner-wrap #header #header-contents #header-links li span {
+              display: inline-block;
+              vertical-align: middle;
+              color: #FFF;
+              padding-left: 10px;
+              padding-right: 10px;
+              font-size: 12px; }
+              #tpl-header .tpl-inner-wrap #header #header-contents #header-links li .lang-select {
+                  padding: 0;
+              }
+              #tpl-header .tpl-inner-wrap #header #header-contents #header-links li .lang-select a {
+                  padding: 3px 10px;
+                  float: left;
+                  color: #2685C9;
+                  font-size: 11px;
+                  text-decoration: none;
+                  background: black;
+              }
+              #tpl-header .tpl-inner-wrap #header #header-contents #header-links li .lang-select a:not(:first-child) {
+                  border-left: 1px solid #2685C9;
+              }
+              #tpl-header .tpl-inner-wrap #header #header-contents #header-links li .lang-select a:hover,
+              #tpl-header .tpl-inner-wrap #header #header-contents #header-links li .lang-select .current {
+                  color: black;
+                  background: #2685C9;
+              }
+        #tpl-header .tpl-inner-wrap #header #header-contents #info-wrap {
+          padding-left: 14px; }
+          #tpl-header .tpl-inner-wrap #header #header-contents #info-wrap p {
+            display: block;
+            text-align: center;
+            vertical-align: middle; }
+          #tpl-header .tpl-inner-wrap #header #header-contents #info-wrap .text {
+            font-size: 10px;
+            margin-top: .5em;
+            line-height: 1.3; }
+    @media screen and (max-width: 750px) {
+      #tpl-header .tpl-inner-wrap #header {
+        border-bottom: 1px solid #333; } }
+
+#sp-menu {
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  #tpl-header {
+    width: 100%;
+    min-width: 320px;
+    height: 60px; }
+    #tpl-header .tpl-inner-wrap {
+      width: 100%;
+      min-width: 320px;
+      display: table;
+      z-index: 9999; }
+      #tpl-header .tpl-inner-wrap #header {
+        width: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        height: 60px;
+        background-color: #000; }
+        #tpl-header .tpl-inner-wrap #header #logo-wrap {
+          margin-left: 15px;
+          padding: 0; }
+          #tpl-header .tpl-inner-wrap #header #logo-wrap #logo-21 {
+            width: 64px; }
+            #tpl-header .tpl-inner-wrap #header #logo-wrap #logo-21 img {
+              width: 100%;
+              height: auto; }
+          #tpl-header .tpl-inner-wrap #header #logo-wrap #logo-regale {
+            margin-left: 0px;
+            width: 63px;
+            height: 25px; }
+            #tpl-header .tpl-inner-wrap #header #logo-wrap #logo-regale a {
+              display: block;
+              width: 63px;
+              height: 25px;
+              background: url(https://re-gale.co.jp/assets/img/common/logo_gold_300.png) center center no-repeat;
+              -webkit-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover; }
+              #tpl-header .tpl-inner-wrap #header #logo-wrap #logo-regale a img {
+                /*display: none;*/
+                width:200px;
+              }
+  #header-contents {
+    display: none; } }
+
+/* #global-nav
+
+----------------------------------------------------------- */
+#global-nav {
+  clear: both;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/ }
+  #global-nav nav {
+    width: 100%;
+    min-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    #global-nav nav ul {
+      width: 1200px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      vertical-align: middle;
+      display: table;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      #global-nav nav ul li {
+        display: table-cell;
+        letter-spacing: normal;
+        vertical-align: middle;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        padding-left: 19px;
+        padding-right: 19px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
+        #global-nav nav ul li:first-child {
+          padding-left: 0; }
+        #global-nav nav ul li:last-child {
+          padding-right: 0; }
+        #global-nav nav ul li a {
+          font-size: 14px;
+          color: #FFF;
+          text-decoration: none; }
+          #global-nav nav ul li a span {
+            display: inline-block;
+            padding-bottom: 10px;
+            padding-top: 10px; }
+            #global-nav nav ul li a span:before {
+              content: "";
+              display: inline-block;
+              width: 13px;
+              height: 13px;
+              background: url(https://re-gale.co.jp/assets/img/common/ico_circle_arw.png) center top no-repeat;
+              vertical-align: middle;
+              margin-right: 6px;
+              margin-top: -3px; }
+          #global-nav nav ul li a:hover, #global-nav nav ul li a.current {
+            color: #2685C9; }
+            #global-nav nav ul li a:hover span, #global-nav nav ul li a.current span {
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              border-bottom: 2px solid #2685C9;
+              margin-bottom: -2px; }
+              #global-nav nav ul li a:hover span:before, #global-nav nav ul li a.current span:before {
+                background: url(https://re-gale.co.jp/assets/img/common/ico_circle_arw.png) center bottom no-repeat; }
+      #global-nav nav ul #contact span:before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 20px;
+        background: url(https://re-gale.co.jp/assets/img/common/ico_mail.png) center center no-repeat;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-top: -2px; }
+      #global-nav nav ul #contact a:hover span:before,
+      #global-nav nav ul #contact a.current span:before {
+        background: url(https://re-gale.co.jp/assets/img/common/ico_mail_on.png) center center no-repeat; }
+      #global-nav nav ul #facebook {
+        letter-spacing: 0.05em; }
+        #global-nav nav ul #facebook span:before {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background: url(../img/common/ico_facebook.png) center center no-repeat;
+          vertical-align: middle;
+          margin-right: 10px;
+          margin-top: -2px; }
+        #global-nav nav ul #facebook a:hover span:before,
+        #global-nav nav ul #facebook a.current span:before {
+          background: url(https://re-gale.co.jp/assets/img/common/ico_facebook_on.png) center center no-repeat; }
+
+@media screen and (max-width: 750px) {
+  #global-nav-wrap {
+    display: none; }
+    #global-nav-wrap nav {
+      min-width: 320px; }
+      #global-nav-wrap nav ul {
+        width: auto;
+        display: block; }
+        #global-nav-wrap nav ul li {
+          display: block; } }
+
+/* sp nav
+
+----------------------------------------------------------- */
+#sidr {
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  #sidr {
+    display: block; }
+  #sp-menu {
+    display: block;
+    float: right;
+    width: 18%; }
+    #sp-menu a {
+      display: block;
+      text-decoration: none;
+      color: #FFF;
+      width: 100%;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent; }
+      #sp-menu a:after {
+        content: 'MENU';
+        display: block;
+        width: 100%;
+        font-size: 10px;
+        text-align: center; }
+      #sp-menu a.active:after {
+        content: 'CLOSE'; }
+    #sp-menu .menu-icon {
+      position: relative;
+      width: 28px;
+      height: 20px; }
+      #sp-menu .menu-icon,
+      #sp-menu .menu-icon span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box; }
+      #sp-menu .menu-icon span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px; }
+        #sp-menu .menu-icon span:nth-of-type(1) {
+          top: 0; }
+        #sp-menu .menu-icon span:nth-of-type(2) {
+          top: 9px; }
+        #sp-menu .menu-icon span:nth-of-type(3) {
+          bottom: 0; }
+  #sp-global-nav-wrap {
+    background: url(https://re-gale.co.jp/assets/img/common/sp_menu_bg.jpg) left top repeat-y #333;
+    -webkit-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    color: #FFF;
+    text-align: center;
+    padding-bottom: 30px;
+    height: 100%; }
+    #sp-global-nav-wrap .menu-title {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    #sp-global-nav-wrap #sp-global-nav ul {
+      letter-spacing: -0.4em;
+      border-top: 1px solid #656565;
+      border-bottom: 1px solid #656565;
+      text-align: left; }
+      #sp-global-nav-wrap #sp-global-nav ul li {
+        letter-spacing: normal;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 50%;
+        border-bottom: 1px solid #656565;
+        margin-bottom: -1px; }
+        #sp-global-nav-wrap #sp-global-nav ul li:nth-child(odd) {
+          border-right: 1px solid #656565; }
+          #sp-global-nav-wrap #sp-global-nav ul li:last-of-type {
+              display: block;
+              width: 100%;
+              border-right: none;
+          }
+          #sp-global-nav-wrap #sp-global-nav ul li .lang-select {
+              margin-left: 10px;
+          }
+          #sp-global-nav-wrap #sp-global-nav ul li .lang-select a {
+              width: auto;
+              padding: 3px 10px;
+              margin: 15px 0;
+              display: inline-block;
+              height: auto;
+              color: #2685C9;
+              font-size: 11px;
+              text-decoration: none;
+              background: black;
+          }
+          #sp-global-nav-wrap #sp-global-nav ul li .lang-select .current {
+              color: black;
+              background: #2685C9;
+          }
+        #sp-global-nav-wrap #sp-global-nav ul li a {
+          display: table-cell;
+          width: 320px;
+          height: 50px;
+          vertical-align: middle;
+          color: #FFF;
+          font-size: 12px;
+          font-weight: 400;
+          text-decoration: none; }
+          #sp-global-nav-wrap #sp-global-nav ul li a.contact span:before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 10px;
+            background: url(https://re-gale.co.jp/assets/img/common/ico_mail.png) center center no-repeat;
+            -webkit-background-size: 100% auto;
+            -o-background-size: 100% auto;
+            background-size: 100% auto;
+            vertical-align: middle;
+            margin-right: 5px;
+            margin-top: -2px; }
+          #sp-global-nav-wrap #sp-global-nav ul li a.facebook span {
+            padding-left: 17px; }
+            #sp-global-nav-wrap #sp-global-nav ul li a.facebook span:before {
+              content: "";
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              background: url(../img/common/ico_facebook.png) center center no-repeat;
+              -webkit-background-size: 100% auto;
+              -o-background-size: 100% auto;
+              background-size: 100% auto;
+              vertical-align: middle;
+              position: absolute;
+              top: 50%;
+              left: 0;
+              margin-top: -6px; }
+          #sp-global-nav-wrap #sp-global-nav ul li a span {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative; }
+            #sp-global-nav-wrap #sp-global-nav ul li a span em {
+              display: block; }
+    #sp-global-nav-wrap #sp-global-nav #sp-tel {
+      display: table;
+      width: 100%;
+      height: 75px;
+      border-bottom: 1px solid #656565; }
+      #sp-global-nav-wrap #sp-global-nav #sp-tel a {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 75px;
+        color: #fff; }
+        #sp-global-nav-wrap #sp-global-nav #sp-tel a div {
+          display: inline-block;
+          width: 100%;
+          vertical-align: middle; }
+          #sp-global-nav-wrap #sp-global-nav #sp-tel a div .note {
+            font-size: 10px;
+            display: block; }
+          #sp-global-nav-wrap #sp-global-nav #sp-tel a div p {
+            display: inline-block;
+            position: relative;
+            padding-left: 30px; }
+            #sp-global-nav-wrap #sp-global-nav #sp-tel a div p:before {
+              content: "";
+              /*background: url(/assets/img/common/ico_freedial.png) center center no-repeat;*/
+              -webkit-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+              width: 31px;
+              height: 20px;
+              position: absolute;
+              top: 50%;
+              left: -6px;
+              margin-top: -8px;
+              line-height: 1; }
+            #sp-global-nav-wrap #sp-global-nav #sp-tel a div p .num {
+              display: inline-block;
+              font-size: 26px;
+              border-bottom: 1px solid #fff;
+              line-height: 1;
+              padding-top: 5px; }
+    #sp-global-nav-wrap #sp-global-nav #sp-nav-close {
+      display: table;
+      width: 87.3%;
+      height: 45px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #656565;
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: auto; }
+      #sp-global-nav-wrap #sp-global-nav #sp-nav-close a {
+        display: table-cell;
+        vertical-align: middle;
+        color: #fff; }
+        #sp-global-nav-wrap #sp-global-nav #sp-nav-close a p {
+          display: inline-block;
+          line-height: 1;
+          position: relative;
+          padding-left: 28px; }
+          #sp-global-nav-wrap #sp-global-nav #sp-nav-close a p:before {
+            content: "";
+            background: url(https://re-gale.co.jp/assets/img/common/ico_close.png) center center no-repeat;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width: 12px;
+            height: 12px;
+            vertical-align: middle;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 12px;
+            height: 12px;
+            margin-top: -6px; }
+          #sp-global-nav-wrap #sp-global-nav #sp-nav-close a p span {
+            font-size: 21px;
+            vertical-align: middle;
+            line-height: 1;
+            margin-right: 10px;
+            font-weight: 100; }
+  #sp-menu a.active span:nth-of-type(1) {
+    -webkit-transform: translateY(9px) rotate(-45deg);
+    transform: translateY(9px) rotate(-45deg); }
+  #sp-menu a.active span:nth-of-type(2) {
+    opacity: 0; }
+  #sp-menu a.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-9px) rotate(45deg);
+    transform: translateY(-9px) rotate(45deg); } }
+
+.tel-link {
+  text-decoration: none; }
+
+.tel-link:hover {
+  text-decoration: none;
+  cursor: text; }
+
+@media only screen and (max-width: 750px) {
+  .tel-link {
+    text-decoration: underline; } }
+
+/* fixed / hide
+
+----------------------------------------------------------- */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; }
+  .fixed#global-nav {
+    border-top: none; }
+    .fixed#global-nav ul {
+      height: 60px; }
+
+.hide {
+  display: none; }
+
+/* #tpl-topicpath
+
+----------------------------------------------------------- */
+#tpl-topicpath {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+  #tpl-topicpath ul {
+    overflow: hidden;
+    padding: 10px; }
+  #tpl-topicpath li {
+    display: inline-block;
+    font-size: 12px;
+    color: #FFF;
+    opacity: 0.5; }
+    #tpl-topicpath li:before {
+      content: ">";
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px; }
+    #tpl-topicpath li:first-child:before {
+      content: "";
+      margin: 0; }
+    #tpl-topicpath li a {
+      font-weight: 200;
+      color: #FFF; }
+
+@media only screen and (max-width: 750px) {
+  #tpl-topicpath {
+    width: auto;
+    background: #000;
+    overflow: hidden;
+    z-index: 0; } }
+
+/* #tpl-contents
+
+----------------------------------------------------------- */
+#tpl-contents .main {
+  min-width: 1200px; }
+
+@media only screen and (max-width: 750px) {
+  #tpl-contents .main {
+    background-color: #000;
+    min-width: 320px; } }
+
+/* #tpl-pagetop-box
+
+----------------------------------------------------------- */
+#tpl-pagetop-box,
+#sp-pagetop-box {
+  text-align: right;
+  line-height: 1;
+  background-color: #808080;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999; }
+  @media screen and (max-width: 750px) {
+    #tpl-pagetop-box,
+    #sp-pagetop-box {
+      display: block;
+      text-align: center;
+      line-height: 1;
+      background-color: #808080;
+      width: 100%;
+      height: 50px;
+      position: relative;
+      right: 0;
+      bottom: 0;
+      z-index: 100; } }
+  #tpl-pagetop-box p,
+  #sp-pagetop-box p {
+    overflow: hidden; }
+    #tpl-pagetop-box p a,
+    #sp-pagetop-box p a {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: url(https://re-gale.co.jp/assets/img/common/ico_pagetop.png) center center no-repeat; }
+      @media screen and (max-width: 750px) {
+        #tpl-pagetop-box p a,
+        #sp-pagetop-box p a {
+          display: inline-block;
+          width: 100%;
+          height: 50px; } }
+      #tpl-pagetop-box p a span,
+      #sp-pagetop-box p a span {
+        display: none; }
+
+#sp-pagetop-box {
+  display: none; }
+
+#tpl-pagetop-box {
+  display: block; }
+
+@media screen and (max-width: 750px) {
+  #sp-pagetop-box {
+    display: block; }
+  #tpl-pagetop-box {
+    display: none; } }
+
+/* #tpl-footer
+
+----------------------------------------------------------- */
+#tpl-footer {
+  /*background: url(/assets/img/common/pc_bg_footer.png) center top no-repeat #000;*/
+  background:url(https://re-gale.co.jp/assets/img/common/bg_body_b.png) center bottom no-repeat;
+  color: #FFF;
+  clear: both;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 5; }
+  #tpl-footer .tpl-inner-wrap {
+    background: none;
+    padding: 10px 0;
+    border-top: 1px solid #000; }
+    #tpl-footer .tpl-inner-wrap #footer {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      padding-top: 60px;
+      padding-bottom: 110px; }
+      #tpl-footer .tpl-inner-wrap #footer #cp-info {
+        float: left;
+        width: 45%; }
+        #tpl-footer .tpl-inner-wrap #footer #cp-info #ft-logo21 {
+          float: left;
+          margin-right: 20px; }
+        #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text {
+          overflow: hidden; }
+          #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .logo-regale {
+            margin-bottom: 18px; }
+          #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .text {
+            line-height: 2.0;
+            font-weight: 100;
+            word-wrap: break-word;
+            overflow-wrap: break-word; }
+            #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .text .freedial {
+              position: relative;
+              padding-left: 30px; }
+              @media only screen and (max-width: 750px) {
+                #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .text .freedial {
+                  padding-left: 22px; } }
+              #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .text .freedial:before {
+                content: "";
+                /*background: url(/assets/img/common/ico_freedial.png) center center no-repeat;*/
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                width: 23px;
+                height: 15px;
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                margin-top: -7px;
+                line-height: 1; }
+                @media only screen and (max-width: 750px) {
+                  #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .text .freedial:before {
+                    width: 16px;
+                    -webkit-background-size: 100% auto;
+                    -o-background-size: 100% auto;
+                    background-size: 100% auto; } }
+        #tpl-footer .tpl-inner-wrap #footer #cp-info .copyright {
+          clear: both;
+          color: #999;
+          padding-top: 92px;
+          font-size: 12px;
+          width: 100%; }
+      #tpl-footer .tpl-inner-wrap #footer #ft-sitemap {
+        float: right; }
+        #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap {
+          display: inline-block;
+          vertical-align: top;
+          overflow: hidden; }
+          #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap .ft-sitemap-block {
+            float: left;
+            vertical-align: top;
+            width: 140px;
+            font-weight: 300; }
+            #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap .ft-sitemap-block:first-child {
+              width: 160px; }
+            #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap .ft-sitemap-block > ul > li {
+              margin-top: 22px;
+              font-size: 14px; }
+              #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap .ft-sitemap-block > ul > li:first-child {
+                margin-top: 0px; }
+              #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap .ft-sitemap-block > ul > li > ul > li {
+                margin-top: 12px; }
+                #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap .ft-sitemap-block > ul > li > ul > li a {
+                  font-size: 12px;
+                  color: #999; }
+        #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: inline-block;
+          width: 144px;
+          height: 208px;
+          background-color: #3D5B99;
+          vertical-align: top;
+          margin-left: 20px; }
+          #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            display: block;
+            padding: 25px 23px;
+            width: 144px;
+            height: 208px;
+            color: #FFF;
+            text-decoration: none;
+            background: url(https://re-gale.co.jp/assets/img/common/ico_arw_lef_w.png) 120px 177px no-repeat; }
+            #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a .text {
+              font-size: 14px;
+              padding-top: 10px;
+              line-height: 1.8;
+              letter-spacing: 0.07em; }
+
+@media screen and (max-width: 750px) {
+  #tpl-footer {
+    background: url(https://re-gale.co.jp/assets/img/common/sp_bg_footer.png) center top no-repeat #000;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 97px; }
+    #tpl-footer .tpl-inner-wrap {
+      padding: 0; }
+      #tpl-footer .tpl-inner-wrap #footer {
+        width: 100%;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 0; }
+        #tpl-footer .tpl-inner-wrap #footer #cp-info {
+          float: none;
+          width: auto;
+          display: inline-block;
+          margin-bottom: 40px; }
+          #tpl-footer .tpl-inner-wrap #footer #cp-info #ft-logo21 {
+            margin-right: 10px;
+            padding-left: 22%; }
+            #tpl-footer .tpl-inner-wrap #footer #cp-info #ft-logo21 img {
+              width: 70px; }
+          #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text {
+            overflow: visible; }
+            #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .logo-regale {
+              margin-bottom: 25px;
+              text-align: center;
+              padding-top: 7px; }
+              #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .logo-regale img {
+                width: 80%; }
+            #tpl-footer .tpl-inner-wrap #footer #cp-info .cp-text .text {
+              line-height: 1.8;
+              font-weight: 400;
+              font-size: 12px; }
+          #tpl-footer .tpl-inner-wrap #footer #cp-info .copyright {
+            position: absolute;
+            bottom: 47px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 0; }
+        #tpl-footer .tpl-inner-wrap #footer #ft-sitemap {
+          float: none; }
+          #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #ft-sitemap-wrap {
+            display: none; }
+          #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap {
+            width: 92%;
+            height: auto;
+            margin-left: 0px;
+            padding-right: 15px;
+            cursor: pointer; }
+            #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a {
+              padding: 14px 15px 14px 20px;
+              width: 100%;
+              height: auto;
+              color: #FFF;
+              background: url(https://re-gale.co.jp/assets/img/common/ico_arw_lef_w.png) right center no-repeat;
+              text-align: left;
+              vertical-align: middle; }
+              #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a .img {
+                display: inline-block;
+                margin-right: 10px;
+                vertical-align: middle; }
+              #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a .text {
+                display: inline-block;
+                line-height: 1;
+                letter-spacing: 0.07em;
+                padding-top: 0;
+                vertical-align: middle; }
+                #tpl-footer .tpl-inner-wrap #footer #ft-sitemap #facebook-wrap a .text br {
+                  display: none; } }
+
+/* .contents
+
+----------------------------------------------------------- */
+.contents {
+  width: 1200px;
+  margin: 0 auto; }
+
+@media screen and (max-width: 750px) {
+  .contents {
+    width: 92%;
+    margin: 0 auto; } }
+
+/* .category-title
+
+----------------------------------------------------------- */
+.category-title {
+  width: 100%;
+  height: 250px;
+  background: #112c40;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #112c40 34%, #123b5b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #112c40 34%, #123b5b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #112c40 34%, #123b5b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#112c40', endColorstr='#123b5b',GradientType=0 );
+  /* IE6-9 */
+  color: #FFF;
+  font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+  text-align: center;
+  display: table; }
+  .category-title .inner {
+    display: table-cell;
+    width: 100%;
+    height: 250px;
+    vertical-align: middle;
+    line-height: 1; }
+    .category-title .inner h1 {
+      font-size: 46px;
+      margin-bottom: 20px;
+      letter-spacing: 0.08em; }
+    @media screen and (max-width: 750px) {
+      .category-title .inner h1 {
+        font-size: 25px;
+        margin-bottom: 0px;
+        padding: 0 20px;
+        line-height: 1.3; } }
+    .category-title .inner p {
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      text-indent: -1.5em; }
+    @media screen and (max-width: 750px) {
+      .category-title .inner p {
+        font-size: 10px;
+        text-indent: 0;
+        margin-top: 9px; } }
+  @media screen and (max-width: 750px) {
+    .category-title .inner {
+      opacity: 0;
+      height: 125px;
+      transition: all .8s;
+      transform: translateY(10px); }
+      .category-title .inner.animation {
+        opacity: 1;
+        transform: translateY(0); } }
+
+@media screen and (max-width: 750px) {
+  .category-title {
+    height: 125px; } }
+
+/* .page-title
+
+----------------------------------------------------------- */
+.page-title {
+  width: 1200px;
+  height: 150px;
+  display: table;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFF; }
+  @media screen and (max-width: 750px) {
+    .page-title {
+      padding-top: 34px; } }
+  .page-title .inner {
+    display: table-cell;
+    width: 100%;
+    height: 150px;
+    vertical-align: middle; }
+    .page-title .inner h1 {
+      display: inline-block;
+      font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      letter-spacing: 0.08em; }
+    @media screen and (max-width: 750px) {
+      .page-title .inner h1 {
+        font-size: 25px;
+        margin-bottom: 0; } }
+  @media screen and (max-width: 750px) {
+    .page-title .inner {
+      height: 103px; } }
+
+@media screen and (max-width: 750px) {
+  .page-title {
+    width: 100%;
+    height: 103px;
+    border-top: 1px solid #333; } }
+
+/* .sub-title
+
+----------------------------------------------------------- */
+.sub-title {
+  color: #FFF;
+  font-size: 28px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
+  letter-spacing: 0.08em;
+  font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
+  @media screen and (max-width: 750px) {
+    .sub-title {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      margin-bottom: 25px; } }
+  .sub-title span {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+    font-weight: normal; }
+
+/* parts
+
+----------------------------------------------------------- */
+.hover-opacity .over {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.no-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.65); }
+
+.btn {
+  display: table;
+  width: 400px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.08em;
+  padding-bottom: 50px; }
+  .btn a {
+    width: 400px;
+    height: 80px;
+    font-size: 18px;
+    color: #FFF;
+    display: table-cell;
+    background-color: #2685C9;
+    vertical-align: middle;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    text-align: center; }
+    @media screen and (max-width: 750px) {
+      .btn a {
+        font-size: 13px; } }
+    .btn a:hover {
+      background-color: #68AAD9; }
+    .btn a span {
+      display: inline-block; }
+  .btn.white a {
+    background-color: #fff;
+    color: #2685C9; }
+    .btn.white a:hover {
+      background-color: #BDDAEF; }
+
+@media screen and (max-width: 750px) {
+  .btn {
+    display: table;
+    width: 100%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.08em; } }
+
+.detail-page-nav {
+  width: 1200px;
+  margin: 0 auto 80px;
+  font-size: 16px; }
+  @media screen and (max-width: 750px) {
+    .detail-page-nav {
+      width: auto;
+      margin: 0 30px 55px;
+      font-size: 12px; } }
+
+.detail-nav-inner {
+  padding: 35px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  overflow: hidden; }
+  @media screen and (max-width: 750px) {
+    .detail-nav-inner {
+      padding: 10px 0; } }
+  .detail-nav-inner .detail-nav-prev {
+    float: left;
+    padding-left: 20px;
+    margin-left: 20px;
+    background: url(https://re-gale.co.jp/assets/img/common/ico_arw_l.png) no-repeat left 0.25em; }
+    @media screen and (max-width: 750px) {
+      .detail-nav-inner .detail-nav-prev {
+        margin-left: 0;
+        padding-left: 10px;
+        background-size: 4.5px 8px;
+        background-position: left 0.4em; } }
+  .detail-nav-inner .detail-nav-next {
+    float: right;
+    padding-right: 20px;
+    margin-right: 20px;
+    background: url(https://re-gale.co.jp/assets/img/common/ico_arw_r.png) no-repeat right 0.25em; }
+    @media screen and (max-width: 750px) {
+      .detail-nav-inner .detail-nav-next {
+        margin-right: 0;
+        padding-right: 10px;
+        background-size: 4.5px 8px;
+        background-position: right 0.4em; } }
+  .detail-nav-inner p {
+    text-align: center; }
+    .detail-nav-inner p a {
+      position: relative;
+      display: inline-block;
+      text-align: left; }
+      .detail-nav-inner p a::before {
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 14px;
+        background: url(https://re-gale.co.jp/assets/img/common/ico_index.png) no-repeat center center;
+        vertical-align: middle;
+        margin-right: 10px;
+        margin-top: -3px; }
+        @media screen and (max-width: 750px) {
+          .detail-nav-inner p a::before {
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            margin: 0;
+            background-size: 9px 7px; } }
+
+.tpl-pager {
+  text-align: center; }
+  .tpl-pager ul {
+    position: relative;
+    letter-spacing: -.3em; }
+    @media screen and (max-width: 750px) {
+      .tpl-pager ul {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 50px; } }
+    .tpl-pager ul li {
+      letter-spacing: normal;
+      display: inline-block;
+      line-height: 1;
+      padding: 19px 23px;
+      border-right: 1px solid #000;
+      color: #bbb;
+      background: #1f1f1f; }
+      @media screen and (max-width: 750px) {
+        .tpl-pager ul li {
+          padding: 15px 0;
+          width: 19.29%;
+          border-right: 2px solid #000; } }
+      .tpl-pager ul li.prev, .tpl-pager ul li.next {
+        font-size: 16px;
+        line-height: 1; }
+        @media screen and (max-width: 750px) {
+          .tpl-pager ul li.prev, .tpl-pager ul li.next {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            font-size: 12px; } }
+        .tpl-pager ul li.prev.prev, .tpl-pager ul li.next.prev {
+          background: transparent url(https://re-gale.co.jp/assets/img/common/ico_arw_l.png) no-repeat left 20px;
+          padding: 19px 30px 19px 20px; }
+          @media screen and (max-width: 750px) {
+            .tpl-pager ul li.prev.prev, .tpl-pager ul li.next.prev {
+              left: 0;
+              padding-right: 14px;
+              padding: 0 5px 0 0; } }
+        .tpl-pager ul li.prev.next, .tpl-pager ul li.next.next {
+          background: transparent url(https://re-gale.co.jp/assets/img/common/ico_arw_r.png) no-repeat right 20px;
+          padding: 19px 20px 19px 30px; }
+          @media screen and (max-width: 750px) {
+            .tpl-pager ul li.prev.next, .tpl-pager ul li.next.next {
+              right: 0;
+              padding-left: 14px;
+              border-left: 1px solid #fff;
+              padding: 0 0 0 5px; } }
+        .tpl-pager ul li.prev a, .tpl-pager ul li.next a {
+          font-size: 16px;
+          line-height: 1;
+          text-decoration: none; }
+          @media screen and (max-width: 750px) {
+            .tpl-pager ul li.prev a, .tpl-pager ul li.next a {
+              font-size: 12px; } }
+          .tpl-pager ul li.prev a:hover, .tpl-pager ul li.next a:hover {
+            background: none;
+            text-decoration: underline; }
+      .tpl-pager ul li a {
+        margin: -19px -23px;
+        display: block;
+        padding: 19px 23px;
+        font-size: 24px;
+        color: #fff;
+        font-weight: 200; }
+        @media screen and (max-width: 750px) {
+          .tpl-pager ul li a {
+            margin: -15px 0;
+            padding: 15px 0;
+            font-size: 12px; } }
+        .tpl-pager ul li a span {
+          border-bottom: 1px solid #7e7e7e; }
+        .tpl-pager ul li a:hover {
+          text-decoration: none;
+          background: #2685c9;
+          color: #fff; }
+          .tpl-pager ul li a:hover span {
+            border-bottom: none; }
+        .tpl-pager ul li a.is-current {
+          background: #2685c9;
+          color: #fff;
+          text-decoration: none; }
+          .tpl-pager ul li a.is-current span {
+            border-bottom: none; }
+
+/* magnific-Popup
+
+----------------------------------------------------------- */
+.mfp-bg, .mfp-container {
+  min-width: 1200px; }
+
+.mfp-iframe-holder .mfp-content {
+  max-width: 1000px; }
+
+.mfp-iframe-scaler {
+  position: relative;
+  border: 1px solid #2E3030;
+  overflow: visible; }
+
+.mfp-iframe-bg {
+  padding: 60px 72px;
+  background-color: #000;
+  border: 1px solid #2E3030; }
+
+.mfp-iframe-holder .mfp-close {
+  width: 1000px;
+  top: -110px;
+  left: -72px;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 46px;
+  padding-right: 0;
+  font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif; }
+  .mfp-iframe-holder .mfp-close:after {
+    content: "CLOSE";
+    font-size: 14px;
+    position: absolute;
+    right: 46px;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    padding-top: 2px; }
+  .mfp-iframe-holder .mfp-close:hover {
+    opacity: 0.6; }
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }

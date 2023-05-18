@@ -1,0 +1,887 @@
+@charset "UTF-8";
+body {
+  /*background: url(/assets/img/common/bg_body_t.png) center top no-repeat;*/ }
+
+.bodies {
+    position:relative;
+    z-index:0;
+    background: #000;
+    /*
+    background-size: cover;
+  background-attachment: fixed;
+    */
+}
+
+.top-title {
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    /*margin-bottom: 10px;
+    opacity: 0;*/
+    font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+.top-subtitle {
+    display: block;
+    text-align: center;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      margin-bottom: 30px;
+      font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif;
+}
+
+
+
+#tpl-contents .main {
+  overflow: hidden;
+  min-width: 320px; }
+
+
+.movie-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://re-gale.co.jp/assets/img/top/bg_mesh.png) left top repeat transparent;
+    z-index: -2; 
+}
+#toppage-mind-section-box {
+    
+    
+    
+    font-size: 3em;
+    
+    font-weight: normal; 
+    font-family :Quicksand, sans-serif;
+    text-shadow:0px 0px 1px #ffffff;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    z-index: 0;
+}
+
+.toppage-mind-section-box-text {
+    position: absolute;
+    top: 40%;
+    text-align:center;
+    width:100%;
+    color:#DDD;
+}
+        
+#toppage-mind-section-box-text-anima1 {
+    opacity:0.0;
+    -webkit-animation-name:fadein;
+    -webkit-animation-duration : 6s;
+    -webkit-animation-iteration-count : infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-delay:-4s;
+    
+    animation-name:fadein;
+    animation-duration : 6s;
+    animation-iteration-count : infinite;
+    animation-direction:alternate;
+    animation-delay:-4s;
+}
+
+#toppage-mind-section-box-text-anima2 {
+    opacity:0.0;
+    -webkit-animation-name:fadein;
+    -webkit-animation-duration : 6s;
+    -webkit-animation-iteration-count : infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-delay:0s;
+    
+    animation-name:fadein;
+    animation-duration : 6s;
+    animation-iteration-count : infinite;
+    animation-direction:alternate;
+    animation-delay:0s;
+}
+
+#toppage-mind-section-box-text-anima3 {
+    opacity:0.0;
+    -webkit-animation-name:fadein;
+    -webkit-animation-duration : 6s;
+    -webkit-animation-iteration-count : infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-delay:4s;
+    
+    animation-name:fadein;
+    animation-duration : 6s;
+    animation-iteration-count : infinite;
+    animation-direction:alternate;
+    animation-delay:4s;
+}
+
+
+
+@-webkit-keyframes fadein {
+	0%{opacity:0.0;}
+        70% {opacity:0.0;}
+	100% {opacity:1.0;}
+}
+@keyframes fadein {
+	0%{opacity:0.0;}
+        70% {opacity:0.0;}
+	100% {opacity:1.0;}
+}
+#toppage-mind-section-box span {
+    font-size: 50%;
+    display: block;
+    margin:5px;
+
+}
+
+
+/* #topvideo
+----------------------------------------------------------- */
+#topvideo-wrap {
+  position: relative;
+  background: black;
+  z-index:0;
+  background: -moz-linear-gradient(270deg, black 0%, #106787 100%);
+  background: -webkit-linear-gradient(270deg, black 0%, #106787 100%);
+  background: -o-linear-gradient(270deg, black 0%, #106787 100%);
+  background: -ms-linear-gradient(270deg, black 0%, #106787 100%);
+  background: linear-gradient(0deg, black 0%, #106787 100%); }
+
+#topvideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;}
+  @media screen and (max-width: 750px) {
+    #topvideo {
+      position: static;} }
+  #topvideo .topvideo-fix {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*z-index: -3;*/ }
+  #topvideo .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*z-index: 0;*/ }
+    #topvideo .overlay #logo {
+      position: absolute;
+      top: 10px;
+      left: 10px; }
+    #topvideo .overlay #info-block {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #FFF;
+      text-align: right; }
+      #topvideo .overlay #info-block p {
+        display: inline-block;
+        margin-left: 16px; }
+      #topvideo .overlay #info-block #info-block .text {
+        font-size: 10px; }
+      #topvideo .overlay #info-block #links-block {
+        letter-spacing: -0.4em;
+        margin-right: -10px;
+        margin-top: 15px; }
+        #topvideo .overlay #info-block #links-block li {
+          display: inline-block;
+          letter-spacing: normal;
+          margin-right: 10px;
+          font-size: 12px; }
+          #topvideo .overlay #info-block #links-block li:before {
+            content: "|";
+            margin-right: 10px; }
+          #topvideo .overlay #info-block #links-block li:first-child:before {
+            content: ""; }
+    #topvideo .overlay #scroll_icon {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 170px;
+      left: 0;
+      z-index: -1; }
+  #topvideo #topvideo-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    z-index: -2; }
+    @media screen and (max-width: 750px) {
+      #topvideo #topvideo-video {
+        height: 0;
+        width: 0;
+        position: absolute;
+        z-index: -100;
+        display: none !important; } }
+  #topvideo .mesh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://re-gale.co.jp/assets/img/top/bg_mesh.png) left top repeat transparent;
+    z-index: -3; }
+    @media screen and (max-width: 750px) {
+      #topvideo .mesh {
+        display: none; } }
+  #topvideo .movie-loading {
+    width: 46px;
+    height: 46px;
+    background: url(https://re-gale.co.jp/assets/img/common/loading.png) center center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -ms-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    z-index: -5;
+    margin-top: -80px;
+    margin-left: -23px; }
+    @media screen and (max-width: 750px) {
+      #topvideo .movie-loading {
+        display: none; } }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-ms-keyframes spin {
+  #topvideo 0% {
+    -ms-transform: rotate(0deg); }
+  #topvideo 100% {
+    -ms-transform: rotate(360deg); } }
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg); }
+  100% {
+    -o-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  #topvideo .tablet-bg {
+    background: url(https://re-gale.co.jp/assets/img/top/topvideo_img.jpg) center center no-repeat;
+    -webkit-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    width: 100%;
+    height: 100%; }
+
+#sp-topvideo-slider-wrap {
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  #topvideo-wrap {
+    padding-bottom: 0px; }
+  #topvideo {
+    height: auto;
+    background: none;
+    padding-top: 80%;
+    /* sp topvideo slide
+    ----------------------------------------------------------- */ }
+    #topvideo #topvideo-video,
+    #topvideo .overlay #logo,
+    #topvideo .overlay #info-block,
+    #topvideo .overlay #scroll_icon,
+    #topvideo .overlay #animate-overlay {
+      display: none; }
+    #topvideo #sp-topvideo-slider-wrap {
+      display: block;
+      width: 100%;
+      position: fixed;
+      top: 60px; }
+      #topvideo #sp-topvideo-slider-wrap .sp-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10; }
+      #topvideo #sp-topvideo-slider-wrap #sp-topvideo-slider li img {
+        width: 100%;
+        height: auto; } }
+
+/* header 
+----------------------------------------------------------- */
+#tpl-header {
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #000; }
+
+#header {
+  display: none; }
+
+#global-nav {
+  border: none; }
+  #global-nav.fixed {
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/ }
+
+@media screen and (max-width: 750px) {
+  #tpl-header {
+    height: 60px;
+    position: static;
+    top: 0px; } }
+
+    #info-block {
+        display: table;
+    }
+
+    #info-block #links-block {
+        display: table-cell;
+    }
+
+    #info-block #links-block li .lang-select {
+        padding: 0;
+        margin-left: 5px;
+    }
+    #info-block #links-block li .lang-select a {
+        padding: 3px 10px;
+        color: #2685C9;
+        font-size: 11px;
+        text-decoration: none;
+        background: black;
+    }
+    #info-block #links-block li .lang-select a:hover,
+    #info-block #links-block li .lang-select .current {
+        color: black;
+        background: #2685C9;
+    }
+
+    #info-block #tel-block {
+        display: table-cell;
+    }
+
+    #topvideo .overlay #info-block #tel-block p {
+        margin-left: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    #topvideo .overlay #info-block #tel-block .text {
+        margin-top: .5em;
+        font-size: 11px;
+    }
+
+/* pickup
+----------------------------------------------------------- */
+#pickup {
+  width: 100%;
+  height: 600px;
+  background: url(https://re-gale.co.jp/assets/img/top/bgimg_pickup_1.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; }
+  #pickup h2 {
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
+    #pickup h2 span {
+      display: block;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif; }
+  #pickup > ul {
+    display: table;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 1px 0;
+    vertical-align: top; }
+    #pickup > ul > li {
+      display: table-cell;
+      width: 25%;
+      opacity: 0.5;
+      transform: matrix3d(0, 0, -1, 0.001, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+      -webkit-transform: matrix3d(0, 0, -1, 0.001, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+      -webkit-transition: -webkit-transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s;
+      -o-transition: -o-transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s;
+      transition: transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s; }
+      #pickup > ul > li.show {
+        opacity: 1;
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+      #pickup > ul > li a {
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative; }
+        #pickup > ul > li a .txtbox {
+          position: absolute;
+          bottom: 26px;
+          right: 20px;
+          text-align: right; }
+          #pickup > ul > li a .txtbox .txt {
+            font-size: 14px;
+            text-align: right;
+            margin-bottom: 5px;
+            letter-spacing: 0.05em; }
+          #pickup > ul > li a .txtbox .link {
+            display: inline-block;
+            background: url(https://re-gale.co.jp/assets/img/common/ico_arw_lef_w.png) left center no-repeat;
+            padding-left: 18px;
+            font-size: 22px;
+            letter-spacing: 0.08em;
+            font-weight: 200;
+            text-align: right; }
+      #pickup > ul > li.list-message {
+        background: url(https://re-gale.co.jp/assets/img/ac/36.jpg) center center no-repeat;
+        /*background: linear-gradient(0deg, rgba(0,0,0, 1.0), rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.0)),url(/assets/img/ac/36.jpg) center center no-repeat;*/
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      #pickup > ul > li.list-guidance {
+        background: url(https://re-gale.co.jp/assets/img/ac/19.jpg) center center no-repeat;
+        /*background: linear-gradient(0deg, rgba(0,0,0, 1.0), rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.0)),url(/assets/img/ac/19.jpg) center center no-repeat;*/
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      #pickup > ul > li.list-philosophy {
+        /*background: linear-gradient(0deg, rgba(0,0,0, 1.0), rgba(0,0,0, 0.0), rgba(0, 0, 0, 0.0)),url(/assets/img/ac/13.jpg) center center no-repeat;*/
+        background: url(https://re-gale.co.jp/assets/img/ac/13.jpg) center center no-repeat;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      #pickup > ul > li.list-staff {
+        overflow: hidden; }
+      #pickup > ul > li .txtbox {
+        background-color:rgba(0,0,0, 0.4);
+      padding:3%;
+      padding-left:0%;
+      /*margin:0px;*/
+      width:94%;}
+        #pickup > ul > li.list-staff a {
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          #pickup > ul > li.list-staff a ul {
+            position: absolute;
+            width: 100%;
+            top: -1px; }
+            #pickup > ul > li.list-staff a ul li {
+              width: 100%;
+              height: 100%; }
+            
+            #pickup > ul > li.list-staff a ul li img {
+                
+                width: auto; 
+                height: 100%; }
+            
+
+@media screen and (max-width: 750px) {
+  #pickup {
+    height: auto;
+    background: url(https://re-gale.co.jp/assets/img/top/bgimg_pickup_sp_1.jpg);
+    background-attachment: scroll;
+    padding-bottom: 50px;
+    z-index: 10; }
+    #pickup h2 {
+      padding-top: 40px;
+      padding-bottom: 22px;
+      font-size: 24px;
+      opacity: 1; }
+      #pickup h2 span {
+        font-size: 12px; }
+    #pickup > ul {
+      display: block;
+      width: 80%;
+      overflow: hidden; }
+      #pickup > ul > li {
+        width: 50%;
+        float: left;
+        opacity: 1;
+        transform: none;
+        -webkit-transform: none;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+        position: relative; }
+        #pickup > ul > li.show {
+          opacity: 1;
+          transform: none;
+          -webkit-transform: none; }
+        #pickup > ul > li a .txtbox {
+          bottom: 15px;
+          right: 14px;
+          text-align: right; }
+          #pickup > ul > li a .txtbox .txt {
+            font-size: 9px;
+            margin-bottom: 0; }
+          #pickup > ul > li a .txtbox .link {
+            display: inline-block;
+            font-size: 12px;
+            -webkit-background-size: 6px auto;
+            -o-background-size: 6px auto;
+            background-size: 6px auto;
+            padding-left: 10px; }
+        #pickup > ul > li.list-message a {
+          -webkit-background-size: 50px auto;
+          -o-background-size: 50px auto;
+          background-size: 50px auto; }
+          #pickup > ul > li.list-message a .link:after {
+            width: 15px;
+            height: 15px;
+            margin-left: 3px; } }
+
+/* information
+----------------------------------------------------------- */
+#recruit-link {
+  background: url(https://re-gale.co.jp/assets/img/top/bgimg_information_1.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 76px;
+  position: relative; }
+  #recruit-link h2 {
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    opacity: 0;
+    font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
+    #recruit-link h2 span {
+      display: block;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif; }
+ 
+
+/* information
+----------------------------------------------------------- */
+#information {
+  background: url(https://re-gale.co.jp/assets/img/top/bgimg_information_1.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 76px;
+  position: relative; }
+  #information h2 {
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+    opacity: 0;
+    font-family: "myfont", "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; }
+    #information h2 span {
+      display: block;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック", "MS P Gothic",Verdana,Arial, Helvetica, sans-serif; }
+  #information #news-wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; }
+    #information #news-wrap .link {
+      font-size: 14px;
+      text-align: right;
+      margin-bottom: 18px; }
+    #information #news-wrap .news {
+      border-bottom: 1px dotted #818284; }
+      #information #news-wrap .news li {
+        border-top: 1px dotted #818284;
+        display: table;
+        width: 100%; }
+        #information #news-wrap .news li a {
+          display: block;
+          height: 94px;
+          position: relative;
+          display: table-cell;
+          vertical-align: middle;
+          text-decoration: none; }
+          #information #news-wrap .news li a:hover dl dd {
+            text-decoration: underline; }
+          #information #news-wrap .news li a dl {
+            display: table;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: -0.4em;
+            opacity: 0.5;
+            transform: matrix3d(0, 0, -1, 0.001, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+            -webkit-transform: matrix3d(0, 0, -1, 0.001, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+            -webkit-transition: -webkit-transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s;
+            -o-transition: -o-transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s;
+            transition: transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s; }
+            #information #news-wrap .news li a dl.show {
+              opacity: 1;
+              transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+              -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+            #information #news-wrap .news li a dl dt, #information #news-wrap .news li a dl dd {
+              display: table-cell;
+              letter-spacing: normal;
+              font-size: 16px;
+              vertical-align: top; }
+            #information #news-wrap .news li a dl dt {
+              color: #2685C9;
+              font-weight: 600;
+              white-space: nowrap;
+              width: 225px; }
+              #information #news-wrap .news li a dl dt .news-tag {
+                display: inline-block;
+                width: 110px;
+                margin-left: 12px;
+                padding: 6px 0;
+                font-size: 14px;
+                color: #fff;
+                line-height: 1;
+                text-align: center; }
+                #information #news-wrap .news li a dl dt .news-tag.about {
+                  border: 1px solid #16a4ad; }
+                #information #news-wrap .news li a dl dt .news-tag.seminar {
+                  border: 1px solid #7ab222; }
+                #information #news-wrap .news li a dl dt .news-tag.other {
+                  border: 1px solid #eb8314; }
+                /*
+  #information #bnr-slider-wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+    #information #bnr-slider-wrap #bnr-slider {
+      overflow: hidden;
+      width: 1046px;
+      margin-left: auto;
+      margin-right: auto; }
+      #information #bnr-slider-wrap #bnr-slider li {
+        float: left;
+        margin-left: 1px; }
+        #information #bnr-slider-wrap #bnr-slider li.first-pannel {
+          opacity: 0.5;
+          transform: matrix3d(0, 0, -1, 0.001, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+          -webkit-transform: matrix3d(0, 0, -1, 0.001, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);
+          -webkit-transition: -webkit-transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s;
+          -o-transition: -o-transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s;
+          transition: transform 1s cubic-bezier(0.15, 0.15, 0.15, 1), opacity 1s cubic-bezier(0.15, 0.15, 0.15, 1) 0.3s; }
+        #information #bnr-slider-wrap #bnr-slider li.first-pannel.show {
+          opacity: 1;
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+        #information #bnr-slider-wrap #bnr-slider li a {
+          display: block;
+          text-align: center; }
+          #information #bnr-slider-wrap #bnr-slider li a img {
+            width: 100%;
+            height: auto; }
+          #information #bnr-slider-wrap #bnr-slider li a span {
+            display: inline-block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 300;
+            position: relative; }
+            #information #bnr-slider-wrap #bnr-slider li a span:before {
+              content: "";
+              display: inline-block;
+              width: 13px;
+              height: 13px;
+              background: url(/assets/img/common/ico_circle_arw.png) center top no-repeat;
+              position: absolute;
+              top: 0.4em;
+              left: -20px; }
+    #information #bnr-slider-wrap #bnr-slide-arrows {
+      opacity: 0; }
+      @media screen and (max-width: 750px) {
+        #information #bnr-slider-wrap #bnr-slide-arrows {
+          opacity: 1; } }
+      #information #bnr-slider-wrap #bnr-slide-arrows .slick-prev,
+      #information #bnr-slider-wrap #bnr-slide-arrows .slick-next {
+        position: absolute;
+        top: 131px;
+        width: 46px;
+        height: 46px; }
+        @media screen and (max-width: 750px) {
+          #information #bnr-slider-wrap #bnr-slide-arrows .slick-prev,
+          #information #bnr-slider-wrap #bnr-slide-arrows .slick-next {
+            top: 50%;
+            width: 32px;
+            height: 32px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin-top: -36px;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover; } }
+      #information #bnr-slider-wrap #bnr-slide-arrows .slick-prev {
+        left: 0;
+        background: url(/assets/img/common/slide_blue_arw_lef.png) left top no-repeat;
+        -webkit-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto; }
+        #information #bnr-slider-wrap #bnr-slide-arrows .slick-prev:hover {
+          background: url(/assets/img/common/slide_blue_arw_lef.png) left bottom no-repeat;
+          -webkit-background-size: 100% auto;
+          -o-background-size: 100% auto;
+          background-size: 100% auto; }
+        @media screen and (max-width: 750px) {
+          #information #bnr-slider-wrap #bnr-slide-arrows .slick-prev {
+            left: 4%; }
+            #information #bnr-slider-wrap #bnr-slide-arrows .slick-prev:hover {
+              background: url(/assets/img/common/slide_blue_arw_lef.png) left top no-repeat;
+              -webkit-background-size: 100% auto;
+              -o-background-size: 100% auto;
+              background-size: 100% auto; } }
+      #information #bnr-slider-wrap #bnr-slide-arrows .slick-next {
+        right: 0;
+        background: url(/assets/img/common/slide_blue_arw_rig.png) left top no-repeat;
+        -webkit-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto; }
+        #information #bnr-slider-wrap #bnr-slide-arrows .slick-next:hover {
+          background: url(/assets/img/common/slide_blue_arw_rig.png) left bottom no-repeat;
+          -webkit-background-size: 100% auto;
+          -o-background-size: 100% auto;
+          background-size: 100% auto; }
+        @media screen and (max-width: 750px) {
+          #information #bnr-slider-wrap #bnr-slide-arrows .slick-next {
+            right: 4%; }
+            #information #bnr-slider-wrap #bnr-slide-arrows .slick-next:hover {
+              background: url(/assets/img/common/slide_blue_arw_rig.png) left top no-repeat;
+              -webkit-background-size: 100% auto;
+              -o-background-size: 100% auto;
+              background-size: 100% auto; } }
+*/
+@media screen and (max-width: 750px) {
+  #information {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: scroll;
+    z-index: 10; }
+    #information h2 {
+      font-size: 24px;
+      opacity: 1; }
+      #information h2 span {
+        font-size: 12px; }
+    #information #news-wrap {
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto; }
+      #information #news-wrap .link {
+        font-size: 12px;
+        margin-bottom: 10px; }
+      #information #news-wrap .news li a {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+        text-decoration: none; }
+        #information #news-wrap .news li a:hover dd {
+          border-bottom: none;
+          margin-top: 0px; }
+        #information #news-wrap .news li a dl {
+          width: 100%;
+          position: static;
+          -webkit-transform: none;
+          -ms-transform: none;
+          transform: none;
+          padding: 0;
+          opacity: 1; }
+          #information #news-wrap .news li a dl dt, #information #news-wrap .news li a dl dd {
+            display: block;
+            font-size: 14px; }
+          #information #news-wrap .news li a dl dt {
+            margin-bottom: 5px; }
+            #information #news-wrap .news li a dl dt .news-tag {
+              max-width: 70px;
+              padding: 4px 0;
+              font-size: 10px;
+              line-height: 1; }
+          #information #news-wrap .news li a dl dd {
+            font-weight: 200; }
+          /*
+    #information #bnr-slider-wrap {
+      width: 100%; }
+      #information #bnr-slider-wrap #bnr-slider {
+        width: 100%; }
+        #information #bnr-slider-wrap #bnr-slider li {
+          padding-left: 0.8%;
+          padding-right: 0.8%; }
+          #information #bnr-slider-wrap #bnr-slider li a span {
+            font-size: 12px; }
+            #information #bnr-slider-wrap #bnr-slider li a span:before {
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              background: url(/assets/img/common/ico_circle_arw.png) center top no-repeat;
+              background-size: cover;
+              position: absolute;
+              top: 0.3em;
+              left: -15px; }
+          #information #bnr-slider-wrap #bnr-slider li.first-pannel {
+            opacity: 1;
+            transform: none;
+            -webkit-transform: none;
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none; }
+          #information #bnr-slider-wrap #bnr-slider li.first-pannel.show {
+            opacity: 1;
+            transform: none;
+            -webkit-transform: none; } */
+}
+
+#tpl-footer {
+  position: relative;
+  background: url(https://re-gale.co.jp/assets/img/common/bg_body_b.png) center bottom no-repeat #000; }
+  @media screen and (max-width: 750px) {
+    #tpl-footer {
+      background: url(https://re-gale.co.jp/assets/img/common/sp_bg_footer.png) center top no-repeat #000;
+      z-index: 10; } }
+
+#pickup .hs{
+	width: 100%;
+	max-width: 1200px;
+	padding-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+@media screen and (max-width: 750px) {
+	#pickup .hs a img{
+		width: 100%;
+		haight: auto;
+	}
+}
