@@ -33,9 +33,9 @@ strong {
 /*---mincho font------------------*/
 @font-face {
   font-family: 'myfont_test';
-  src: url("https://re-gale.co.jp/common/font/12mincho_reg_min.eot");
+  src: url("/common/font/12mincho_reg_min.eot");
   /* IE9 Compat Modes */
-  src: url("https://re-gale.co.jp/common/font/12mincho_reg_min.eot?") format("embedded-opentype"), url("https://re-gale.co.jp/common/font/12mincho_reg_min.woff") format("woff"), url("https://re-gale.co.jp/common/font/12mincho_reg_min.ttf") format("truetype");
+  src: url("/common/font/12mincho_reg_min.eot?") format("embedded-opentype"), url("/common/font/12mincho_reg_min.woff") format("woff"), url("/common/font/12mincho_reg_min.ttf") format("truetype");
   /* Safari, Android, iOS */ }
 
 .mincho {

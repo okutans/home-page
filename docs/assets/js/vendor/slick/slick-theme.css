@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('https://re-gale.co.jp/assets/js/vendor/slick/fonts/slick.eot');
-    src: url('https://re-gale.co.jp/assets/js/vendor/slick/fonts/slick.eot?') format('embedded-opentype'), url('https://re-gale.co.jp/assets/js/vendor/slick/fonts/slick.woff') format('woff'), url('https://re-gale.co.jp/assets/js/vendor/slick/fonts/slick.ttf') format('truetype'), url('https://re-gale.co.jp/assets/js/vendor/slick/fonts/slick.svg') format('svg');
+    src: url('/assets/js/vendor/slick/fonts/slick.eot');
+    src: url('/assets/js/vendor/slick/fonts/slick.eot?') format('embedded-opentype'), url('/assets/js/vendor/slick/fonts/slick.woff') format('woff'), url('/assets/js/vendor/slick/fonts/slick.ttf') format('truetype'), url('/assets/js/vendor/slick/fonts/slick.svg') format('svg');
 }
 /* Arrows */
 .slick-prev,

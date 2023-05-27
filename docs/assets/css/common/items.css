@@ -279,7 +279,7 @@ s:before {
 }
 
 #nonparallax {
-	background-image: url('https://re-gale.co.jp/assets/css/common/assets/img/landing/2/pgallary.png');
+	background-image: url('/assets/css/common/assets/img/landing/2/pgallary.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto 100%;

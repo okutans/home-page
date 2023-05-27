@@ -202,7 +202,7 @@
 
     #tpl-contents .contact .step li.check {
 
-      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step.png) no-repeat right center;
+      background: transparent url(/data/contact/img/bg_form-step.png) no-repeat right center;
 
       width: 414px; }
 
@@ -272,7 +272,7 @@
 
     #tpl-contents .contact .step li.current {
 
-      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step_current.png) no-repeat right center; }
+      background: transparent url(/data/contact/img/bg_form-step_current.png) no-repeat right center; }
 
     #tpl-contents .contact .step li.current.comp {
 
@@ -802,7 +802,7 @@
 
         #tpl-contents .contact .form .address .select-wrap .customSelect {
 
-          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+          background: url(/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
 
           border: 1px solid #666666;
 
@@ -886,7 +886,7 @@
 
         #tpl-contents .contact .form .job .select-wrap .customSelect, #tpl-contents .contact .form .jobposition .select-wrap .customSelect, #tpl-contents .contact .form .job-income .select-wrap .customSelect, #tpl-contents .contact .form .job-length .select-wrap .customSelect, #tpl-contents .contact .form .business .select-wrap .customSelect, #tpl-contents .contact .form .borro .select-wrap .customSelect {
 
-          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+          background: url(/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
 
           border: 1px solid #666666;
 
@@ -928,7 +928,7 @@
 
           #tpl-contents .contact .form .job .select-wrap .customSelect, #tpl-contents .contact .form .jobposition .select-wrap .customSelect, #tpl-contents .contact .form .job-income .select-wrap .customSelect, #tpl-contents .contact .form .job-length .select-wrap .customSelect, #tpl-contents .contact .form .business .select-wrap .customSelect, #tpl-contents .contact .form .borro .select-wrap .customSelect {
 
-            background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+            background: url(/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
 
             border: 1px solid #666666;
 
@@ -1162,7 +1162,7 @@
 
       #tpl-contents .contact .form_alert .title:before {
 
-        content: url(https://re-gale.co.jp/data/contact/img/ico_alert.png);
+        content: url(/data/contact/img/ico_alert.png);
 
         margin-right: 14px;
 
@@ -1174,7 +1174,7 @@
 
         #tpl-contents .contact .form_alert .title:before {
 
-          content: url(https://re-gale.co.jp/data/contact/img/ico_alert-sp.png);
+          content: url(/data/contact/img/ico_alert-sp.png);
 
           margin-right: 5px;
 

@@ -1,6 +1,6 @@
 #tpl-contents .main-visual {
 
-  background: url(https://re-gale.co.jp/assets/img/staff/president_message_bg.jpg) no-repeat center center;
+  background: url(/assets/img/staff/president_message_bg.jpg) no-repeat center center;
 
   background-size: cover;
 
@@ -123,7 +123,7 @@
 
   display: table;
 
-  background: url(https://re-gale.co.jp/company/message/img/bg_btn-movie.png) repeat left top;
+  background: url(/company/message/img/bg_btn-movie.png) repeat left top;
 
   border: 1px solid #fff;
 
@@ -169,7 +169,7 @@
 
 #tpl-contents .main-visual .btn-movie span {
 
-  background: url(https://re-gale.co.jp/company/message/img/ico_movie.png) no-repeat left center;
+  background: url(/company/message/img/ico_movie.png) no-repeat left center;
 
   display: table-cell;
 

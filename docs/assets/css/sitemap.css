@@ -36,7 +36,7 @@
     #tpl-contents .sitemap .list-wrap .list .parent > li.line01 {
       border-top: 1px dotted #4d4d4d; } }
   #tpl-contents .sitemap .list-wrap .list .parent > li > a {
-    background: url(https://re-gale.co.jp/assets/img/common/ico_arw_rs.png) no-repeat left center;
+    background: url(/assets/img/common/ico_arw_rs.png) no-repeat left center;
     font-size: 14px;
     display: block;
     padding: 30px 0 30px 14px;
@@ -70,5 +70,5 @@
     #tpl-contents .sitemap .list-wrap .list .child > li > a {
       font-size: 12px; } }
   #tpl-contents .sitemap .other-win:after {
-    content: url(https://re-gale.co.jp/assets/img/sitemap/img/ico-otherwin.png);
+    content: url(/assets/img/sitemap/img/ico-otherwin.png);
     margin-left: 10px; }

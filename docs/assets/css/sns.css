@@ -58,7 +58,7 @@
 
               display: inline-block;
 
-              background: url(https://re-gale.co.jp/common/img/ico_arw_lef_w.png) left center no-repeat;
+              background: url(/common/img/ico_arw_lef_w.png) left center no-repeat;
 
               padding-left: 18px; }
 
@@ -82,25 +82,25 @@
 
   #tpl-contents .company-list .li1 {
 
-    background: url("https://re-gale.co.jp/assets/img/sns/facebook.jpg") no-repeat center;
+    background: url("/assets/img/sns/facebook.jpg") no-repeat center;
 
     background-size: 40%; }
 
   #tpl-contents .company-list .li2 {
 
-    background: url("https://re-gale.co.jp/assets/img/sns/twitter.jpg") no-repeat center;
+    background: url("/assets/img/sns/twitter.jpg") no-repeat center;
 
     background-size: 40%; }
 
   #tpl-contents .company-list .li3 {
 
-    background: url("https://re-gale.co.jp/assets/img/sns/instagram.jpg") no-repeat center;
+    background: url("/assets/img/sns/instagram.jpg") no-repeat center;
 
     background-size: 40%; }
 
   #tpl-contents .company-list .li4 {
 
-    background: url("https://re-gale.co.jp/assets/img/ac/21.jpg") no-repeat center;
+    background: url("/assets/img/ac/21.jpg") no-repeat center;
 
     background-size: cover; }
 
@@ -118,13 +118,13 @@
 
   #tpl-contents .company-list .li7 {
 
-    background: url("https://re-gale.co.jp/assets/img/ac/6.jpg") no-repeat left center;
+    background: url("/assets/img/ac/6.jpg") no-repeat left center;
 
     background-size: cover; }
 
   #tpl-contents .company-list .li8 {
 
-    background: url("https://re-gale.co.jp/assets/img/ac/3.jpg") no-repeat left center;
+    background: url("/assets/img/ac/3.jpg") no-repeat left center;
 
     background-size: cover; }
 
@@ -182,7 +182,7 @@ sp
 
           display: inline-block;
 
-          background: url(https://re-gale.co.jp/common/img/ico_arw_lef_w.png) left center no-repeat;
+          background: url(/common/img/ico_arw_lef_w.png) left center no-repeat;
 
           -webkit-background-size: 6px auto;
 

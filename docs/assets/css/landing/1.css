@@ -165,7 +165,7 @@ display:inline-block;
 }
 
 .keyVisual{
-    background:url(https://re-gale.co.jp/assets/img/landing/main_bg.jpg) no-repeat;
+    background:url(/assets/img/landing/main_bg.jpg) no-repeat;
     background-size:100%;
     /*height:732px;*/
     height:300px;
@@ -212,7 +212,7 @@ display:inline-block;
     background:#fff;
 }
 .message .inner{
-    background:url(https://re-gale.co.jp/assets/img/landing/president.png) #fff no-repeat 70% 100%;
+    background:url(/assets/img/landing/president.png) #fff no-repeat 70% 100%;
 
 }
 .message h2{
@@ -268,7 +268,7 @@ display:inline-block;
 .reason{
     /*background:#0f0f0f;*/
     color:#fff;
-    background: url(https://re-gale.co.jp/assets/img/ac/46_b.jpg) no-repeat center;
+    background: url(/assets/img/ac/46_b.jpg) no-repeat center;
     background-size:cover;
 }
 .reason h2{
@@ -352,7 +352,7 @@ display:inline-block;
 }
 .voice{
     /*background:#091626;*/
-    background: url(https://re-gale.co.jp/assets/img/ac/49_b.jpg) no-repeat center;
+    background: url(/assets/img/ac/49_b.jpg) no-repeat center;
     background-size:cover;
     color:#fff;
     padding:130px 0 160px;
@@ -537,7 +537,7 @@ footer{
         border:1px #0a1768 solid;
     }
     .keyVisual{
-        background:url(https://re-gale.co.jp/assets/img/landing/main_bg.jpg) no-repeat 90% 90%;
+        background:url(/assets/img/landing/main_bg.jpg) no-repeat 90% 90%;
         background-size:auto;
         height:auto;
         color:#fff;
@@ -639,7 +639,7 @@ footer{
     .reason{
         /*background:#0f0f0f;*/
         color:#fff;
-        background: url(https://re-gale.co.jp/assets/img/ac/46_b.jpg) no-repeat center;
+        background: url(/assets/img/ac/46_b.jpg) no-repeat center;
         background-size:cover;
     }
     .reason h2{
@@ -720,7 +720,7 @@ footer{
     }
     .voice{
         /*background:#091626;*/
-        background: url(https://re-gale.co.jp/assets/img/ac/49_b.jpg) no-repeat center;
+        background: url(/assets/img/ac/49_b.jpg) no-repeat center;
         background-size:cover;
         color:#fff;
         padding:90px 0 100px;
@@ -1065,7 +1065,7 @@ footer{
 
     .contact .step li.check {
 
-      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step.png) no-repeat right center;
+      background: transparent url(/data/contact/img/bg_form-step.png) no-repeat right center;
 
       width: 414px; }
 
@@ -1135,7 +1135,7 @@ footer{
 
     .contact .step li.current {
 
-      background: transparent url(https://re-gale.co.jp/data/contact/img/bg_form-step_current.png) no-repeat right center; }
+      background: transparent url(/data/contact/img/bg_form-step_current.png) no-repeat right center; }
 
     .contact .step li.current.comp {
 
@@ -1665,7 +1665,7 @@ footer{
 
         .contact .form .address .select-wrap .customSelect {
 
-          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+          background: url(/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
 
           border: 1px solid #666666;
 
@@ -1749,7 +1749,7 @@ footer{
 
         .contact .form .job .select-wrap .customSelect, .contact .form .jobposition .select-wrap .customSelect, .contact .form .job-income .select-wrap .customSelect, .contact .form .job-length .select-wrap .customSelect, .contact .form .business .select-wrap .customSelect, .contact .form .borro .select-wrap .customSelect {
 
-          background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+          background: url(/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
 
           border: 1px solid #666666;
 
@@ -1791,7 +1791,7 @@ footer{
 
           .contact .form .job .select-wrap .customSelect, .contact .form .jobposition .select-wrap .customSelect, .contact .form .job-income .select-wrap .customSelect, .contact .form .job-length .select-wrap .customSelect, .contact .form .business .select-wrap .customSelect, .contact .form .borro .select-wrap .customSelect {
 
-            background: url(https://re-gale.co.jp/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
+            background: url(/common/img/select_arrow.gif) right top no-repeat #1f1f1f;
 
             border: 1px solid #666666;
 
@@ -2025,7 +2025,7 @@ footer{
 
       .contact .form_alert .title:before {
 
-        content: url(https://re-gale.co.jp/data/contact/img/ico_alert.png);
+        content: url(/data/contact/img/ico_alert.png);
 
         margin-right: 14px;
 
@@ -2037,7 +2037,7 @@ footer{
 
         .contact .form_alert .title:before {
 
-          content: url(https://re-gale.co.jp/data/contact/img/ico_alert-sp.png);
+          content: url(/data/contact/img/ico_alert-sp.png);
 
           margin-right: 5px;
 

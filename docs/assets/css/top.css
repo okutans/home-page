@@ -270,7 +270,7 @@ body {
   100% {
     transform: rotate(360deg); } }
   #topvideo .tablet-bg {
-    background: url(https://re-gale.co.jp/assets/img/top/topvideo_img.jpg) center center no-repeat;
+    background: url(/assets/img/top/topvideo_img.jpg) center center no-repeat;
     -webkit-background-size: auto 100%;
     -o-background-size: auto 100%;
     background-size: auto 100%;

@@ -15,7 +15,7 @@
   background: none; }
 
 #tpl-contents .main {
-  background: url(https://re-gale.co.jp/assets/img/ac/41_b.jpg) no-repeat center;
+  background: url(/assets/img/ac/41_b.jpg) no-repeat center;
   background-size: cover; }
 
 #tpl-contents .main .mainCont {
@@ -79,7 +79,7 @@
   .category-title .inner h1 {
     margin-bottom: 0; }
   #tpl-contents .main {
-        background: url(https://re-gale.co.jp/assets/img/ac/41_b.jpg) no-repeat center;
+        background: url(/assets/img/ac/41_b.jpg) no-repeat center;
         background-size:cover;
     }
   #tpl-contents .main .mainCont {

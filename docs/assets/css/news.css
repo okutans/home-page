@@ -45,19 +45,19 @@
     #tpl-contents .news-release .category-menu li.other span {
       border-bottom: 2px solid #eb8314; }
     #tpl-contents .news-release .category-menu li.all.current {
-      background: url(https://re-gale.co.jp/news/img/ico-category-navi_all.png) no-repeat center bottom; }
+      background: url(/news/img/ico-category-navi_all.png) no-repeat center bottom; }
     #tpl-contents .news-release .category-menu li.all.current span {
       background: #2685c9; }
     #tpl-contents .news-release .category-menu li.about.current {
-      background: url(https://re-gale.co.jp/news/img/ico-category-navi_about.png) no-repeat center bottom; }
+      background: url(/news/img/ico-category-navi_about.png) no-repeat center bottom; }
     #tpl-contents .news-release .category-menu li.about.current span {
       background: #16a4ad; }
     #tpl-contents .news-release .category-menu li.seminar.current {
-      background: url(https://re-gale.co.jp/news/img/ico-category-navi_seminar.png) no-repeat center bottom; }
+      background: url(/news/img/ico-category-navi_seminar.png) no-repeat center bottom; }
     #tpl-contents .news-release .category-menu li.seminar.current span {
       background: #7ab222; }
     #tpl-contents .news-release .category-menu li.other.current {
-      background: url(https://re-gale.co.jp/news/img/ico-category-navi_other.png) no-repeat center bottom; }
+      background: url(/news/img/ico-category-navi_other.png) no-repeat center bottom; }
     #tpl-contents .news-release .category-menu li.other.current span {
       background: #eb8314; }
     #tpl-contents .news-release .category-menu li a {
